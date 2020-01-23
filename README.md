@@ -1,7 +1,7 @@
-# pwdgenerator-reframe
+# Aventine Solutions Password Generator
+`pwdgenerator-reframe` Version 0.1.0
 
-A [re-frame](https://github.com/day8/re-frame) application designed to ... well, that part is up to
-you.
+A [re-frame](https://github.com/day8/re-frame) application designed to generate passwords, Aventine style.
 
 ## Getting Started
 
