@@ -11,63 +11,6 @@
   [& msgs]
   `(.log js/console ~@msgs))
 
-(def defaults {:no_words           5
-               :uppercase          "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-               :no_uppercase_alpha 5
-               :lowercase          "abcdefghijklmnopqrstuvwxyz"
-               :no_lowercase_alpha 5
-               :symbols            "!@#$&*.:?+="
-               :no_symbols         1
-               :numerics           "0123456789"
-               :no_numerics        3
-               :word_separator     " "})
-
-(def form-field-defs {:no_words           {:order     1
-                                           :label     "Number of Words "
-                                           :size      3
-                                           :maxlength 3
-                                           :numeric?  true}
-                      :uppercase          {:order     2
-                                           :label     "Upper Case Alpha Character Set "
-                                           :size      35
-                                           :maxlength 26
-                                           :numeric?  false}
-                      :no_uppercase_alpha {:order     3
-                                           :label     "Number of Upper Case Alpha Characters "
-                                           :size      3
-                                           :maxlength 3
-                                           :numeric?  true}
-                      :lowercase          {:order     4
-                                           :label     "Lower Case Alpha Character Set "
-                                           :size      35
-                                           :maxlength 26
-                                           :numeric?  false}
-                      :no_lowercase_alpha {:order     5
-                                           :label     "Number of Lower Case Alpha Characters "
-                                           :size      3
-                                           :maxlength 3
-                                           :numeric?  true}
-                      :numerics           {:order     6
-                                           :label     "Numeric Character Set "
-                                           :size      10
-                                           :maxlength 10
-                                           :numeric?  false}
-                      :no_numerics        {:order     7
-                                           :label     "Number of Numeric Characters "
-                                           :size      3
-                                           :maxlength 3
-                                           :numeric?  true}
-                      :symbols            {:order     8
-                                           :label     "Symbol Character Set "
-                                           :size      10
-                                           :maxlength 10
-                                           :numeric?  false}
-                      :no_symbols         {:order     9
-                                           :label     "Number of Symbol Characters "
-                                           :size      3
-                                           :maxlength 3
-                                           :numeric?  true}})
-
 (def password-validations
   [["At least 12 characters"
     (fn [s]
@@ -85,7 +28,8 @@
       (re-frame/dispatch [:generate @s])))
 
 (defn form-field [field s]
-  (let [defs (field form-field-defs)]
+  (let [form-field-defs @(re-frame/subscribe [::subs/form-field-defs])
+        defs (field form-field-defs)]
     [:div {:id (str field "-input")}
      [:label (:label defs)
       [:input {:type      :text
@@ -95,7 +39,8 @@
                :on-change #(on-field-change s field %)}]]]))
 
 (defn form-fields [s]
-  (map #(form-field % s) (sort-by #(:order (% form-field-defs)) (keys form-field-defs))))
+  (let [form-field-defs @(re-frame/subscribe [::subs/form-field-defs])]
+   (map #(form-field % s) (sort-by #(:order (% form-field-defs)) (keys form-field-defs)))))
 
 (defn random-char [s]
   (nth s (rand-int (count s))))
@@ -129,7 +74,8 @@
 (re-frame/reg-event-db
   :initialize
   (fn [_ _]
-    {:value (generate-pw defaults)}))
+    (let [defaults @(re-frame/subscribe [::subs/defaults])]
+      {:value (generate-pw defaults)})))
 
 (re-frame/reg-event-db
   :generate
@@ -141,7 +87,8 @@
   (fn [db] (:value db)))
 
 (defn pwdgenerator []
-  (let [s (reagent/atom (merge defaults {:show? true}))]
+  (let [defaults @(re-frame/subscribe [::subs/defaults])
+        s (reagent/atom (merge defaults {:show? true}))]
     (fn []
       (let [value @(re-frame/subscribe [:value])
             validations (for [[desc f] password-validations]
@@ -188,9 +135,9 @@
               desc]))]))))
 
 (defn home-panel []
-  (let [name (re-frame/subscribe [::subs/name])]
+  (let [name @(re-frame/subscribe [::subs/name])]
     [:div
-     [:h1 (str "Hello from " @name ". This is the Home Page.")]
+     [:h1 (str "Hello from " name ". This is the Home Page.")]
      [pwdgenerator]
 
      [:div

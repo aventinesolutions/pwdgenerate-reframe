@@ -11,3 +11,13 @@
  ::active-panel
  (fn [db _]
    (:active-panel db)))
+
+(re-frame/reg-sub
+  ::defaults
+  (fn [db]
+    (:default db)))
+
+(re-frame/reg-sub
+  ::form-field-defs
+  (fn [db]
+    (:form-field-defs db)))
