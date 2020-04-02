@@ -3,25 +3,9 @@
     [reagent.core :as reagent]
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.subs :as subs]
-    [clojure.string :as s]))
+    [pwdgenerator-reframe.config :refer [log]]))
 
 ;; home
-
-(defmacro log
-  [& msgs]
-  `(.log js/console ~@msgs))
-
-(def password-validations
-  [["At least 12 characters"
-    (fn [s]
-      (>= (count s) 12))]
-   ["At least 50% unique characters"
-    (fn [s]
-      (-> s
-          set
-          count
-          (/ (count s))
-          (>= 0.5)))]])
 
 (defn on-field-change [s field event]
   (do (swap! s assoc field (-> event .-target .-value))
@@ -41,35 +25,6 @@
 (defn form-fields [s]
   (let [form-field-defs @(re-frame/subscribe [::subs/form-field-defs])]
    (map #(form-field % s) (sort-by #(:order (% form-field-defs)) (keys form-field-defs)))))
-
-(defn random-char [s]
-  (nth s (rand-int (count s))))
-
-(defn random-string [len s]
-  (let [length (js/parseInt len)]
-    (apply str (take length (repeatedly #(random-char s))))))
-
-(defn uppercase-word [params]
-  (random-string (:no_uppercase_alpha params) (:uppercase params)))
-
-(defn lowercase-word [params]
-  (random-string (:no_lowercase_alpha params) (:lowercase params)))
-
-(defn numerics-symbols-word [params]
-  (apply str
-         (shuffle
-           (seq
-             (str (random-string (:no_numerics params) (:numerics params))
-                  (random-string (:no_symbols params) (:symbols params)))))))
-
-(defn all-words [params]
-  (let [generators [uppercase-word lowercase-word numerics-symbols-word]
-        words (js/parseInt (:no_words params))]
-    (shuffle
-      (take words (repeatedly #((nth generators (rand-int (count generators))) params))))))
-
-(defn generate-pw [params]
-  (s/join (:word_separator params) (all-words params)))
 
 (re-frame/reg-event-db
   :initialize

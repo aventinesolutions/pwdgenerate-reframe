@@ -1,4 +1,6 @@
-(ns pwdgenerator-reframe.db)
+(ns pwdgenerator-reframe.db
+  (:require
+    [pwdgenerator-reframe.domain :refer [generate-pw]]))
 
 (def defaults
   {:no_words           5
@@ -61,7 +63,7 @@
 
 (def default-db
   {:name       "Password Generator in Re-frame"
-   :value      ""
+   :value      (generate-pw defaults)
    :show?      true
    :params     defaults
    :field-defs form-field-defs})
