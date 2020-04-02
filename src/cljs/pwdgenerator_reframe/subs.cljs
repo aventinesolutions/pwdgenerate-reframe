@@ -23,10 +23,17 @@
     (:field-defs db)))
 
 (re-frame/reg-sub
-  :value
+  ::value
   (fn [db] (:value db)))
 
 (re-frame/reg-sub
-  :show?
+  ::show?
   (fn [db] (:show? db)))
 
+(re-frame/reg-sub
+  ::dirty?
+  (fn [db] (:dirty? db)))
+
+(re-frame/reg-sub
+  ::focus?
+  (fn [db] (:focus? db)))
