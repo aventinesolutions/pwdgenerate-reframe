@@ -4,8 +4,7 @@
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-validations]]
     [pwdgenerator-reframe.subs :as subs]
-    [pwdgenerator-reframe.events :as events]
-    [pwdgenerator-reframe.config :as config]))
+    [pwdgenerator-reframe.events :as events]))
 
 ;; home
 
@@ -18,6 +17,7 @@
   (let [params @(re-frame/subscribe [::subs/params])
         field-defs @(re-frame/subscribe [::subs/field-defs])
         defs (field field-defs)]
+    ^{:key field}
     [:div {:id (str field "-input")}
      [:label (:label defs)
       [:input {:type      :text
@@ -42,7 +42,7 @@
             valid? (every? identity (map second validations))
             color (when dirty? (if valid? "green" "red"))]
         [:form
-         [:div {:id :dbdump} (pprint params)]
+         [:div {:id :dbdump} (do (pprint params) (pr-str params))]
          [:label {:style {:color color}} "Password"]
          [:input {:type      (if show? :text :password)
                   :style     {:width  "100%"
@@ -58,6 +58,7 @@
                            :on-change #(re-frame/dispatch [::events/show? (-> % .-target .-checked)])}]
            " Show password?"]]
          (doall (form-fields))
+         ^{:key "word-separator-input"}
          [:div {:id "word-separator-input"}
           [:label "Word Separator "
            [:input {:type      :text
@@ -66,6 +67,7 @@
                     :value     (:word_separator params)
                     :on-change #(on-field-change params :word_separator %)}]
            " " (pr-str (:word_separator params))]]
+         ^{:key "regenerate"}
          [:div {:id :regenerate :on-click
                     (fn []
                       (re-frame/dispatch [::events/generate]))} "Regenerate"]

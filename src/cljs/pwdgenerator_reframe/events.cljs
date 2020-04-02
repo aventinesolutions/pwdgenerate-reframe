@@ -15,6 +15,11 @@
    (assoc db :active-panel active-panel)))
 
 (re-frame/reg-event-db
+  ::params
+  (fn [db [_ params]]
+    (assoc db :params params)))
+
+(re-frame/reg-event-db
   ::generate
   (fn [db [_ _]]
     (assoc db :value (generate-pw (:params db)))))
