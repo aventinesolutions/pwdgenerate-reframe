@@ -1,6 +1,6 @@
 (ns pwdgenerator-reframe.views
   (:require
-    [reagent.core :as reagent]
+    [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-validations]]
     [pwdgenerator-reframe.subs :as subs]
@@ -11,10 +11,12 @@
 
 (defn on-field-change [params field event]
   (do (assoc params field (-> event .-target .-value))
+      (re-frame/dispatch [::events/params params])
       (re-frame/dispatch [::events/generate])))
 
-(defn form-field [field params]
-  (let [field-defs @(re-frame/subscribe [::subs/field-defs])
+(defn form-field [field]
+  (let [params @(re-frame/subscribe [::subs/params])
+        field-defs @(re-frame/subscribe [::subs/field-defs])
         defs (field field-defs)]
     [:div {:id (str field "-input")}
      [:label (:label defs)
@@ -24,56 +26,54 @@
                :value     (field params)
                :on-change #(on-field-change params field %)}]]]))
 
-(defn form-fields [params]
+(defn form-fields []
   (let [field-defs @(re-frame/subscribe [::subs/field-defs])]
-    (map #(form-field % params) (sort-by #(:order (% field-defs)) (keys field-defs)))))
+    (map #(form-field %) (sort-by #(:order (% field-defs)) (keys field-defs)))))
 
 (defn pwdgenerator []
-  (let [defaults @(re-frame/subscribe [::subs/defaults])
-        s (reagent/atom (merge defaults {:show? true}))]
+  (let [value @(re-frame/subscribe [::subs/value])
+        params @(re-frame/subscribe [::subs/params])
+        show? @(re-frame/subscribe [::subs/show?])
+        dirty? @(re-frame/subscribe [::subs/dirty?])
+        focus? @(re-frame/subscribe [::subs/focus?])]
     (fn []
-      (let [value @(re-frame/subscribe [:value])
-            validations (for [[desc f] password-validations]
-                          [desc (f (:value @s))])
+      (let [validations (for [[desc f] password-validations]
+                          [desc (f (:value value))])
             valid? (every? identity (map second validations))
-            color (when (:dirty? @s) (if valid? "green" "red"))]
+            color (when dirty? (if valid? "green" "red"))]
         [:form
-         [:div {:id :dbdump} (pr-str @s)]
+         [:div {:id :dbdump} (pprint params)]
          [:label {:style {:color color}} "Password"]
-         [:input {:type      (if (:show? @s) :text :password)
+         [:input {:type      (if show? :text :password)
                   :style     {:width  "100%"
                               :border (str "1px solid " color)}
                   :value     value
-                  :on-focus  #(swap! s assoc :focus? true)
-                  :on-blur   #(swap! s assoc :dirty? true)
-                  :on-change #(swap! s assoc
-                                     :dirty? true
-                                     :value
-                                     (-> % .-target .-value))}]
+                  :on-focus  #(re-frame/dispatch [::events/focus? true])
+                  :on-blur   #(re-frame/dispatch [::events/dirty? true])
+                  :on-change #(doall (re-frame/dispatch [::events/dirty? true])
+                                  (re-frame/dispatch [::events/value (-> % .-target .-value)]))}]
          [:div {:id "show-password-input"}
           [:label [:input {:type      :checkbox
-                           :checked   (:show? @s)
-                           :on-change #(swap! s assoc
-                                              :show?
-                                              (-> % .-target .-checked))}]
+                           :checked   show?
+                           :on-change #(re-frame/dispatch [::events/show? (-> % .-target .-checked)])}]
            " Show password?"]]
-         (form-fields s)
+         (doall (form-fields))
          [:div {:id "word-separator-input"}
           [:label "Word Separator "
            [:input {:type      :text
                     :size      3
                     :maxLength 3
-                    :value     (:word_separator @s)
-                    :on-change #(on-field-change s :word_separator %)}]
-           " " (pr-str (:word_separator @s))]]
+                    :value     (:word_separator params)
+                    :on-change #(on-field-change params :word_separator %)}]
+           " " (pr-str (:word_separator params))]]
          [:div {:id :regenerate :on-click
                     (fn []
-                      (re-frame/dispatch [:generate @s]))} "Regenerate"]
+                      (re-frame/dispatch [::events/generate]))} "Regenerate"]
          (for [[desc valid?] validations]
-           (when (:focus? @s)
-             [:div {:style {:color (when (:dirty? @s)
+           (when focus?
+             [:div {:style {:color (when dirty?
                                      (if valid? "green" "red"))}}
-              (when (:dirty? @s) (if valid? "✔ " "✘ "))
+              (when dirty? (if valid? "✔ " "✘ "))
               desc]))]))))
 
 (defn home-panel []
