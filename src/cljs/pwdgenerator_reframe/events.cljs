@@ -15,6 +15,26 @@
    (assoc db :active-panel active-panel)))
 
 (re-frame/reg-event-db
-  :generate
+  ::generate
   (fn [db [_ _]]
     (assoc db :value (generate-pw (:params db)))))
+
+(re-frame/reg-event-db
+  ::value
+  (fn [db [_ value]]
+    (assoc db :value value)))
+
+(re-frame/reg-event-db
+  ::show?
+  (fn [db [_ show?]]
+    (assoc db :show? show?)))
+
+(re-frame/reg-event-db
+  ::dirty?
+  (fn [db [_ dirty?]]
+    (assoc db :dirty? dirty?)))
+
+(re-frame/reg-event-db
+  ::focus?
+  (fn [db [_ focus?]]
+    (assoc db :focus? focus?)))

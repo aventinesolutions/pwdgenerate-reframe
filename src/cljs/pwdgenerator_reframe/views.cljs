@@ -4,28 +4,29 @@
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-validations]]
     [pwdgenerator-reframe.subs :as subs]
+    [pwdgenerator-reframe.events :as events]
     [pwdgenerator-reframe.config :as config]))
 
 ;; home
 
-(defn on-field-change [s field event]
-  (do (swap! s assoc field (-> event .-target .-value))
-      (re-frame/dispatch [:generate @s])))
+(defn on-field-change [params field event]
+  (do (assoc params field (-> event .-target .-value))
+      (re-frame/dispatch [::events/generate])))
 
-(defn form-field [field s]
-  (let [form-field-defs @(re-frame/subscribe [::subs/form-field-defs])
-        defs (field form-field-defs)]
+(defn form-field [field params]
+  (let [field-defs @(re-frame/subscribe [::subs/field-defs])
+        defs (field field-defs)]
     [:div {:id (str field "-input")}
      [:label (:label defs)
       [:input {:type      :text
                :size      (:size defs)
                :maxLength (:maxlength defs)
-               :value     (field @s)
-               :on-change #(on-field-change s field %)}]]]))
+               :value     (field params)
+               :on-change #(on-field-change params field %)}]]]))
 
-(defn form-fields [s]
-  (let [form-field-defs @(re-frame/subscribe [::subs/form-field-defs])]
-   (map #(form-field % s) (sort-by #(:order (% form-field-defs)) (keys form-field-defs)))))
+(defn form-fields [params]
+  (let [field-defs @(re-frame/subscribe [::subs/field-defs])]
+    (map #(form-field % params) (sort-by #(:order (% field-defs)) (keys field-defs)))))
 
 (defn pwdgenerator []
   (let [defaults @(re-frame/subscribe [::subs/defaults])
