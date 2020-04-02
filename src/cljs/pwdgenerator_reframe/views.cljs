@@ -8,13 +8,14 @@
 
 ;; home
 
-(defn on-field-change [params field event]
-  (do (assoc params field (-> event .-target .-value))
+(defn on-field-change [field event]
+  (let [params (re-frame/subscribe [::subs/params])]
+   (do (assoc @params field (-> event .-target .-value))
       (pprint field)
       (pprint (-> event .-target .-value))
-      (pprint (field params))
-      (re-frame/dispatch [::events/params params])
-      (re-frame/dispatch [::events/generate])))
+      (pprint (field @params))
+      (re-frame/dispatch [::events/params @params])
+      (re-frame/dispatch [::events/generate]))))
 
 (defn form-field [field]
   (let [params (re-frame/subscribe [::subs/params])
@@ -27,7 +28,7 @@
                :size      (:size defs)
                :maxLength (:maxlength defs)
                :value     (field @params)
-               :on-change #(on-field-change @params field %)}]]]))
+               :on-change #(on-field-change field %)}]]]))
 
 (defn form-fields []
   (let [field-defs (re-frame/subscribe [::subs/field-defs])]
@@ -68,7 +69,7 @@
                     :size      3
                     :maxLength 3
                     :value     (:word_separator @params)
-                    :on-change #(on-field-change @params :word_separator %)}]
+                    :on-change #(on-field-change :word_separator %)}]
            " " (pr-str (:word_separator @params))]]
          ^{:key "regenerate"}
          [:div {:id :regenerate :on-click
