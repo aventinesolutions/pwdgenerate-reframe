@@ -13,11 +13,20 @@
    (:active-panel db)))
 
 (re-frame/reg-sub
-  ::defaults
+  ::params
   (fn [db]
-    (:default db)))
+    (:params db)))
 
 (re-frame/reg-sub
-  ::form-field-defs
+  ::field-defs
   (fn [db]
-    (:form-field-defs db)))
+    (:field-defs db)))
+
+(re-frame/reg-sub
+  :value
+  (fn [db] (:value db)))
+
+(re-frame/reg-sub
+  :show?
+  (fn [db] (:show? db)))
+

@@ -2,8 +2,9 @@
   (:require
     [reagent.core :as reagent]
     [re-frame.core :as re-frame]
+    [pwdgenerator-reframe.domain :refer [password-validations]]
     [pwdgenerator-reframe.subs :as subs]
-    [pwdgenerator-reframe.config :refer [log]]))
+    [pwdgenerator-reframe.config :as config]))
 
 ;; home
 
@@ -25,21 +26,6 @@
 (defn form-fields [s]
   (let [form-field-defs @(re-frame/subscribe [::subs/form-field-defs])]
    (map #(form-field % s) (sort-by #(:order (% form-field-defs)) (keys form-field-defs)))))
-
-(re-frame/reg-event-db
-  :initialize
-  (fn [_ _]
-    (let [defaults @(re-frame/subscribe [::subs/defaults])]
-      {:value (generate-pw defaults)})))
-
-(re-frame/reg-event-db
-  :generate
-  (fn [db [_ s]]
-    (assoc db :value (generate-pw s))))
-
-(re-frame/reg-sub
-  :value
-  (fn [db] (:value db)))
 
 (defn pwdgenerator []
   (let [defaults @(re-frame/subscribe [::subs/defaults])
@@ -100,7 +86,6 @@
        "go to About Page"]]
      ]))
 
-
 ;; about
 
 (defn about-panel []
@@ -110,7 +95,6 @@
    [:div
     [:a {:href "#/"}
      "go to Home Page"]]])
-
 
 ;; main
 
@@ -125,5 +109,4 @@
 
 (defn main-panel []
   (let [active-panel (re-frame/subscribe [::subs/active-panel])]
-    (defonce _init (re-frame/dispatch-sync [:initialize]))
     [show-panel @active-panel]))
