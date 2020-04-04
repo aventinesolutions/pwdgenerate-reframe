@@ -8,14 +8,10 @@
 
 ;; home
 
-(defn on-field-change [field event]
-  (let [params (re-frame/subscribe [::subs/params])]
-   (do (assoc @params field (-> event .-target .-value))
-      (pprint field)
-      (pprint (-> event .-target .-value))
-      (pprint (field @params))
-      (re-frame/dispatch [::events/params @params])
-      (re-frame/dispatch [::events/generate]))))
+(defn on-field-change [params field event]
+  (do
+    (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))])
+    (re-frame/dispatch [::events/generate])))
 
 (defn form-field [field]
   (let [params (re-frame/subscribe [::subs/params])
@@ -28,7 +24,7 @@
                :size      (:size defs)
                :maxLength (:maxlength defs)
                :value     (field @params)
-               :on-change #(on-field-change field %)}]]]))
+               :on-change #(on-field-change @params field %)}]]]))
 
 (defn form-fields []
   (let [field-defs (re-frame/subscribe [::subs/field-defs])]
@@ -46,7 +42,7 @@
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
         [:form
-         [:div {:id :dbdump} (do (pprint @params) (pr-str @params))]
+         [:div {:id :dbdump} (pr-str @params)]
          [:label {:style {:color color}} "Password"]
          [:input {:type      (if @show? :text :password)
                   :style     {:width  "100%"
@@ -69,7 +65,7 @@
                     :size      3
                     :maxLength 3
                     :value     (:word_separator @params)
-                    :on-change #(on-field-change :word_separator %)}]
+                    :on-change #(on-field-change @params :word_separator %)}]
            " " (pr-str (:word_separator @params))]]
          ^{:key "regenerate"}
          [:div {:id :regenerate :on-click
