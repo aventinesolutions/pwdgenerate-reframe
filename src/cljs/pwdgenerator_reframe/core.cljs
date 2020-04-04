@@ -5,8 +5,7 @@
    [pwdgenerator-reframe.events :as events]
    [pwdgenerator-reframe.routes :as routes]
    [pwdgenerator-reframe.views :as views]
-   [pwdgenerator-reframe.config :as config]
-   ))
+   [pwdgenerator-reframe.config :as config]))
 
 
 (defn dev-setup []

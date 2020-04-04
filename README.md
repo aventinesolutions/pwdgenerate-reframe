@@ -195,8 +195,10 @@ For example, in Vim / Neovim with `fireplace.vim`
 Build the app with the `prod` profile, start a temporary local web server, launch headless
 Chrome/Chromium, run tests, and stop the web server:
 
-```sh
-lein karma
+```shell
+% lein karma
+# for MingW64 Windows shell
+% "/c/Program Files/nodejs/node.exe" /d/workspace/pwdgenerator-reframe/node_modules/karma/bin/karma start ./karma.conf.js --single-run --reporters 'junit,dots'
 ```
 
 Please be patient; it may take over 15 seconds to see any output, and over 25 seconds to complete.
