@@ -68,9 +68,13 @@
                     :on-change #(on-field-change @params :word_separator %)}]
            " " (pr-str (:word_separator @params))]]
          ^{:key "regenerate"}
-         [:div {:id :regenerate :on-click
+         [:button {:id :regenerate :on-click
                     (fn []
                       (re-frame/dispatch [::events/generate]))} "Regenerate"]
+         ^{:key "reset"}
+         [:button {:id :reset :on-click
+                    (fn []
+                      (re-frame/dispatch [::events/reset]))} "Reset"]
          (doall
            (for [[desc valid?] validations]
              (when focus?

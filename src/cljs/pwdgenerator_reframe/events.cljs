@@ -2,7 +2,7 @@
   (:require
     [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
-    [pwdgenerator-reframe.db :as db]
+    [pwdgenerator-reframe.db :as db :refer [defaults]]
     [pwdgenerator-reframe.domain :refer [generate-pw]]))
 
 (re-frame/reg-event-db
@@ -24,6 +24,11 @@
   ::generate
   (fn [db [_ _]]
     (assoc db :value (generate-pw (:params db)))))
+
+(re-frame/reg-event-db
+  ::reset
+  (fn [db [_ _]]
+    (assoc db :value (generate-pw defaults) :params defaults)))
 
 (re-frame/reg-event-db
   ::value
