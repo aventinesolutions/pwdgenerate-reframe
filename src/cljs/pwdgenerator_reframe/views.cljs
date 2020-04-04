@@ -1,22 +1,99 @@
 (ns pwdgenerator-reframe.views
   (:require
-   [re-frame.core :as re-frame]
-   [pwdgenerator-reframe.subs :as subs]
-   ))
-
+    [cljs.pprint :refer [pprint]]
+    [re-frame.core :as re-frame]
+    [pwdgenerator-reframe.domain :refer [password-validations]]
+    [pwdgenerator-reframe.subs :as subs]
+    [pwdgenerator-reframe.events :as events]))
 
 ;; home
 
+(defn on-field-change [params field event]
+  (do
+    (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))])
+    (re-frame/dispatch [::events/generate])))
+
+(defn form-field [field]
+  (let [params (re-frame/subscribe [::subs/params])
+        field-defs (re-frame/subscribe [::subs/field-defs])
+        defs (field @field-defs)]
+    ^{:key field}
+    [:div {:id (str field "-input")}
+     [:label (:label defs)
+      [:input {:type      :text
+               :size      (:size defs)
+               :maxLength (:maxlength defs)
+               :value     (field @params)
+               :on-change #(on-field-change @params field %)}]]]))
+
+(defn form-fields []
+  (let [field-defs (re-frame/subscribe [::subs/field-defs])]
+    (map #(form-field %) (sort-by #(:order (% @field-defs)) (keys @field-defs)))))
+
+(defn pwdgenerator []
+  (let [value (re-frame/subscribe [::subs/value])
+        params (re-frame/subscribe [::subs/params])
+        show? (re-frame/subscribe [::subs/show?])
+        dirty? (re-frame/subscribe [::subs/dirty?])
+        focus? (re-frame/subscribe [::subs/focus?])]
+    (fn []
+      (let [validations (for [[desc f] password-validations]
+                          [desc (f (:value @value))])
+            valid? (every? identity (map second validations))
+            color (when @dirty? (if valid? "green" "red"))]
+        [:form
+         [:div {:id :dbdump} (pr-str @params)]
+         [:label {:style {:color color}} "Password"]
+         [:input {:type      (if @show? :text :password)
+                  :style     {:width  "100%"
+                              :border (str "1px solid " color)}
+                  :value     @value
+                  :on-focus  #(re-frame/dispatch [::events/focus? true])
+                  :on-blur   #(re-frame/dispatch [::events/dirty? true])
+                  :on-change #(doall (re-frame/dispatch [::events/dirty? true])
+                                     (re-frame/dispatch [::events/value (-> % .-target .-value)]))}]
+         [:div {:id "show-password-input"}
+          [:label [:input {:type      :checkbox
+                           :checked   @show?
+                           :on-change #(re-frame/dispatch [::events/show? (-> % .-target .-checked)])}]
+           " Show password?"]]
+         (doall (form-fields))
+         ^{:key "word-separator-input"}
+         [:div {:id "word-separator-input"}
+          [:label "Word Separator "
+           [:input {:type      :text
+                    :size      3
+                    :maxLength 3
+                    :value     (:word_separator @params)
+                    :on-change #(on-field-change @params :word_separator %)}]
+           " " (pr-str (:word_separator @params))]]
+         ^{:key "regenerate"}
+         [:button {:id :regenerate :on-click
+                    (fn []
+                      (re-frame/dispatch [::events/generate]))} "Regenerate"]
+         ^{:key "reset"}
+         [:button {:id :reset :on-click
+                    (fn []
+                      (re-frame/dispatch [::events/reset]))} "Reset"]
+         (doall
+           (for [[desc valid?] validations]
+             (when focus?
+               ^{:key desc}
+               [:div {:style {:color (when @dirty?
+                                       (if valid? "green" "red"))}}
+                (when @dirty? (if valid? "✔ " "✘ "))
+                desc])))]))))
+
 (defn home-panel []
-  (let [name (re-frame/subscribe [::subs/name])]
+  (let [name @(re-frame/subscribe [::subs/name])]
     [:div
-     [:h1 (str "Hello from " @name ". This is the Home Page.")]
+     [:h1 (str "Hello from " name ". This is the Home Page.")]
+     [pwdgenerator]
 
      [:div
       [:a {:href "#/about"}
        "go to About Page"]]
      ]))
-
 
 ;; about
 
@@ -27,7 +104,6 @@
    [:div
     [:a {:href "#/"}
      "go to Home Page"]]])
-
 
 ;; main
 
