@@ -1,4 +1,4 @@
-(defproject pwdgenerator-reframe "0.1.1-SNAPSHOT"
+(defproject pwdgenerator-reframe "0.1.2-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.597"
                   :exclusions [com.google.javascript/closure-compiler-unshaded
