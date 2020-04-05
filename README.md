@@ -290,3 +290,15 @@ If `port` is not set, the server will run on port 3000 by default.
     ```sh
     git push heroku master
     ```
+   
+#### Using Docker for Development
+For Windows 10 or MacOS, Docker Desktop is required.  For Linux, use the package distribution to install `docker` and
+`docker-compose`.
+
+To build the base image load dependencies into the volumes:
+```shell
+% winpty docker-compose run runner lein deps
+% winpty docker-compose run runner npm install
+```
+
+   

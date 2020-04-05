@@ -32,6 +32,8 @@ services:
     ports:
       - '9638:9638'
       - '8290:8290'
+      - '8280:8280'
+      - '8777:8777'
 
 volumes:
   m2_repository:
