@@ -303,14 +303,14 @@ To build the base image load dependencies into the volumes:
 It will take some time to build the development image the first time the runner is called. (`winpty` is only required
 on windows).
 
-To work on development, use the runner again:
+To work on development with all development ports exposed:
 ```shell
-% winpty docker-compose run runner lein dev
+% winpty docker-compose up
 ```
 
-Test can be run this way:
+Once the backend server is up, the REPL can be run like this:
 ```shell
-% winpty 
+% winpty  docker-compose run runner lein repl :connect runner:8777
 ```
 
 
