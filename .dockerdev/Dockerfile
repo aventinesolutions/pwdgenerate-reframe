@@ -32,6 +32,9 @@ RUN curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
     chmod 0775 /bin/lein && \
     /bin/lein --version
 
+# install Karma
+RUN npm install --global karma-cli
+
 # Create a directory for the app code
 RUN mkdir -p /app
 
