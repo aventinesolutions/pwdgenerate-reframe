@@ -69,12 +69,15 @@
            " " (pr-str (:word_separator @params))]]
          ^{:key "regenerate"}
          [:button {:id :regenerate :on-click
-                    (fn []
-                      (re-frame/dispatch [::events/generate]))} "Regenerate"]
+                       (fn [event]
+                         (do (.preventDefault event)
+                             (re-frame/dispatch [::events/generate])))} "Regenerate"]
          ^{:key "reset"}
          [:button {:id :reset :on-click
-                    (fn []
-                      (re-frame/dispatch [::events/reset]))} "Reset"]
+                       (fn [event]
+                         (do
+                           (.preventDefault event)
+                           (re-frame/dispatch [::events/reset])))} "Reset"]
          (doall
            (for [[desc valid?] validations]
              (when focus?
