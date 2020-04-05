@@ -22,7 +22,7 @@
 
   :source-paths ["src/clj" "src/cljs"]
 
-  :test-paths   ["test/cljs"]
+  :test-paths ["test/cljs"]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"
                                     "test/js"]
@@ -44,23 +44,23 @@
                             ["shell" "open" "target/build-report.html"]]
             "karma"        ["with-profile" "prod" "do"
                             ["run" "-m" "shadow.cljs.devtools.cli" "compile" "karma-test"]
-                            ; does not work with MingW64:
-                            ; ["shell" "/c/Users/matthew/AppData/Roaming/npm/karma" "start" "--single-run" "--reporters" "junit,dots"]
+                            ["shell" "karma" "start" "--single-run" "--reporters" "junit,dots"]
                             ]}
 
   :profiles
   {:dev
-   {:dependencies [[binaryage/devtools "0.9.11"]
-                   [re-frisk "0.5.4.1"]]}
+            {:local-repo   "/m2_repository"
+             :dependencies [[binaryage/devtools "0.9.11"]
+                            [re-frisk "0.5.4.1"]]}
 
-   :prod { }
+   :prod    {:local-repo "/m2_repository"}
 
    :uberjar {:source-paths ["env/prod/clj"]
              :omit-source  true
              :main         pwdgenerator-reframe.server
              :aot          [pwdgenerator-reframe.server]
              :uberjar-name "pwdgenerator-reframe.jar"
-             :prep-tasks   ["compile" ["prod"]["less" "once"]]}}
+             :prep-tasks   ["compile" ["prod"] ["less" "once"]]}}
 
   :prep-tasks [
                ["less" "once"]])

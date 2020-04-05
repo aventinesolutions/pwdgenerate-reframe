@@ -9,9 +9,7 @@
 ;; home
 
 (defn on-field-change [params field event]
-  (do
-    (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))])
-    (re-frame/dispatch [::events/generate])))
+  (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))]))
 
 (defn form-field [field]
   (let [params (re-frame/subscribe [::subs/params])
@@ -69,12 +67,16 @@
            " " (pr-str (:word_separator @params))]]
          ^{:key "regenerate"}
          [:button {:id :regenerate :on-click
-                    (fn []
-                      (re-frame/dispatch [::events/generate]))} "Regenerate"]
+                       (fn [event]
+                         (do
+                           (.preventDefault event)
+                           (re-frame/dispatch [::events/generate])))} "Regenerate"]
          ^{:key "reset"}
          [:button {:id :reset :on-click
-                    (fn []
-                      (re-frame/dispatch [::events/reset]))} "Reset"]
+                       (fn [event]
+                         (do
+                           (.preventDefault event)
+                           (re-frame/dispatch [::events/reset])))} "Reset"]
          (doall
            (for [[desc valid?] validations]
              (when focus?

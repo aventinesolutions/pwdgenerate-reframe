@@ -290,3 +290,30 @@ If `port` is not set, the server will run on port 3000 by default.
     ```sh
     git push heroku master
     ```
+   
+#### Using Docker for Development
+For Windows 10 or MacOS, Docker Desktop is required.  For Linux, use the package distribution to install `docker` and
+`docker-compose`.
+
+To build the base image load dependencies into the volumes:
+```shell
+% winpty docker-compose run runner lein deps
+% winpty docker-compose run runner npm install
+```
+It will take some time to build the development image the first time the runner is called. (`winpty` is only required
+on windows).
+
+To work on development with all development ports exposed:
+```shell
+% winpty docker-compose up
+```
+
+Once the backend server is up, the REPL can be run like this:
+```shell
+% winpty docker-compose run runner lein repl :connect runner:8777
+```
+
+Tests can be run with Karma like this:
+```shell
+% winpty docker-compose run runner lein karma
+```
