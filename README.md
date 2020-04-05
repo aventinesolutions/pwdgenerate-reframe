@@ -310,8 +310,10 @@ To work on development with all development ports exposed:
 
 Once the backend server is up, the REPL can be run like this:
 ```shell
-% winpty  docker-compose run runner lein repl :connect runner:8777
+% winpty docker-compose run runner lein repl :connect runner:8777
 ```
 
-
-   
+Tests can be run with Karma like this:
+```shell
+% winpty docker-compose run runner lein karma
+```

@@ -27,10 +27,11 @@ services:
       - NODE_ENV=development
       - HISTFILE=/shell_history/.zhistory
       - EDITOR=emacs
+      - CHROME_BIN=chromium-browser
 
   runner:
     <<: *backend
-    command: /bin/zsh
+    command: lein dev
     ports:
       - '9638:9638'
       - '8290:8290'
