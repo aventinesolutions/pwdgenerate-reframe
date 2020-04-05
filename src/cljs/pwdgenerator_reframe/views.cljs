@@ -66,13 +66,13 @@
                     :on-change #(on-field-change @params :word_separator %)}]
            " " (pr-str (:word_separator @params))]]
          ^{:key "regenerate"}
-         [:button {:id :regenerate :on-click
+         [:button {:id :regenerate :class [:uk-button :uk-button-primary] :on-click
                        (fn [event]
                          (do
                            (.preventDefault event)
                            (re-frame/dispatch [::events/generate])))} "Regenerate"]
          ^{:key "reset"}
-         [:button {:id :reset :on-click
+         [:button {:id :reset :class [:uk-button :uk-button-secondary] :on-click
                        (fn [event]
                          (do
                            (.preventDefault event)
