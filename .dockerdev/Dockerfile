@@ -1,7 +1,6 @@
 ARG ADOPTOPEN_JDK_VERSION
 FROM adoptopenjdk:$ADOPTOPEN_JDK_VERSION
 
-ARG LEIN_VERSION
 ARG NODE_MAJOR
 ARG YARN_VERSION
 
@@ -24,3 +23,15 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrad
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     truncate -s 0 /var/log/*log
+
+# Configure bundler and PATH
+ENV LANG=C.UTF-8
+
+# install Leingingen
+RUN curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein > /bin/lein && \
+    chmod 0775 /bin/lein
+
+# Create a directory for the app code
+RUN mkdir -p /app
+
+WORKDIR /app

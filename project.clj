@@ -50,7 +50,8 @@
 
   :profiles
   {:dev
-   {:dependencies [[binaryage/devtools "0.9.11"]
+   {:local-repo "/m2_repository"
+    :dependencies [[binaryage/devtools "0.9.11"]
                    [re-frisk "0.5.4.1"]]}
 
    :prod { }

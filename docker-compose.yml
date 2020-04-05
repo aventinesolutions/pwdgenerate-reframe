@@ -9,7 +9,6 @@ services:
         ADOPTOPEN_JDK_VERSION: '13-jdk-hotspot'
         NODE_MAJOR: '13'
         YARN_VERSION: '1.22.0'
-        LEIN_VERSION: '2.9.3'
     image: aventine-reframe-dev:0.1.1
     tmpfs:
       - /tmp
