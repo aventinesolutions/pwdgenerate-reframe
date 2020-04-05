@@ -1,0 +1,39 @@
+version: '3.4'
+
+services:
+  app: &app
+    build:
+      context: .
+      dockerfile: ./.dockerdev/Dockerfile
+      args:
+        ADOPTOPEN_JDK_VERSION: '13-jdk-hotspot'
+        NODE_MAJOR: '13'
+        YARN_VERSION: '1.22.0'
+        LEIN_VERSION: '2.9.3'
+    image: aventine-reframe-dev:0.1.1
+    tmpfs:
+      - /tmp
+
+  backend: &backend
+    <<: *app
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+      - m2_repository:/m2_repository
+      - node_modules:/app/node_modules
+    environment:
+      - NODE_ENV=development
+      - HISTFILE=/app/log/.bash_history
+      - EDITOR=vi
+
+  runner:
+    <<: *backend
+    command: /bin/zsh
+    ports:
+      - '9638:9638'
+      - '8290:8290'
+
+volumes:
+  m2_repository:
+  node_modules:
