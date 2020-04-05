@@ -54,7 +54,7 @@
     :dependencies [[binaryage/devtools "0.9.11"]
                    [re-frisk "0.5.4.1"]]}
 
-   :prod { }
+   :prod {:local-repo "/m2_repository"}
 
    :uberjar {:source-paths ["env/prod/clj"]
              :omit-source  true

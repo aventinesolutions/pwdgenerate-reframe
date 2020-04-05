@@ -300,5 +300,18 @@ To build the base image load dependencies into the volumes:
 % winpty docker-compose run runner lein deps
 % winpty docker-compose run runner npm install
 ```
+It will take some time to build the development image the first time the runner is called. (`winpty` is only required
+on windows).
+
+To work on development, use the runner again:
+```shell
+% winpty docker-compose run runner lein dev
+```
+
+Test can be run this way:
+```shell
+% winpty 
+```
+
 
    
