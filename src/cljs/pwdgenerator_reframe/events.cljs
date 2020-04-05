@@ -18,7 +18,7 @@
 (re-frame/reg-event-db
   ::params
   (fn [db [_ params]]
-    (assoc db :params params)))
+    (assoc db :params params :value (generate-pw params))))
 
 (re-frame/reg-event-db
   ::generate
