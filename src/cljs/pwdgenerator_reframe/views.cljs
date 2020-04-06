@@ -39,7 +39,7 @@
                           [desc (f (:value @value))])
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
-        [:form {:class [:uk-card :uk-card-default :uk-card-body]}
+        [:form {:class [:uk-card :uk-card-default :uk-card-body :uk-padding]}
          [:div {:id :dbdump} (pr-str @params)]
          [:label {:style {:color color}} "Password"]
          [:input {:type      (if @show? :text :password)
@@ -66,13 +66,13 @@
                     :on-change #(on-field-change @params :word_separator %)}]
            " " (pr-str (:word_separator @params))]]
          ^{:key "regenerate"}
-         [:button {:id :regenerate :class [:uk-button :uk-button-primary] :on-click
+         [:button {:id :regenerate :class [:uk-button :uk-button-small :uk-button-primary] :on-click
                        (fn [event]
                          (do
                            (.preventDefault event)
                            (re-frame/dispatch [::events/generate])))} "Regenerate"]
          ^{:key "reset"}
-         [:button {:id :reset :class [:uk-button :uk-button-secondary] :on-click
+         [:button {:id :reset :class [:uk-button :uk-button-small :uk-button-secondary] :on-click
                        (fn [event]
                          (do
                            (.preventDefault event)
@@ -88,12 +88,12 @@
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
-    [:div {:class [:uk-flex :uk-flex-center]}
-     [:h1 {:class [:uk-text-lead :uk-card :uk-card-default]} name]
+    [:div {:class [:uk-flex :uk-flex-center :uk-flex-top :uk-padding]}
+     [:h1 {:class [:uk-text-lead :uk-card :uk-card-default :uk-padding]} name]
      [pwdgenerator]
 
-     [:div
-      [:a {:href "#/about"}
+     [:div {:class [:uk-text-small :uk-card :uk-card-default :uk-padding]}
+      [:a {:class [:uk-link-muted] :href "#/about"}
        "go to About Page"]]
      ]))
 
