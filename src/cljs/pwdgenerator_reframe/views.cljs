@@ -39,7 +39,7 @@
                           [desc (f (:value @value))])
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
-        [:form
+        [:form {:class [:uk-card :uk-card-default :uk-card-body]}
          [:div {:id :dbdump} (pr-str @params)]
          [:label {:style {:color color}} "Password"]
          [:input {:type      (if @show? :text :password)
@@ -88,8 +88,8 @@
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
-    [:div
-     [:h1 (str "Hello from " name ". This is the Home Page.")]
+    [:div {:class [:uk-flex :uk-flex-center]}
+     [:h1 {:class [:uk-text-lead :uk-card :uk-card-default]} name]
      [pwdgenerator]
 
      [:div
