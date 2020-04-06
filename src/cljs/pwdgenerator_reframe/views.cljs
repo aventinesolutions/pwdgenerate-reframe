@@ -16,7 +16,7 @@
         field-defs (re-frame/subscribe [::subs/field-defs])
         defs (field @field-defs)]
     ^{:key field}
-    [:div {:id (str field "-input")}
+    [:div {:id (str field "-input") :class [:uk-padding-small :uk-padding-remove-bottom]}
      [:label (:label defs)
       [:input {:type      :text
                :size      (:size defs)
