@@ -16,9 +16,10 @@
         field-defs (re-frame/subscribe [::subs/field-defs])
         defs (field @field-defs)]
     ^{:key field}
-    [:div {:id (str field "-input") :class [:uk-padding-small :uk-padding-remove-bottom]}
-     [:label (:label defs)
-      [:input {:type      :text
+    [:div {:id (str field "-input") :class [:uk-card :uk-card-body :uk-padding-remove-bottom :uk-padding-remove-top]}
+     [:label {:class [:uk-text-primary]} (:label defs)
+      [:input {:class     [:uk-input :uk-width-1-3]
+               :type      :text
                :size      (:size defs)
                :maxLength (:maxlength defs)
                :value     (field @params)
@@ -39,10 +40,11 @@
                           [desc (f (:value @value))])
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
-        [:form {:class [:uk-card :uk-card-default :uk-card-body :uk-padding]}
+        [:form {:class [:uk-card :uk-card-small :uk-card-body :uk-padding]}
          [:div {:id :dbdump} (pr-str @params)]
          [:label {:style {:color color}} "Password"]
-         [:input {:type      (if @show? :text :password)
+         [:input {:class     [:uk-input :uk-width-1-3]
+                  :type      (if @show? :text :password)
                   :style     {:width  "100%"
                               :border (str "1px solid " color)}
                   :value     @value
@@ -50,21 +52,26 @@
                   :on-blur   #(re-frame/dispatch [::events/dirty? true])
                   :on-change #(doall (re-frame/dispatch [::events/dirty? true])
                                      (re-frame/dispatch [::events/value (-> % .-target .-value)]))}]
-         [:div {:id "show-password-input"}
-          [:label [:input {:type      :checkbox
-                           :checked   @show?
-                           :on-change #(re-frame/dispatch [::events/show? (-> % .-target .-checked)])}]
-           " Show password?"]]
-         (doall (form-fields))
-         ^{:key "word-separator-input"}
-         [:div {:id "word-separator-input"}
-          [:label "Word Separator "
-           [:input {:type      :text
-                    :size      3
-                    :maxLength 3
-                    :value     (:word_separator @params)
-                    :on-change #(on-field-change @params :word_separator %)}]
-           " " (pr-str (:word_separator @params))]]
+         [:div {:class [:uk-flex :uk-flex-column]}
+          [:div {:id "show-password-input" :class [:uk-card :uk-card-body]}
+           [:label {:class [:uk-text-primary]}
+            [:input {:class     :uk-checkbox
+                     :type      :checkbox
+                     :checked   @show?
+                     :on-change #(re-frame/dispatch [::events/show? (-> % .-target .-checked)])}]
+            " Show password?"]]
+          (doall (form-fields))
+          ^{:key "word-separator-input"}
+          [:div {:id    "word-separator-input"
+                 :class [:uk-card :uk-card-body :uk-padding-remove-top]}
+           [:label {:class [:uk-text-primary]}
+            "Word Separator "
+            [:input {:type      :text
+                     :size      3
+                     :maxLength 3
+                     :value     (:word_separator @params)
+                     :on-change #(on-field-change @params :word_separator %)}]
+            " " (pr-str (:word_separator @params))]]]
          ^{:key "regenerate"}
          [:button {:id :regenerate :class [:uk-button :uk-button-small :uk-button-primary] :on-click
                        (fn [event]
@@ -88,7 +95,7 @@
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
-    [:div {:class [:uk-flex :uk-flex-center :uk-flex-top :uk-padding]}
+    [:div {:class [:uk-flex :uk-flex-column :uk-flex-top :uk-padding]}
      [:h1 {:class [:uk-text-lead :uk-card :uk-card-default :uk-padding]} name]
      [pwdgenerator]
 
