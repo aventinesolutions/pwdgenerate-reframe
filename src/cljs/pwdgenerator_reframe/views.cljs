@@ -4,7 +4,8 @@
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-validations]]
     [pwdgenerator-reframe.subs :as subs]
-    [pwdgenerator-reframe.events :as events]))
+    [pwdgenerator-reframe.events :as events]
+    [uikit]))
 
 ;; home
 
@@ -16,7 +17,8 @@
         field-defs (re-frame/subscribe [::subs/field-defs])
         defs (field @field-defs)]
     ^{:key field}
-    [:div {:id (str field "-input") :class [:uk-card :uk-card-body :uk-padding-remove-bottom :uk-padding-remove-top]}
+    [:div {:id (str field "-input")
+           :class [:uk-card :uk-card-body :uk-padding-remove-bottom :uk-padding-remove-top]}
      [:label {:class [:uk-text-primary]} (:label defs)
       [:input {:class     [:uk-input :uk-width-1-3]
                :type      :text
@@ -40,10 +42,12 @@
                           [desc (f (:value @value))])
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
-        [:form {:class [:uk-card :uk-card-small :uk-card-body :uk-padding]}
+
+        [:div {:id :form-container :class [:uk-grid :uk-box-shadow-medium :uk-grid-small :uk-padding]}
+         [:form {:class []}
          [:div {:id :dbdump} (pr-str @params)]
          [:label {:style {:color color}} "Password"]
-         [:input {:class     [:uk-input :uk-width-1-3]
+         [:input {:class     [:uk-input]
                   :type      (if @show? :text :password)
                   :style     {:width  "100%"
                               :border (str "1px solid " color)}
@@ -91,15 +95,16 @@
                [:div {:style {:color (when @dirty?
                                        (if valid? "green" "red"))}}
                 (when @dirty? (if valid? "✔ " "✘ "))
-                desc])))]))))
+                desc])))]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
     [:div {:class [:uk-flex :uk-flex-column :uk-flex-top :uk-padding]}
-     [:h1 {:class [:uk-text-lead :uk-card :uk-card-default :uk-padding]} name]
+     [:div {:class [:uk-background-secondary :uk-light]}
+      [:h1 {:class [:uk-logo:uk-text-lead :uk-padding]} name]]
      [pwdgenerator]
 
-     [:div {:class [:uk-text-small :uk-card :uk-card-default :uk-padding]}
+     [:div {:class [:uk-text-small :uk-box-shadow-medium :uk-card :uk-card-default :uk-padding]}
       [:a {:class [:uk-link-muted] :href "#/about"}
        "go to About Page"]]
      ]))
@@ -127,4 +132,5 @@
 
 (defn main-panel []
   (let [active-panel (re-frame/subscribe [::subs/active-panel])]
+    (.grid uikit (.getElementById js/document "form-container"))
     [show-panel @active-panel]))
