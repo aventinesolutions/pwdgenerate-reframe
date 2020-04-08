@@ -18,7 +18,9 @@
         defs (field @field-defs)]
     ^{:key field}
     [:div {:id    (str field "-input")
-           :class [:uk-width-1-2 :uk-card :uk-card-body :uk-card-default :uk-box-shadow-medium]}
+           :class [:uk-width-auto :uk-padding-small :uk-margin
+                   :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
+                   :uk-box-shadow-medium :uk-box-shadow-hover-large]}
      [:label {:class [:uk-text-primary]} (:label defs)
       [:input {:class     [:uk-input]
                :type      :text
@@ -43,46 +45,55 @@
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
 
-        [:div {:id    :form-container :uk-grid 1
-               :class [:uk-background-default :uk-padding-small]}
-         [:form {:uk-grid 1}
+        [:div {:id    :form-container "uk-grid" 1
+               :class [:uk-grid-large :uk-background-default :uk-padding-small]}
+         [:form
           ^{:key :password}
-          [:label {:style {:color color}} "Password"]
-          [:input {:class     [:uk-input]
-                   :type      (if @show? :text :password)
-                   :style     {:border (str "1px solid " color)}
-                   :value     @value
-                   :on-focus  #(re-frame/dispatch [::events/focus? true])
-                   :on-blur   #(re-frame/dispatch [::events/dirty? true])
-                   :on-change #(doall (re-frame/dispatch [::events/dirty? true])
-                                      (re-frame/dispatch [::events/value (-> % .-target .-value)]))}]
-          (doall
-            (for [[desc valid?] validations]
-              (when focus?
-                ^{:key desc}
-                [:div {:style {:color (when @dirty?
-                                        (if valid? "green" "red"))}}
-                 (when @dirty? (if valid? "✔ " "✘ "))
-                 desc])))
-          ^{:key "regenerate"}
-          [:button {:id    :regenerate
-                    :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-primary :uk-box-shadow-medium]
-                    :on-click
-                           (fn [event]
-                             (do
-                               (.preventDefault event)
-                               (re-frame/dispatch [::events/generate])))} "Regenerate"]
-          ^{:key "reset"}
-          [:button {:id    :reset
-                    :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-secondary :uk-box-shadow-medium]
-                    :on-click
-                           (fn [event]
-                             (do
-                               (.preventDefault event)
-                               (re-frame/dispatch [::events/reset])))} "Reset"]
+          [:div {:class [:uk-width-auto :uk-padding-small :uk-margin
+                         :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
+                         :uk-box-shadow-medium :uk-box-shadow-hover-large]}
+           [:label {:style {:color color}} "Password"]
+           [:input {:class     [:uk-input]
+                    :type      (if @show? :text :password)
+                    :style     {:border (str "1px solid " color)}
+                    :value     @value
+                    :on-focus  #(re-frame/dispatch [::events/focus? true])
+                    :on-blur   #(re-frame/dispatch [::events/dirty? true])
+                    :on-change #(doall (re-frame/dispatch [::events/dirty? true])
+                                       (re-frame/dispatch [::events/value (-> % .-target .-value)]))}]
+           (doall
+             (for [[desc valid?] validations]
+               (when focus?
+                 ^{:key desc}
+                 [:div {:style {:color (when @dirty?
+                                         (if valid? "green" "red"))}}
+                  (when @dirty? (if valid? "✔ " "✘ "))
+                  desc])))]
+          [:div {:id :button-group :class [:uk-width-auto :uk-padding-small :uk-margin
+                                           :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
+                                           :uk-box-shadow-medium :uk-box-shadow-hover-large]}
+           ^{:key "regenerate"}
+           [:button {:id    :regenerate
+                     :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-primary
+                             :uk-box-shadow-medium :uk-box-shadow-hover-large]
+                     :on-click
+                            (fn [event]
+                              (do
+                                (.preventDefault event)
+                                (re-frame/dispatch [::events/generate])))} "Regenerate"]
+           ^{:key "reset"}
+           [:button {:id    :reset
+                     :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-secondary
+                             :uk-box-shadow-medium :uk-box-shadow-hover-large]
+                     :on-click
+                            (fn [event]
+                              (do
+                                (.preventDefault event)
+                                (re-frame/dispatch [::events/reset])))} "Reset"]]
           ^{:key "show-password-input"}
           [:div {:id    "show-password-input"
-                 :class [:uk-width-1-2 :uk-card :uk-card-body :uk-card-default :uk-box-shadow-medium]}
+                 :class [:uk-margin :uk-width-auto :uk-card :uk-card-body :uk-margin-left :uk-card-default
+                         :uk-box-shadow-hover-large :uk-box-shadow-medium]}
            [:label {:class [:uk-text-primary]}
             [:input {:class     :uk-checkbox
                      :type      :checkbox
@@ -92,7 +103,8 @@
           (doall (form-fields))
           ^{:key "word-separator-input"}
           [:div {:id    "word-separator-input"
-                 :class [:uk-width-1-2 :uk-card :uk-card-body :uk-card-default :uk-box-shadow-medium]}
+                 :class [:uk-margin :uk-width-auto :uk-card :uk-card-body :uk-margin-left :uk-card-default
+                         :uk-box-shadow-hover-large :uk-box-shadow-medium]}
            [:label {:class [:uk-text-primary]}
             "Word Separator "
             [:input {:type      :text
@@ -105,14 +117,15 @@
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
-    [:div {:class [:uk-background-muted :uk-flex :uk-flex-column :uk-flex-top :uk-padding]}
+    [:div {:class [:uk-background-muted :uk-flex :uk-flex-column :uk-flex-around
+                   :uk-flex-top :uk-padding]}
      [:div {:class [:uk-background-secondary :uk-light]}
       [:h1 {:class [:uk-padding]} name]]
      [pwdgenerator]
 
      [:div {:class [:uk-text-small :uk-padding]}
       [:a {:class [:uk-link-muted] :href "#/about"}
-       "go to About Page"]]
+       (str "About \"" name "\"")]]
      ]))
 
 ;; about
