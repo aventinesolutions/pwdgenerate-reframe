@@ -9,6 +9,10 @@
 
 ;; home
 
+(def card-classes [:uk-width-auto :uk-padding-small :uk-margin
+                   :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
+                   :uk-box-shadow-medium :uk-box-shadow-hover-large])
+
 (defn on-field-change [params field event]
   (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))]))
 
@@ -18,9 +22,7 @@
         defs (field @field-defs)]
     ^{:key field}
     [:div {:id    (str field "-input")
-           :class [:uk-width-auto :uk-padding-small :uk-margin
-                   :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
-                   :uk-box-shadow-medium :uk-box-shadow-hover-large]}
+           :class card-classes}
      [:label {:class [:uk-text-primary]} (:label defs)
       [:input {:class     [:uk-input]
                :type      :text
@@ -49,9 +51,7 @@
                :class [:uk-grid-large :uk-background-default :uk-padding-small]}
          [:form
           ^{:key :password}
-          [:div {:class [:uk-width-auto :uk-padding-small :uk-margin
-                         :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
-                         :uk-box-shadow-medium :uk-box-shadow-hover-large]}
+          [:div {:class card-classes}
            [:label {:style {:color color}} "Password"]
            [:input {:class     [:uk-input]
                     :type      (if @show? :text :password)
@@ -69,9 +69,7 @@
                                          (if valid? "green" "red"))}}
                   (when @dirty? (if valid? "✔ " "✘ "))
                   desc])))]
-          [:div {:id :button-group :class [:uk-width-auto :uk-padding-small :uk-margin
-                                           :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
-                                           :uk-box-shadow-medium :uk-box-shadow-hover-large]}
+          [:div {:id :button-group :class card-classes}
            ^{:key "regenerate"}
            [:button {:id    :regenerate
                      :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-primary
@@ -92,8 +90,7 @@
                                 (re-frame/dispatch [::events/reset])))} "Reset"]]
           ^{:key "show-password-input"}
           [:div {:id    "show-password-input"
-                 :class [:uk-margin :uk-width-auto :uk-card :uk-card-body :uk-margin-left :uk-card-default
-                         :uk-box-shadow-hover-large :uk-box-shadow-medium]}
+                 :class card-classes}
            [:label {:class [:uk-text-primary]}
             [:input {:class     :uk-checkbox
                      :type      :checkbox
@@ -103,8 +100,7 @@
           (doall (form-fields))
           ^{:key "word-separator-input"}
           [:div {:id    "word-separator-input"
-                 :class [:uk-margin :uk-width-auto :uk-card :uk-card-body :uk-margin-left :uk-card-default
-                         :uk-box-shadow-hover-large :uk-box-shadow-medium]}
+                 :class card-classes}
            [:label {:class [:uk-text-primary]}
             "Word Separator "
             [:input {:type      :text
