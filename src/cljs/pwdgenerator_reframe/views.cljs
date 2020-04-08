@@ -18,7 +18,7 @@
         defs (field @field-defs)]
     ^{:key field}
     [:div {:id    (str field "-input")
-           :class [:uk-card :uk-card-body :uk-card-default :uk-box-shadow-medium]}
+           :class [:uk-width-1-2 :uk-card :uk-card-body :uk-card-default :uk-box-shadow-medium]}
      [:label {:class [:uk-text-primary]} (:label defs)
       [:input {:class     [:uk-input]
                :type      :text
@@ -43,9 +43,10 @@
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
 
-        [:div {:id      :form-container :uk-grid 1
-               :class   [:uk-background-default :uk-padding-small]}
-         [:form
+        [:div {:id    :form-container :uk-grid 1
+               :class [:uk-background-default :uk-padding-small]}
+         [:form {:uk-grid 1}
+          ^{:key :password}
           [:label {:style {:color color}} "Password"]
           [:input {:class     [:uk-input]
                    :type      (if @show? :text :password)
@@ -55,38 +56,6 @@
                    :on-blur   #(re-frame/dispatch [::events/dirty? true])
                    :on-change #(doall (re-frame/dispatch [::events/dirty? true])
                                       (re-frame/dispatch [::events/value (-> % .-target .-value)]))}]
-          [:div
-           [:div {:id "show-password-input" :class [:uk-card :uk-card-body]}
-            [:label {:class [:uk-text-primary]}
-             [:input {:class     :uk-checkbox
-                      :type      :checkbox
-                      :checked   @show?
-                      :on-change #(re-frame/dispatch [::events/show? (-> % .-target .-checked)])}]
-             " Show password?"]]
-           (doall (form-fields))
-           ^{:key "word-separator-input"}
-           [:div {:id    "word-separator-input"
-                  :class [:uk-card :uk-card-body :uk-padding-remove-top]}
-            [:label {:class [:uk-text-primary]}
-             "Word Separator "
-             [:input {:type      :text
-                      :size      3
-                      :maxLength 3
-                      :value     (:word_separator @params)
-                      :on-change #(on-field-change @params :word_separator %)}]
-             " " (pr-str (:word_separator @params))]]]
-          ^{:key "regenerate"}
-          [:button {:id :regenerate :class [:uk-button :uk-button-small :uk-button-primary] :on-click
-                        (fn [event]
-                          (do
-                            (.preventDefault event)
-                            (re-frame/dispatch [::events/generate])))} "Regenerate"]
-          ^{:key "reset"}
-          [:button {:id :reset :class [:uk-button :uk-button-small :uk-button-secondary] :on-click
-                        (fn [event]
-                          (do
-                            (.preventDefault event)
-                            (re-frame/dispatch [::events/reset])))} "Reset"]
           (doall
             (for [[desc valid?] validations]
               (when focus?
@@ -94,7 +63,45 @@
                 [:div {:style {:color (when @dirty?
                                         (if valid? "green" "red"))}}
                  (when @dirty? (if valid? "✔ " "✘ "))
-                 desc])))]]))))
+                 desc])))
+          ^{:key "regenerate"}
+          [:button {:id    :regenerate
+                    :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-primary :uk-box-shadow-medium]
+                    :on-click
+                           (fn [event]
+                             (do
+                               (.preventDefault event)
+                               (re-frame/dispatch [::events/generate])))} "Regenerate"]
+          ^{:key "reset"}
+          [:button {:id    :reset
+                    :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-secondary :uk-box-shadow-medium]
+                    :on-click
+                           (fn [event]
+                             (do
+                               (.preventDefault event)
+                               (re-frame/dispatch [::events/reset])))} "Reset"]
+          ^{:key "show-password-input"}
+          [:div {:id    "show-password-input"
+                 :class [:uk-width-1-2 :uk-card :uk-card-body :uk-card-default :uk-box-shadow-medium]}
+           [:label {:class [:uk-text-primary]}
+            [:input {:class     :uk-checkbox
+                     :type      :checkbox
+                     :checked   @show?
+                     :on-change #(re-frame/dispatch [::events/show? (-> % .-target .-checked)])}]
+            " Show password?"]]
+          (doall (form-fields))
+          ^{:key "word-separator-input"}
+          [:div {:id    "word-separator-input"
+                 :class [:uk-width-1-2 :uk-card :uk-card-body :uk-card-default :uk-box-shadow-medium]}
+           [:label {:class [:uk-text-primary]}
+            "Word Separator "
+            [:input {:type      :text
+                     :size      3
+                     :maxLength 3
+                     :value     (:word_separator @params)
+                     :on-change #(on-field-change @params :word_separator %)}]
+            " " (pr-str (:word_separator @params))]]
+          ]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
