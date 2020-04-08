@@ -51,7 +51,7 @@
                :class [:uk-grid-large :uk-background-default :uk-padding-small]}
          [:form
           ^{:key :password}
-          [:div {:class card-classes}
+          [:div {:id "password-container" :class card-classes}
            [:label {:class [:uk-text-lead :uk-text-bolder :uk-text-primary]
                     :style {:color color}} "Password"]
            [:input {:class     [:uk-input]

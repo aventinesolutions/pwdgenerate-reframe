@@ -1,3 +1,7 @@
 body {
   color: #000;
 }
+#password-container input {
+  font-family: courier-new, courier, monospace;
+  font-weight: bolder;
+}
