@@ -5,6 +5,9 @@
 
 (def password-stats
   [(fn [s]
+     (format "%d characters total length"
+             (count (vec s))))
+   (fn [s]
      (format "%d uppercase alpha characters"
              (count (remove nil? (map #(some #{%} (vec "ABCDEFGHIJKLMNOPQRSTUVWXYZ")) (vec s))))))
    (fn [s]
