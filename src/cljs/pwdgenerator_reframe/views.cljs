@@ -43,7 +43,7 @@
         focus? (re-frame/subscribe [::subs/focus?])]
     (fn []
       (let [validations (for [[desc f] password-validations]
-                          [desc (f (:value @value))])
+                          [desc (f @value)])
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
 
