@@ -52,7 +52,8 @@
          [:form
           ^{:key :password}
           [:div {:class card-classes}
-           [:label {:style {:color color}} "Password"]
+           [:label {:class [:uk-text-lead :uk-text-bolder :uk-text-primary]
+                    :style {:color color}} "Password"]
            [:input {:class     [:uk-input]
                     :type      (if @show? :text :password)
                     :style     {:border (str "1px solid " color)}
