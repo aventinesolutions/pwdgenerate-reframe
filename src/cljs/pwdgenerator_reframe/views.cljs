@@ -1,8 +1,7 @@
 (ns pwdgenerator-reframe.views
   (:require
-    [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
-    [pwdgenerator-reframe.domain :refer [password-validations password-stats]]
+    [pwdgenerator-reframe.domain :refer [password-stats]]
     [pwdgenerator-reframe.subs :as subs]
     [pwdgenerator-reframe.events :as events]
     [uikit]))
@@ -38,43 +37,24 @@
 (defn pwdgenerator []
   (let [value (re-frame/subscribe [::subs/value])
         params (re-frame/subscribe [::subs/params])
-        show? (re-frame/subscribe [::subs/show?])
-        dirty? (re-frame/subscribe [::subs/dirty?])
-        focus? (re-frame/subscribe [::subs/focus?])]
+        show? (re-frame/subscribe [::subs/show?])]
     (fn []
-      (let [validations (for [[desc f] password-validations]
-                          [desc (f @value)])
-            stats (for [f password-stats] (f @value))
-            valid? (every? identity (map second validations))
-            color (when @dirty? (if valid? "green" "red"))]
+      (let [stats (for [f password-stats] (f @value))]
 
         [:div {:id    :form-container "uk-grid" 1
                :class [:uk-grid-large :uk-background-default :uk-padding-small]}
          [:form
           ^{:key :password}
           [:div {:id "password-container" :class card-classes}
-           [:label {:class [:uk-text-lead :uk-text-bolder :uk-text-primary]
-                    :style {:color color}} "Password"]
+           [:label {:class [:uk-text-lead :uk-text-bolder :uk-text-primary]} "Password"]
            [:input {:class     [:uk-input]
                     :type      (if @show? :text :password)
-                    :style     {:border (str "1px solid " color)}
                     :value     @value
-                    :on-focus  #(re-frame/dispatch [::events/focus? true])
-                    :on-blur   #(re-frame/dispatch [::events/dirty? true])
-                    :on-change #(doall (re-frame/dispatch [::events/dirty? true])
-                                       (re-frame/dispatch [::events/value (-> % .-target .-value)]))}]
-           (doall
-             (for [[desc valid?] validations]
-               (when focus?
-                 ^{:key desc}
-                 [:div {:style {:color (when @dirty?
-                                         (if valid? "green" "red"))}}
-                  (when @dirty? (if valid? "✔ " "✘ "))
-                  desc])))
+                    :on-change #(re-frame/dispatch [::events/value (-> % .-target .-value)])}]
            [:ul
             (doall
-             (for [stat stats]
-               ^{:key stat} [:li stat]))]]
+              (for [stat stats]
+                ^{:key stat} [:li stat]))]]
 
           [:div {:id :button-group :class card-classes}
            ^{:key "regenerate"}

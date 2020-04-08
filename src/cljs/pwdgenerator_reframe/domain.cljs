@@ -3,18 +3,6 @@
     [clojure.string :refer [join]]
     [goog.string :refer [format]]))
 
-(def password-validations
-  [["At least 12 characters"
-    (fn [s]
-      (>= (count s) 12))]
-   ["At least 50% unique characters"
-    (fn [s]
-      (-> s
-          set
-          count
-          (/ (count s))
-          (>= 0.5)))]])
-
 (def password-stats
   [(fn [s]
      (format "%d uppercase alpha characters"
