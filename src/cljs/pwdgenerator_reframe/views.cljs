@@ -2,7 +2,7 @@
   (:require
     [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
-    [pwdgenerator-reframe.domain :refer [password-validations]]
+    [pwdgenerator-reframe.domain :refer [password-validations password-stats]]
     [pwdgenerator-reframe.subs :as subs]
     [pwdgenerator-reframe.events :as events]
     [uikit]))
@@ -44,6 +44,7 @@
     (fn []
       (let [validations (for [[desc f] password-validations]
                           [desc (f @value)])
+            stats (for [f password-stats] (f @value))
             valid? (every? identity (map second validations))
             color (when @dirty? (if valid? "green" "red"))]
 
@@ -69,7 +70,12 @@
                  [:div {:style {:color (when @dirty?
                                          (if valid? "green" "red"))}}
                   (when @dirty? (if valid? "✔ " "✘ "))
-                  desc])))]
+                  desc])))
+           [:ul
+            (doall
+             (for [stat stats]
+               ^{:key stat} [:li stat]))]]
+
           [:div {:id :button-group :class card-classes}
            ^{:key "regenerate"}
            [:button {:id    :regenerate
