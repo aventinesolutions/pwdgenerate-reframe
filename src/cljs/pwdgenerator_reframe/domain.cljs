@@ -12,19 +12,19 @@
      (format "%d uppercase alpha characters"
              (->> (vec s)
                   (map #(some #{%} (vec "ABCDEFGHIJKLMNOPQRSTUVWXYZ")))
-                  (remove #(nil? %))
+                  (remove nil?)
                   count)))
    (fn [s]
      (format "%d lowercase alpha characters"
              (->> (vec s)
                   (map #(some #{%} (vec "abcdefghijklmnopqrstuvwxyz")))
-                  (remove #(nil? %))
+                  (remove nil?)
                   count)))
    (fn [s]
      (format "%d number characters"
              (->> (vec s)
                   (map #(some #{%} (vec "0123456789")))
-                  (remove #(nil? %))
+                  (remove nil?)
                   count)))
    (fn [s]
      (format "%d symbol characters"
