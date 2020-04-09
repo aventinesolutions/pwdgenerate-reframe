@@ -51,7 +51,8 @@
           ^{:key :password}
           [:div {:id "password-container" :class (conj card-classes :uk-width-1-1)}
            [:label {:class [:uk-text-lead :uk-text-bolder :uk-text-primary]} "Password"]
-           [:input {:class     [:uk-input]
+           [:input {:id        "password-input"
+                    :class     [:uk-input]
                     :type      (if @show? :text :password)
                     :value     @value
                     :on-change #(re-frame/dispatch [::events/value (-> % .-target .-value)])}]
@@ -63,7 +64,7 @@
           [:div {:id :button-group :class (conj card-classes :uk-width-1-1)}
            ^{:key "regenerate"}
            [:button {:id    :regenerate
-                     :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-primary
+                     :class [:uk-button :uk-width-3-5 :uk-button-small :uk-button-primary
                              :uk-box-shadow-medium :uk-box-shadow-hover-large]
                      :on-click
                             (fn [event]
@@ -72,13 +73,23 @@
                                 (re-frame/dispatch [::events/generate])))} "Regenerate"]
            ^{:key "reset"}
            [:button {:id    :reset
-                     :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-secondary
+                     :class [:uk-button :uk-width-1-5 :uk-button-small :uk-button-secondary
                              :uk-box-shadow-medium :uk-box-shadow-hover-large]
                      :on-click
                             (fn [event]
                               (do
                                 (.preventDefault event)
-                                (re-frame/dispatch [::events/reset])))} "Reset"]]
+                                (re-frame/dispatch [::events/reset])))} "Reset"]
+           ^{:key "copy"}
+           [:button {:id    :copy
+                     :class [:uk-button :uk-width-1-5 :uk-button-small :uk-button-danger
+                             :uk-box-shadow-medium :uk-box-shadow-hover-large]
+                     :on-click
+                            (fn [event]
+                              (do
+                                (.preventDefault event)
+                                (-> (.getElementById js/document "password-input") .select)
+                                (.execCommand js/document "copy")))} "Copy"]]
           ^{:key "show-password-input"}
           [:div {:id    "show-password-input"
                  :class card-classes}
