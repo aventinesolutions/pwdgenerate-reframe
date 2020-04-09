@@ -6,24 +6,38 @@
 (def password-stats
   [(fn [s]
      (format "%d characters total length"
-             (count (vec s))))
+             (->> (vec s)
+                  count)))
    (fn [s]
      (format "%d uppercase alpha characters"
-             (count (remove nil? (map #(some #{%} (vec "ABCDEFGHIJKLMNOPQRSTUVWXYZ")) (vec s))))))
+             (->> (vec s)
+                  (map #(some #{%} (vec "ABCDEFGHIJKLMNOPQRSTUVWXYZ")))
+                  (remove #(nil? %))
+                  count)))
    (fn [s]
      (format "%d lowercase alpha characters"
-             (count (remove nil? (map #(some #{%} (vec "abcdefghijklmnopqrstuvwxyz")) (vec s))))))
+             (->> (vec s)
+                  (map #(some #{%} (vec "abcdefghijklmnopqrstuvwxyz")))
+                  (remove #(nil? %))
+                  count)))
    (fn [s]
-     (format "%d numeric characters"
-             (count (remove nil? (map #(some #{%} (vec "0123456789")) (vec s))))))
+     (format "%d number characters"
+             (->> (vec s)
+                  (map #(some #{%} (vec "0123456789")))
+                  (remove #(nil? %))
+                  count)))
    (fn [s]
      (format "%d symbol characters"
-             (count (remove #(not (nil? %))
-                            (map #(some #{%} (vec " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"))
-                                 (vec s))))))
+             (->> (vec s)
+                  (map #(some #{%} (vec " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")))
+                  (remove #(not (nil? %)))
+                  count)))
    (fn [s]
      (format "%d spaces"
-             (count (remove false? (map #(= % \space) (vec s))))))
+             (->> (vec s)
+                  (map #(= % \space))
+                  (remove false?)
+                  count)))
    ])
 
 (defn random-char [s]
