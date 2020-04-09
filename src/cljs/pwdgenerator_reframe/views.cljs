@@ -1,5 +1,6 @@
 (ns pwdgenerator-reframe.views
   (:require
+    [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-stats]]
     [pwdgenerator-reframe.subs :as subs]
@@ -8,7 +9,7 @@
 
 ;; home
 
-(def card-classes [:uk-width-auto :uk-padding-small :uk-margin
+(def card-classes [:uk-padding-small :uk-margin-small
                    :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
                    :uk-box-shadow-medium :uk-box-shadow-hover-large])
 
@@ -23,7 +24,7 @@
     [:div {:id    (str field "-input")
            :class card-classes}
      [:label {:class [:uk-text-primary]} (:label defs)
-      [:input {:class     [:uk-input]
+      [:input {:class     :uk-input
                :type      :text
                :size      (:size defs)
                :maxLength (:maxlength defs)
@@ -41,11 +42,14 @@
     (fn []
       (let [stats (for [f password-stats] (f @value))]
 
-        [:div {:id    :form-container "uk-grid" 1
-               :class [:uk-grid-large :uk-background-default :uk-padding-small]}
-         [:form
+        [:form
+         [:div {:id    :form-container "uk-grid" 1
+                :class [:uk-margin-auto :uk-padding-small
+                        :uk-flex-center
+                        "uk-width-3-5@l" "uk-width-auto@s"
+                        :uk-background-default]}
           ^{:key :password}
-          [:div {:id "password-container" :class card-classes}
+          [:div {:id "password-container" :class (conj card-classes :uk-width-1-1)}
            [:label {:class [:uk-text-lead :uk-text-bolder :uk-text-primary]} "Password"]
            [:input {:class     [:uk-input]
                     :type      (if @show? :text :password)
@@ -56,7 +60,7 @@
               (for [stat stats]
                 ^{:key stat} [:li stat]))]]
 
-          [:div {:id :button-group :class card-classes}
+          [:div {:id :button-group :class (conj card-classes :uk-width-1-1)}
            ^{:key "regenerate"}
            [:button {:id    :regenerate
                      :class [:uk-button :uk-width-1-2 :uk-button-small :uk-button-primary
@@ -95,18 +99,17 @@
                      :maxLength 3
                      :value     (:word_separator @params)
                      :on-change #(on-field-change @params :word_separator %)}]
-            " " (pr-str (:word_separator @params))]]
-          ]]))))
+            " " (pr-str (:word_separator @params))]]]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
-    [:div {:class [:uk-background-muted :uk-flex :uk-flex-column :uk-flex-around
+    [:div {:class [:uk-background-muted :uk-flex :uk-flex-column :uk-flex-center
                    :uk-flex-top :uk-padding]}
-     [:div {:class [:uk-background-secondary :uk-light]}
+     [:div {:class [:uk-margin-auto :uk-background-secondary :uk-light]}
       [:h1 {:class [:uk-padding]} name]]
      [pwdgenerator]
 
-     [:div {:class [:uk-text-small :uk-padding]}
+     [:div {:class [:uk-margin-auto :uk-text-small :uk-padding]}
       [:a {:class [:uk-link-muted] :href "#/about"}
        (str "About \"" name "\"")]]
      ]))
