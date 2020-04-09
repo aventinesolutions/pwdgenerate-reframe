@@ -64,7 +64,7 @@
           [:div {:id :button-group :class (conj card-classes :uk-width-1-1)}
            ^{:key "regenerate"}
            [:button {:id    :regenerate
-                     :class [:uk-button :uk-width-3-5 :uk-button-small :uk-button-primary
+                     :class [:uk-button "uk-width-3-5@m" :uk-button-small :uk-button-primary
                              :uk-box-shadow-medium :uk-box-shadow-hover-large]
                      :on-click
                             (fn [event]
@@ -73,7 +73,7 @@
                                 (re-frame/dispatch [::events/generate])))} "Regenerate"]
            ^{:key "reset"}
            [:button {:id    :reset
-                     :class [:uk-button :uk-width-1-5 :uk-button-small :uk-button-secondary
+                     :class [:uk-button "uk-width-1-5@m" :uk-button-small :uk-button-secondary
                              :uk-box-shadow-medium :uk-box-shadow-hover-large]
                      :on-click
                             (fn [event]
@@ -82,7 +82,7 @@
                                 (re-frame/dispatch [::events/reset])))} "Reset"]
            ^{:key "copy"}
            [:button {:id    :copy
-                     :class [:uk-button :uk-width-1-5 :uk-button-small :uk-button-danger
+                     :class [:uk-button "uk-width-1-5@m" :uk-button-small :uk-button-danger
                              :uk-box-shadow-medium :uk-box-shadow-hover-large]
                      :on-click
                             (fn [event]
