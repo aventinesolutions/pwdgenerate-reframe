@@ -1,6 +1,5 @@
 (ns pwdgenerator-reframe.views
   (:require
-    [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-stats]]
     [pwdgenerator-reframe.subs :as subs]
@@ -12,6 +11,9 @@
 (def card-classes [:uk-padding-small :uk-margin-small
                    :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
                    :uk-box-shadow-medium :uk-box-shadow-hover-large])
+
+(def container-classes [:uk-margin-auto :uk-padding-small :uk-flex-center
+                        "uk-width-3-5@l" "uk-width-auto@s" :uk-background-default])
 
 (defn on-field-change [params field event]
   (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))]))
@@ -44,10 +46,7 @@
 
         [:form
          [:div {:id    :form-container "uk-grid" 1
-                :class [:uk-margin-auto :uk-padding-small
-                        :uk-flex-center
-                        "uk-width-3-5@l" "uk-width-auto@s"
-                        :uk-background-default]}
+                :class container-classes}
           ^{:key :password}
           [:div {:id "password-container" :class (conj card-classes :uk-width-1-1)}
            [:label {:class [:uk-text-lead :uk-text-bolder :uk-text-primary]} "Password"]
@@ -122,18 +121,28 @@
 
      [:div {:class [:uk-margin-auto :uk-text-small :uk-padding]}
       [:a {:class [:uk-link-muted] :href "#/about"}
-       (str "About \"" name "\"")]]
-     ]))
+       (str "About \"" name "\"")]]]))
 
 ;; about
 
 (defn about-panel []
-  [:div
-   [:h1 "This is the About Page."]
+  (let [name @(re-frame/subscribe [::subs/name])]
+    [:div {:class [:uk-background-muted :uk-flex :uk-flex-column :uk-flex-center
+                   :uk-flex-top :uk-padding]}
+     [:div {:class [:uk-margin-auto :uk-background-secondary :uk-light]}
+      [:h1 {:class [:uk-padding]} (str "About \"" name "\"")]]
 
-   [:div
-    [:a {:href "#/"}
-     "go to Home Page"]]])
+     [:div {:class container-classes}
+      [:ul
+       [:li "based on the idea that passwords with spaces are more secure, considering dictionary attacks"]
+       [:li "generates a password that can be typed out a bit easier if necessary, considering virtual keyboards"]
+       [:li "uses " [:a {:href "https://github.com/day8/re-frame"} "Reframe"]]
+       [:li "uses " [:a {:href "https://getuikit.com/"} "UIkit"]]
+       ]]
+
+     [:div {:class [:uk-margin-auto :uk-text-small :uk-padding]}
+      [:a {:class [:uk-link-muted] :href "#/"}
+       (str "Goto " name)]]]))
 
 ;; main
 
