@@ -39,13 +39,3 @@
   ::show?
   (fn [db [_ show?]]
     (assoc db :show? show?)))
-
-(re-frame/reg-event-db
-  ::dirty?
-  (fn [db [_ dirty?]]
-    (assoc db :dirty? dirty?)))
-
-(re-frame/reg-event-db
-  ::focus?
-  (fn [db [_ focus?]]
-    (assoc db :focus? focus?)))

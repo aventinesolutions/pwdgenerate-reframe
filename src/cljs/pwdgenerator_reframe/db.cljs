@@ -65,7 +65,5 @@
   {:name       "Password Generator in Re-frame"
    :value      (generate-pw defaults)
    :show?      true
-   :dirty?     false
-   :focus?     false
    :params     defaults
    :field-defs form-field-defs})

@@ -1,18 +1,44 @@
 (ns pwdgenerator-reframe.domain
   (:require
-    [clojure.string :refer [join]]))
+    [clojure.string :refer [join]]
+    [goog.string :refer [format]]))
 
-(def password-validations
-  [["At least 12 characters"
-    (fn [s]
-      (>= (count s) 12))]
-   ["At least 50% unique characters"
-    (fn [s]
-      (-> s
-          set
-          count
-          (/ (count s))
-          (>= 0.5)))]])
+(def password-stats
+  [(fn [s]
+     (format "%d characters total length"
+             (->> (vec s)
+                  count)))
+   (fn [s]
+     (format "%d uppercase alpha characters"
+             (->> (vec s)
+                  (map #(some #{%} (vec "ABCDEFGHIJKLMNOPQRSTUVWXYZ")))
+                  (remove nil?)
+                  count)))
+   (fn [s]
+     (format "%d lowercase alpha characters"
+             (->> (vec s)
+                  (map #(some #{%} (vec "abcdefghijklmnopqrstuvwxyz")))
+                  (remove nil?)
+                  count)))
+   (fn [s]
+     (format "%d number characters"
+             (->> (vec s)
+                  (map #(some #{%} (vec "0123456789")))
+                  (remove nil?)
+                  count)))
+   (fn [s]
+     (format "%d symbol characters"
+             (->> (vec s)
+                  (map #(some #{%} (vec " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")))
+                  (remove #(not (nil? %)))
+                  count)))
+   (fn [s]
+     (format "%d spaces"
+             (->> (vec s)
+                  (map #(= % \space))
+                  (remove false?)
+                  count)))
+   ])
 
 (defn random-char [s]
   (nth s (rand-int (count s))))
