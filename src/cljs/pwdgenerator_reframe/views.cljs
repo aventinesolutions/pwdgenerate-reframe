@@ -4,16 +4,11 @@
     [pwdgenerator-reframe.domain :refer [password-stats]]
     [pwdgenerator-reframe.subs :as subs]
     [pwdgenerator-reframe.events :as events]
+    [pwdgenerator-reframe.components :refer [save-personalized-params]]
+    [pwdgenerator-reframe.styles :refer [card-classes container-classes]]
     [uikit]))
 
 ;; home
-
-(def card-classes [:uk-padding-small :uk-margin-small
-                   :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
-                   :uk-box-shadow-medium :uk-box-shadow-hover-large])
-
-(def container-classes [:uk-margin-auto :uk-padding-small :uk-flex-center
-                        "uk-width-3-5@l" "uk-width-auto@s" :uk-background-default])
 
 (defn on-field-change [params field event]
   (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))]))
@@ -109,7 +104,8 @@
                      :maxLength 3
                      :value     (:word_separator @params)
                      :on-change #(on-field-change @params :word_separator %)}]
-            " " (pr-str (:word_separator @params))]]]]))))
+            " " (pr-str (:word_separator @params))]]
+          (save-personalized-params)]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
