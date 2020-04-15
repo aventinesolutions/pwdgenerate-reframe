@@ -1,10 +1,19 @@
 (ns pwdgenerator-reframe.events
   (:require
+    [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
     [firebase.core :refer [init]]
-    [firebase.auth :as auth]
+    ["firebase" :as Firebase]
     [pwdgenerator-reframe.db :as db :refer [defaults]]
     [pwdgenerator-reframe.domain :refer [generate-pw]]))
+
+(defn email-sign-in [{:keys [:email :password]}]
+  (-> Firebase
+      .auth
+      (.signInWithEmailAndPassword email password)))
+
+(defn current-user []
+  (-> Firebase .auth .-currentUser))
 
 (re-frame/reg-event-db
   ::initialize-db
@@ -43,8 +52,9 @@
 
 (re-frame/reg-event-db
   ::firebase-login
-  (fn [db [_ [email password]]]
+  (fn [db [_ credentials]]
     (do
       (init {})
-      (auth/email-sign-in {:keys [email password]})
-      (assoc db :user (auth/current-user)))))
+      (email-sign-in credentials)
+      (pprint (current-user))
+      (assoc db :user (current-user)))))

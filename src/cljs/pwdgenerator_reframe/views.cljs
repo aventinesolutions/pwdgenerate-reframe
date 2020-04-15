@@ -105,7 +105,7 @@
                      :value     (:word_separator @params)
                      :on-change #(on-field-change @params :word_separator %)}]
             " " (pr-str (:word_separator @params))]]
-          (save-personalized-params)]]))))
+          [save-personalized-params]]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
