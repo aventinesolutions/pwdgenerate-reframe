@@ -1,5 +1,6 @@
 (ns pwdgenerator-reframe.views
   (:require
+    [reagent.core :refer [atom]]
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-stats]]
     [pwdgenerator-reframe.subs :as subs]
@@ -32,13 +33,12 @@
   (let [field-defs (re-frame/subscribe [::subs/field-defs])]
     (map #(form-field %) (sort-by #(:order (% @field-defs)) (keys @field-defs)))))
 
-(defn pwdgenerator []
+(defn pwdgenerator [personalized-params]
   (let [value (re-frame/subscribe [::subs/value])
         params (re-frame/subscribe [::subs/params])
         show? (re-frame/subscribe [::subs/show?])]
     (fn []
       (let [stats (for [f password-stats] (f @value))]
-
         [:form
          [:div {:id    :form-container "uk-grid" 1
                 :class container-classes}
@@ -105,7 +105,7 @@
                      :value     (:word_separator @params)
                      :on-change #(on-field-change @params :word_separator %)}]
             " " (pr-str (:word_separator @params))]]
-          [save-personalized-params]]]))))
+          [personalized-params]]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
@@ -113,7 +113,7 @@
                    :uk-flex-top :uk-padding]}
      [:div {:class [:uk-margin-auto :uk-background-secondary :uk-light]}
       [:h1 {:class [:uk-padding]} name]]
-     [pwdgenerator]
+     [pwdgenerator save-personalized-params]
 
      [:div {:class [:uk-margin-auto :uk-text-small :uk-padding]}
       [:a {:class [:uk-link-muted] :href "#/about"}
