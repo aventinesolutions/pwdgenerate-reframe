@@ -48,4 +48,4 @@
       (init {})
       (email-sign-in credentials)
       (.log js/console (current-user))
-      (assoc db :user (current-user)))))
+      (assoc db :user (first credentials)))))
