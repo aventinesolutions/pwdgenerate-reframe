@@ -16,10 +16,10 @@
       [:div
        {:id    :save-personalized-params
         :class card-classes}
-       [:h4.uk-text-primary "Personalized Params "
-        [:span.uk-text-small
-         {:class [:uk-text-italic]
-          :data-uk-icon "icon: check"} (:email @user)]]
+       [:h4.uk-text-primary
+        [:span.uk-icon {:data-uk-icon "icon: heart"}]
+        " Personalized Params "
+        [:span.uk-text-small (:email @user)]]
        [:fieldset.uk-form-stacked.uk-padding
         {:on-focus
          (fn [event]

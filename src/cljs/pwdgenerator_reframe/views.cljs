@@ -7,7 +7,8 @@
     [pwdgenerator-reframe.events :as events]
     [pwdgenerator-reframe.components :refer [save-personalized-params]]
     [pwdgenerator-reframe.styles :refer [card-classes container-classes]]
-    [uikit]))
+    [uikit]
+    ["uikit/dist/js/uikit-icons" :as Icons]))
 
 ;; home
 
@@ -64,7 +65,8 @@
                             (fn [event]
                               (do
                                 (.preventDefault event)
-                                (re-frame/dispatch [::events/generate])))} "Regenerate"]
+                                (re-frame/dispatch [::events/generate])))}
+            [:span.uk-icon {:data-uk-icon "icon: refresh"}] " Regenerate"]
            ^{:key "reset"}
            [:button {:id    :reset
                      :class [:uk-button "uk-width-1-5@m" :uk-button-small :uk-button-secondary
@@ -73,7 +75,8 @@
                             (fn [event]
                               (do
                                 (.preventDefault event)
-                                (re-frame/dispatch [::events/reset])))} "Reset"]
+                                (re-frame/dispatch [::events/reset])))}
+            [:span.uk-icon {:data-uk-icon "icon: history"}] " Reset"]
            ^{:key "copy"}
            [:button {:id    :copy
                      :class [:uk-button "uk-width-1-5@m" :uk-button-small :uk-button-danger
@@ -83,7 +86,8 @@
                               (do
                                 (.preventDefault event)
                                 (-> (.getElementById js/document "password-input") .select)
-                                (.execCommand js/document "copy")))} "Copy"]]
+                                (.execCommand js/document "copy")))}
+            [:span.uk-icon {:data-uk-icon "icon: copy"}] " Copy"]]
           ^{:key "show-password-input"}
           [:div {:id    "show-password-input"
                  :class card-classes}
@@ -153,5 +157,6 @@
 
 (defn main-panel []
   (let [active-panel (re-frame/subscribe [::subs/active-panel])]
+    (.use uikit Icons)
     (.grid uikit (.getElementById js/document "form-container"))
     [show-panel @active-panel]))
