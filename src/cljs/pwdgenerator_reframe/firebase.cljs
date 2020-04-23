@@ -1,5 +1,6 @@
 (ns pwdgenerator-reframe.firebase
   (:require
+    [re-frame.core :as re-frame]
     [pwdgenerator-reframe.subs :as subs]
     [pwdgenerator-reframe.events :as events]
     [com.degel.re-frame-firebase :as firebase]))
@@ -23,6 +24,16 @@
                            :get-user-sub [::subs/user]
                            :set-user-event [::events/user]
                            :default-error-handler [:firebase-error]))))
+
+(re-frame/reg-event-fx
+  ::sign-in-by-email
+  (fn [_ [_ [email password]]]
+    {:firebase/email-sign-in {:email email :password password}}))
+
+(re-frame/reg-event-fx
+  ::sign-out
+  (fn [_ _]
+    {:firebase/sign-out nil}))
 
 
 

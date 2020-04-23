@@ -16,8 +16,10 @@
       [:div
        {:id    :save-personalized-params
         :class card-classes}
-       [:h4.uk-text-primary "Personalized Params" [:span {:data-uk-icon "icon: check"}]]
-       [:div (:email @user)]
+       [:h4.uk-text-primary "Personalized Params "
+        [:span.uk-text-small
+         {:class [:uk-text-italic]
+          :data-uk-icon "icon: check"} (:email @user)]]
        [:fieldset.uk-form-stacked.uk-padding
         {:on-focus
          (fn [event]
@@ -42,5 +44,6 @@
         [:button {:class [:uk-button :uk-button-primary :uk-button-small]
                   :on-click
                          (fn [event]
-                           (.preventDefault event))}
+                           (.preventDefault event)
+                           (re-frame/dispatch [::firebase/sign-in-by-email [email password]]))}
          "login"]]])))
