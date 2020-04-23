@@ -4,7 +4,7 @@
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.styles :refer [card-classes]]
     [pwdgenerator-reframe.subs :as subs]
-    [pwdgenerator-reframe.events :as events]))
+    [pwdgenerator-reframe.firebase :as firebase]))
 
 (defonce component-state (atom {}))
 
@@ -16,12 +16,18 @@
       [:div
        {:id    :save-personalized-params
         :class card-classes}
-       (pr-str user)
        [:h4.uk-text-primary "Personalized Params" [:span {:data-uk-icon "icon: check"}]]
+       [:div (:email @user)]
        [:fieldset.uk-form-stacked.uk-padding
+        {:on-focus
+         (fn [event]
+           (do
+             (.preventDefault event)
+             (firebase/init)))}
         [:label.text-primary "email address"
          [:input.uk-input {:type          :text
                            :auto-complete :email
+
                            :on-change     (fn [event]
                                             (do
                                               (.preventDefault event)
@@ -33,10 +39,8 @@
                                             (do
                                               (.preventDefault event)
                                               (swap! component-state assoc :password (-> event .-target .-value))))}]]
-        [:button.uk-button-primary {:on-click
-                                    (fn [event]
-                                      (do
-                                        (.preventDefault event)
-                                        (re-frame/dispatch-sync
-                                          [::events/firebase-login [email password]])))}
+        [:button {:class [:uk-button :uk-button-primary :uk-button-small]
+                  :on-click
+                         (fn [event]
+                           (.preventDefault event))}
          "login"]]])))
