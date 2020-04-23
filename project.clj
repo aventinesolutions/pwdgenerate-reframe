@@ -11,7 +11,7 @@
                  [compojure "1.6.1"]
                  [yogthos/config "1.1.7"]
                  [ring "1.7.1"]
-                 [fbielejec/cljs-firebase-client "0.0.9"]]
+                 [com.degel/re-frame-firebase "0.8.0"]]
 
   :plugins [
             [lein-less "1.7.5"]
