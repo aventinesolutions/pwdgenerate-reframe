@@ -5,7 +5,7 @@
     [pwdgenerator-reframe.domain :refer [password-stats]]
     [pwdgenerator-reframe.subs :as subs]
     [pwdgenerator-reframe.events :as events]
-    [pwdgenerator-reframe.components :refer [save-personalized-params]]
+    [pwdgenerator-reframe.components.save-personalized-params :refer [save-personalized-params]]
     [pwdgenerator-reframe.styles :refer [card-classes container-classes]]
     [uikit]
     ["uikit/dist/js/uikit-icons" :as Icons]))

@@ -1,4 +1,4 @@
-(ns pwdgenerator-reframe.components
+(ns pwdgenerator-reframe.components.save-personalized-params
   (:require
     [reagent.core :refer [atom]]
     [re-frame.core :as re-frame]
