@@ -43,6 +43,4 @@
 (re-frame/reg-event-db
   ::user
   (fn [db [_ user]]
-    (do
-      (.log js/console user)
-      (assoc db :user user))))
+    (assoc db :user user)))
