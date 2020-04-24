@@ -34,7 +34,7 @@
   (let [field-defs (re-frame/subscribe [::subs/field-defs])]
     (map #(form-field %) (sort-by #(:order (% @field-defs)) (keys @field-defs)))))
 
-(defn pwdgenerator [personalized-params]
+(defn pwdgenerator []
   (let [value (re-frame/subscribe [::subs/value])
         params (re-frame/subscribe [::subs/params])
         show? (re-frame/subscribe [::subs/show?])]
@@ -109,7 +109,7 @@
                      :value     (:word_separator @params)
                      :on-change #(on-field-change @params :word_separator %)}]
             " " (pr-str (:word_separator @params))]]
-          [personalized-params]]]))))
+          [save-personalized-params]]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
@@ -117,7 +117,7 @@
                    :uk-flex-top :uk-padding]}
      [:div {:class [:uk-margin-auto :uk-background-secondary :uk-light]}
       [:h1 {:class [:uk-padding]} name]]
-     [pwdgenerator save-personalized-params]
+     [pwdgenerator]
 
      [:div {:class [:uk-margin-auto :uk-text-small :uk-padding]}
       [:a {:class [:uk-link-muted] :href "#/about"}
