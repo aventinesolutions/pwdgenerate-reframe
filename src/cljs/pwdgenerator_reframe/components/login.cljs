@@ -12,8 +12,8 @@
     (let [email (:email @component-state)
           password (:password @component-state)]
       ^{:key :login}
-      [:fieldset.uk-form-stacked.uk-padding
-       {:id :login
+      [:fieldset#login
+       {:class [:uk-form-stacked :uk-padding-small]
         :on-focus
         (fn [event]
           (do
