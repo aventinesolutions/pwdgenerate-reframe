@@ -5,14 +5,12 @@
     [pwdgenerator-reframe.events :as events]
     [com.degel.re-frame-firebase :as firebase]))
 
-(defonce firebase-app-info {:apiKey            "AIzaSyDBJGdi-3rLcUO5SgA4-dwPqWIH1IeysZo",
-                            :authDomain        "pwdgenerator-reframe.firebaseapp.com",
-                            :databaseURL       "https://pwdgenerator-reframe.firebaseio.com",
-                            :projectId         "pwdgenerator-reframe",
-                            :storageBucket     "pwdgenerator-reframe.appspot.com",
-                            :messagingSenderId "266579826485",
-                            :appId             "1:266579826485:web:90964aa050285094431e7c",
-                            :measurementId     "G-T8N6XH2956"})
+(defonce firebase-app-info {})
+
+(re-frame/reg-event-fx
+  ::firebase-error
+  (fn [_ [_ error]]
+    (.log js/console error)))
 
 (defonce firebase-instance (atom nil))
 
@@ -23,7 +21,7 @@
                            :firestore-settings {}
                            :get-user-sub [::subs/user]
                            :set-user-event [::events/user]
-                           :default-error-handler [:firebase-error]))))
+                           :default-error-handler [::firebase-error]))))
 
 (re-frame/reg-event-fx
   ::sign-in-by-email
@@ -34,7 +32,3 @@
   ::sign-out
   (fn [_ _]
     {:firebase/sign-out nil}))
-
-
-
-

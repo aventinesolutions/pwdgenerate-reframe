@@ -5,12 +5,15 @@
     [pwdgenerator-reframe.firebase :as firebase]))
 
 (defn personal-params []
-  ^{:key :personal-params}
-  [:fieldset#personal-params
-   {:class [:uk-form-stacked :uk-padding-small]}
-   [:button {:class [:uk-button :uk-button-primary :uk-button-small]
-             :on-click
-                    (fn [event]
-                      (.preventDefault event)
-                      (re-frame/dispatch [::firebase/sign-out]))}
-    "logoff"]])
+  (let [params (re-frame/subscribe [:firebase/on-value {:path [:params]}])]
+    ^{:key :personal-params}
+    [:div#personal-params
+     (pr-str @params)
+     [:fieldset#logoff
+      {:class [:uk-form-stacked :uk-padding-small]}
+      [:button {:class [:uk-button :uk-button-primary :uk-button-small]
+                :on-click
+                       (fn [event]
+                         (.preventDefault event)
+                         (re-frame/dispatch [::firebase/sign-out]))}
+       "logoff"]]]))

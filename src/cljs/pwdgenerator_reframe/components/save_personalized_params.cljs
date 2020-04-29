@@ -10,9 +10,8 @@
 (defn save-personalized-params []
   (fn []
     (let [user (re-frame/subscribe [::subs/user])]
-      [:div
-       {:id    :save-personalized-params
-        :class card-classes}
+      [:div#save-personalized-params
+       {:class card-classes}
        [:h4.uk-text-primary
         [:span.uk-icon {:data-uk-icon "icon: heart"}]
         " Personalized Params "
