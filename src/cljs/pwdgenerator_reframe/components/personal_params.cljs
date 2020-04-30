@@ -2,16 +2,18 @@
   (:require
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.styles :refer [card-classes]]
-    [pwdgenerator-reframe.events :as events]))
+    [pwdgenerator-reframe.events :as events]
+    [pwdgenerator-reframe.subs :as subs]
+    [com.degel.re-frame-firebase :as firebase]))
 
 (def document-path [:params])
 
 (defn personal-params []
   (fn []
-    (let [params (re-frame/subscribe [:firebase/on-value {:path document-path}])]
+    (let [params (re-frame/subscribe [:firestore/on-snapshot {:path-collection [:params]}])]
       ^{:key :personal-params}
       [:div#personal-params
-       [:h4 (pr-str @params)]
+       [:div.uk-text-small (pr-str @params)]
        [:fieldset#logoff
         {:class [:uk-form-stacked :uk-padding-small]}
         [:button {:class [:uk-button :uk-button-primary :uk-button-small]

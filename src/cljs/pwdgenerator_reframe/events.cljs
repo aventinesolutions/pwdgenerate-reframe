@@ -46,9 +46,6 @@
   (fn [db [_ user]]
     (assoc db :user user)))
 
-;(if (not (nil? user))
-;  (re-frame/dispatch-sync [::get-initial-personalized]))
-
 (re-frame/reg-event-fx
   ::sign-in-by-email
   (fn [_ [_ [email password]]]
@@ -58,23 +55,3 @@
   ::sign-out
   (fn [_ _]
     {:firebase/sign-out nil}))
-
-(re-frame/reg-event-db
-  ::update-personalized
-  (fn [db [_ personalized]]
-    (do
-      (assoc db :personalized personalized)
-      (if (empty? personalized) (re-frame/dispatch-sync [::set-initial-personalized])))))
-
-(re-frame/reg-event-fx
-  ::get-initial-personalized
-  (fn [_ _]
-    {:firestore/get {:path-document [:params]
-                     :on-success    [::update-personalized]}}))
-
-(re-frame/reg-event-fx
-  ::set-initial-personalized
-  (fn [_ _]
-    {:firestore/set {:path-document [:params]
-                     :data          [{:name "default" :params db/defaults}]
-                     :on-success    [::update-personalized]}}))
