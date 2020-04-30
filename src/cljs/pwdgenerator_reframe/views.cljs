@@ -112,11 +112,9 @@
           [save-personalized-params]]]))))
 
 (defn home-panel []
-  (let [name @(re-frame/subscribe [::subs/name])
-        params (re-frame/subscribe [:firebase/on-value {:path [:params]}])]
+  (let [name @(re-frame/subscribe [::subs/name])]
     [:div {:class [:uk-background-muted :uk-flex :uk-flex-column :uk-flex-center
                    :uk-flex-top :uk-padding]}
-     [:div (pr-str @params)]
      [:div {:class [:uk-margin-auto :uk-background-secondary :uk-light]}
       [:h1 {:class [:uk-padding]} name]]
      [pwdgenerator]

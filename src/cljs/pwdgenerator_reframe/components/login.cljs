@@ -2,6 +2,7 @@
   (:require
     [reagent.core :refer [atom]]
     [re-frame.core :as re-frame]
+    [pwdgenerator-reframe.events :as events]
     [pwdgenerator-reframe.styles :refer [card-classes]]
     [pwdgenerator-reframe.firebase :as firebase]))
 
@@ -38,5 +39,4 @@
                  :on-click
                         (fn [event]
                           (.preventDefault event)
-                          (re-frame/dispatch [::firebase/sign-in-by-email [email password]]))}
-        "login"]])))
+                          (re-frame/dispatch [::events/sign-in-by-email [email password]]))} "login"]])))
