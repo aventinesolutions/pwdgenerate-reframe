@@ -4,10 +4,25 @@
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.subs :as subs]
     [pwdgenerator-reframe.events :as events]
-    [pwdgenerator-reframe.db :as db]
     [com.degel.re-frame-firebase :as firebase]))
 
-(defonce firebase-app-info {})
+(goog-define API_KEY "<secret>")
+(goog-define AUTH_DOMAIN "<secret>")
+(goog-define DATABASE_URL "<secret>")
+(goog-define PROJECT_ID "<secret>")
+(goog-define STORAGE_BUCKET "<secret>")
+(goog-define MESSAGING_SENDER_ID "<secret>")
+(goog-define APP_ID "<secret>")
+(goog-define MEASUREMENT_ID "<secret>")
+
+(defonce firebase-app-info {:apiKey            API_KEY,
+                            :authDomain        AUTH_DOMAIN,
+                            :databaseURL       DATABASE_URL,
+                            :projectId         PROJECT_ID,
+                            :storageBucket     STORAGE_BUCKET,
+                            :messagingSenderId MESSAGING_SENDER_ID
+                            :appId             APP_ID
+                            :measurementId     MEASUREMENT_ID})
 
 (re-frame/reg-event-fx
   ::firebase-error
