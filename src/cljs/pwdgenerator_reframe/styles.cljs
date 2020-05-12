@@ -1,7 +1,7 @@
 (ns pwdgenerator-reframe.styles)
 
 (def card-classes [:uk-padding-small :uk-margin-small
-                   :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
+                   :uk-card :uk-card-body :uk-card-default :uk-responsive-width
                    :uk-box-shadow-medium :uk-box-shadow-hover-large])
 
 (def container-classes [:uk-margin-auto :uk-padding-small :uk-flex-center
