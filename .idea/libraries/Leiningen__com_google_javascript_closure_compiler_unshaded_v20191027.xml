@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.google.javascript/closure-compiler-unshaded:v20191027">
+    <CLASSES>
+      <root url="jar://C:/m2_repository/com/google/javascript/closure-compiler-unshaded/v20191027/closure-compiler-unshaded-v20191027.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

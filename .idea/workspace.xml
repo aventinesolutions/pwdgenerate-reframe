@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: remove the &quot;margin left&quot; styles from the form&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
+    <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
+    <list id="4929e027-bbb7-489b-8fb1-ca813f03ff89" name="#167342318 As a Security Auditor, I would like to restrict the MIME types of files that are uploa..." comment=":bear: :construction: add some console logging :confused: &#10;&#10;#167342318 As a Security Auditor, I would like to restrict the MIME types &#10;of files that are uploaded to prevent viruses and other malware from &#10;getting to the backend." />
+    <list id="c246a231-e57a-4348-acf5-4573ece91070" name="#170867407 fit the existing code into the newer Reframe templatee" comment=":bear: :construction: add a &quot;reset&quot; action &#10;&#10;#170867407 As a Developer, I want to fit the existing code into the newer Reframe template &#10;to keep the application maintainable." />
+    <list id="ca5136ef-1ad0-4e5f-83ad-19d0578c37c7" name="#172164715 As a Developer, I want to be able to develop on containers for maximum flexibility." comment=":bear: :construction: don't need this &quot;settings&quot; file&#10;&#10;#172164715 As a Developer, I want to be able to develop on containers for maximum flexibility." />
+    <list id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="" />
+    <list id="e77cb756-d6b5-4c69-bf44-30841a72849c" name="Revert &quot;:bear: :construction: some dependency updates&quot;" comment="Revert &quot;:bear: :construction: some dependency updates&quot;&#10;&#10;This reverts commit f85fb629" />
+    <list id="01d4be0a-d07c-4447-bac0-667bc5fc2a97" name="VTI-369 Stekkie 2.0 Bug Intermediair portal " comment=":bear: :construction: add &quot;mortgage calculation&quot; to the document types&#10;&#10;VTI-369 Stekkie 2.0 Bug Intermediair portal" />
+    <list id="2ffc0782-7ebf-479c-a858-8018df3014cd" name="VTI-394 Nieuwe versie (3.4) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediares" comment=":bear: :construction: new version of Excel calculator tool&#10;&#10;VTI-394 Nieuwe versie (3.4) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediares" />
+    <list id="ff69c0c5-a38f-4d45-8dff-da9fdb1cfbb1" name="VTI-401 Stekkie &quot;stack&quot; volledig op &quot;Docker for Windows&quot; bouwen en testen" comment=":bear: :construction: additional tips for Windows development :two:&#10;&#10;VTI-401 Stekkie &quot;stack&quot; volledig op &quot;Docker for Windows&quot; bouwen en testen" />
+    <list id="7ce0b6fe-f691-4996-bcec-595d4eff82b1" name="VTI-407 Nieuwe versie (3.5) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediares" comment=":bear: :construction: a little nicer local environment for Windows&#10;&#10;VTI-407 Nieuwe versie (3.5) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediaïrs" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="stekkie-frontend" />
+    <favorites_list name="ApplicationDocuments">
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailBindingOfferDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/render-prop-components/Upload/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/render-prop-components/Upload/withUpload.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Upload Application Documents">
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailBindingOfferDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailNonBindingOfferDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenCommonDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenDocumentsSectionBox/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/render-prop-components/Upload/withUpload.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/components/DocumentError/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenStatusSectionBox/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenStatusSectionBox/index.scss" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Login">
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/LoginScreen/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/common/lib/locale/nl/messages.json" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/common/locale/en/messages.json" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Docker Sync">
+      <favorite_root url="file://$PROJECT_DIR$/docker-compose-sync.yml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/docker-sync.yml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Owner Income">
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/components/OwnerDetailSectionBox/components/OwnerDetailSectionBoxIncome/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/components/OwnerDetailSectionBox/components/OwnerDetailSectionBoxIncome/OwnerDetailSectionBoxIncomeFragment.graphql" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_COMMON_BRANCH" value="develop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="savedDocuments">
+              <list>
+                <AnonymousApexSavedDocument>
+                  <option name="name" value="Anonymous Apex 1" />
+                </AnonymousApexSavedDocument>
+              </list>
+            </option>
+            <option name="selectedSavedDocumentIndex" value="0" />
+          </AnonymousApexSettings>
+        </option>
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="savedDocuments">
+              <list>
+                <SoqlQuerySavedDocument>
+                  <option name="name" value="SOQL Query 1" />
+                </SoqlQuerySavedDocument>
+              </list>
+            </option>
+            <option name="selectedSavedDocumentIndex" value="0" />
+          </SoqlQuerySettings>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
+  </component>
+  <component name="JQLSearcherProjectManager">
+    <selected>-1</selected>
+    <searchers />
+  </component>
+  <component name="JiraServerManager">
+    <selected>-1</selected>
+    <servers />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="1Oiw3aN6LZ8MtAUhzeQftRnVLhO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv&#10;Clojure&#10;Markdown&#10;Bash" />
+    <property name="editorconfig.notification" value="../.editorconfig&#10;" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/public/css" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.417734" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="start.from.branch" value="develop" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matth\.IntelliJIdea2019.3\config\scratches" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\pwdgenerate-reframe\resources\public\css" />
+      <recent name="D:\workspace\pwdgenerate-reframe\less" />
+      <recent name="D:\workspace\pwdgenerate-reframe\.dockerdev" />
+      <recent name="D:\workspace\stekkie-frontend\packages\intermediary\build\api" />
+      <recent name="D:\workspace\stekkie-frontend\packages\intermediary\api" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.Intermediary Lint with fixes">
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="NREPL" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Firefox Remote Debugger" type="FirefoxRemoteDebugType">
+      <method v="2" />
+    </configuration>
+    <configuration name="Common Lint" type="NodeJSConfigurationType" application-parameters="lint" path-to-node="$USER_HOME$/.nvm/versions/node/v10.16.0/bin/node" path-to-js-file="/usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js" working-dir="$PROJECT_DIR$/packages/common">
+      <method v="2" />
+    </configuration>
+    <configuration name="Intermediary Lint with fixes" type="NodeJSConfigurationType" application-parameters="lint --fix" path-to-node="$USER_HOME$/.nvm/versions/node/v10.16.0/bin/node" path-to-js-file="/usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js" working-dir="$PROJECT_DIR$/packages/intermediary">
+      <method v="2" />
+    </configuration>
+    <configuration name="Intermediary Lint" type="NodeJSConfigurationType" application-parameters="lint" path-to-node="$USER_HOME$/.nvm/versions/node/v10.16.0/bin/node" path-to-js-file="/usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js" working-dir="$PROJECT_DIR$/packages/intermediary">
+      <method v="2" />
+    </configuration>
+    <configuration name="Prettier Linter Intermediary" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="intermediary_lint" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose-lint-intermediary.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Prettier Linter Intermediary" />
+      <item itemvalue="Firefox Remote.Firefox Remote Debugger" />
+      <item itemvalue="Node.js.Common Lint" />
+      <item itemvalue="Node.js.Intermediary Lint" />
+      <item itemvalue="Node.js.Intermediary Lint with fixes" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="1" Folder0="C:\Users\matth\.IntelliJIdea2019.3\config\scratches" CustomDictionaries="1" CustomDictionary0="$APPLICATION_CONFIG_DIR$/scratches/dutch.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="Talios.JiraConfigurationComponent" enableIssueTracking="false" autoRefresh="false" useExternalBrowser="false" refreshTimeout="0" annotateissues="false">
+    <servers />
+    <columns>
+      <column id="created" position="0" width="-1" />
+      <column id="key" position="1" width="-1" />
+      <column id="component" position="2" width="-1" />
+      <column id="title" position="3" width="-1" />
+      <column id="type" position="4" width="-1" />
+      <column id="priority" position="5" width="-1" />
+      <column id="status" position="6" width="-1" />
+      <column id="resolution" position="7" width="-1" />
+      <column id="assignee" position="8" width="-1" />
+      <column id="reporter" position="9" width="-1" />
+      <column id="updated" position="10" width="-1" />
+      <column id="dueDate" position="11" width="-1" />
+      <column id="version" position="12" width="-1" />
+      <column id="fixVersion" position="13" width="-1" />
+    </columns>
+  </component>
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <branch name="develop" repository="D:\workspace\stekkie-frontend" />
+      <branch name="feature/VTI-401_Windows_build_and_documentation" repository="D:\workspace\stekkie-frontend" original="true" />
+      <branch name="feature/VTI-407_nieuwe_versie_3.5_rekentool" repository="D:\workspace\stekkie-frontend" original="true" />
+      <branch name="feature/170867407_fit_into_reframe_template" repository="D:\workspace\pwdgenerate-reframe" original="true" />
+      <changelist id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="" />
+      <created>1562767651662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586880304839</updated>
+      <workItem from="1562767652885" duration="4937000" />
+      <workItem from="1562830648371" duration="1932000" />
+      <workItem from="1562853644264" duration="2100000" />
+      <workItem from="1562915999125" duration="7152000" />
+      <workItem from="1563176171997" duration="493000" />
+      <workItem from="1563190413953" duration="713000" />
+      <workItem from="1563199698439" duration="1234000" />
+      <workItem from="1563348926519" duration="2314000" />
+      <workItem from="1563375047711" duration="600000" />
+      <workItem from="1563447365792" duration="2786000" />
+      <workItem from="1563522184996" duration="1949000" />
+      <workItem from="1563534033480" duration="623000" />
+      <workItem from="1563798118280" duration="1423000" />
+      <workItem from="1563868661197" duration="1636000" />
+      <workItem from="1563970338235" duration="2776000" />
+      <workItem from="1563975029475" duration="1961000" />
+      <workItem from="1564039519580" duration="5348000" />
+      <workItem from="1564473530997" duration="575000" />
+      <workItem from="1564474158716" duration="10051000" />
+      <workItem from="1564499574355" duration="198000" />
+      <workItem from="1564499798638" duration="285000" />
+      <workItem from="1564562507672" duration="2484000" />
+      <workItem from="1564645942007" duration="1320000" />
+      <workItem from="1564732137216" duration="3230000" />
+      <workItem from="1564991531475" duration="1973000" />
+      <workItem from="1565078436298" duration="581000" />
+      <workItem from="1565094542611" duration="1234000" />
+      <workItem from="1565163117158" duration="378000" />
+      <workItem from="1565164605990" duration="6388000" />
+      <workItem from="1565190072087" duration="648000" />
+      <workItem from="1565250456341" duration="667000" />
+      <workItem from="1565340394634" duration="298000" />
+      <workItem from="1565598104622" duration="113000" />
+      <workItem from="1565598241307" duration="3651000" />
+      <workItem from="1566466449216" duration="2691000" />
+      <workItem from="1566476543952" duration="980000" />
+      <workItem from="1566552961546" duration="1141000" />
+      <workItem from="1566807481088" duration="13653000" />
+      <workItem from="1567172817795" duration="652000" />
+      <workItem from="1567409964662" duration="22000" />
+      <workItem from="1568128001704" duration="1859000" />
+      <workItem from="1568192346884" duration="3339000" />
+      <workItem from="1569924445777" duration="15000" />
+      <workItem from="1570184142330" duration="4133000" />
+      <workItem from="1570192351719" duration="4868000" />
+      <workItem from="1575889015946" duration="7804000" />
+      <workItem from="1575972695893" duration="2192000" />
+      <workItem from="1577103134750" duration="1604000" />
+      <workItem from="1577700517838" duration="2587000" />
+      <workItem from="1579078508410" duration="2174000" />
+      <workItem from="1579185186388" duration="5552000" />
+      <workItem from="1579512437491" duration="72000" />
+      <workItem from="1580122167308" duration="2661000" />
+      <workItem from="1580313384800" duration="1125000" />
+      <workItem from="1580392478679" duration="307000" />
+      <workItem from="1580984272818" duration="3222000" />
+      <workItem from="1581001207052" duration="707000" />
+      <workItem from="1581085696934" duration="55000" />
+      <workItem from="1581413337596" duration="1256000" />
+      <workItem from="1581429676695" duration="167000" />
+      <workItem from="1581594373350" duration="5242000" />
+      <workItem from="1581676701754" duration="2067000" />
+      <workItem from="1581686258577" duration="596000" />
+      <workItem from="1581936062183" duration="598000" />
+      <workItem from="1581940202682" duration="615000" />
+      <workItem from="1581948225277" duration="667000" />
+      <workItem from="1581948975656" duration="441000" />
+      <workItem from="1581949448690" duration="2138000" />
+      <workItem from="1582018149622" duration="152000" />
+      <workItem from="1582018328562" duration="599000" />
+      <workItem from="1582021990770" duration="597000" />
+      <workItem from="1582039163958" duration="1215000" />
+      <workItem from="1582208094885" duration="1143000" />
+      <workItem from="1585666395956" duration="253000" />
+      <workItem from="1586018854110" duration="2014000" />
+      <workItem from="1586118552273" duration="521000" />
+      <workItem from="1586119135047" duration="896000" />
+      <workItem from="1586438456530" duration="1392000" />
+      <workItem from="1586532011203" duration="43000" />
+      <workItem from="1586532668670" duration="81000" />
+      <workItem from="1586532766270" duration="118000" />
+      <workItem from="1586532904042" duration="44000" />
+      <workItem from="1586535958950" duration="701000" />
+      <workItem from="1586544124749" duration="5626000" />
+      <workItem from="1586594972771" duration="21000" />
+      <workItem from="1586878961075" duration="1341000" />
+    </task>
+    <task id="LOCAL-00059" summary=":bear: staging release 0.1.2">
+      <created>1586119659092</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1586119659092</updated>
+    </task>
+    <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
+      <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
+      <branch name="feature/#153809837_beautiful" repository="D:\workspace\pwdgenerate-reframe" />
+      <changelist id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable." />
+      <created>1513760782000</created>
+      <option name="issue" value="true" />
+      <url>https://www.pivotaltracker.com/story/show/153809837</url>
+      <option name="number" value="153809837" />
+      <option name="presentableId" value="#153809837" />
+      <option name="project" value="2137954" />
+      <updated>1586438455967</updated>
+      <workItem from="1586120032216" duration="12959000" />
+      <workItem from="1586344324727" duration="25567000" />
+    </task>
+    <task id="LOCAL-00060" summary=":bear: :construction: inject &quot;uikit&quot; into the project&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586121497979</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1586121497979</updated>
+    </task>
+    <task id="LOCAL-00061" summary=":bear: :construction: start a &quot;uk flex&quot; layout&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586184702161</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1586184702161</updated>
+    </task>
+    <task id="LOCAL-00062" summary=":bear: :construction: styling :two:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586185836691</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1586185836691</updated>
+    </task>
+    <task id="LOCAL-00063" summary=":bear: :construction: styling :three:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586186012955</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1586186012955</updated>
+    </task>
+    <task id="LOCAL-00064" summary=":bear: :construction: styling :four:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586279464397</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1586279464397</updated>
+    </task>
+    <task id="LOCAL-00065" summary=":bear: :construction: styling :five:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586346757593</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1586346757594</updated>
+    </task>
+    <task id="LOCAL-00066" summary=":bear: :construction: styling :six:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586350796879</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1586350796879</updated>
+    </task>
+    <task id="LOCAL-00067" summary=":bear: :construction: styling :seven:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586351694421</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1586351694421</updated>
+    </task>
+    <task id="LOCAL-00068" summary=":bear: :construction: styling :eight:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586354139671</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1586354139671</updated>
+    </task>
+    <task id="LOCAL-00069" summary=":bear: :construction: refactoring so classes are a bit more DRY&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586354397915</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1586354397915</updated>
+    </task>
+    <task id="LOCAL-00070" summary=":bear: :construction: styling :nine:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586354662558</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1586354662559</updated>
+    </task>
+    <task id="LOCAL-00071" summary=":bear: :construction: styling :one::zero:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586355125705</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1586355125706</updated>
+    </task>
+    <task id="LOCAL-00072" summary=":bear: :construction: fix validations&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586357017080</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1586357017080</updated>
+    </task>
+    <task id="LOCAL-00073" summary=":bear: :construction: add password statistics&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586359434051</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1586359434051</updated>
+    </task>
+    <task id="LOCAL-00074" summary=":bear: :construction: yank out Erik's password validations&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586360084528</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1586360084528</updated>
+    </task>
+    <task id="LOCAL-00075" summary=":bear: :construction: add the total length of password statistic&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586360342639</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1586360342639</updated>
+    </task>
+    <task id="LOCAL-00076" summary=":bear: :construction: some refactoring of &quot;stats&quot; for readability&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586431404326</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1586431404327</updated>
+    </task>
+    <task id="LOCAL-00077" summary=":bear: :construction: some refactoring of &quot;stats&quot; for readability :two:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586431880772</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1586431880772</updated>
+    </task>
+    <task id="LOCAL-00078" summary=":bear: :construction: styling :one::one: (margins, widths and flex centering)&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586435491644</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1586435491644</updated>
+    </task>
+    <task id="LOCAL-00079" summary=":bear: :construction: added a &quot;copy to clipboard function&quot;&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586436816990</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1586436816990</updated>
+    </task>
+    <task id="LOCAL-00080" summary=":bear: :construction: buttons a bit more responsive&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586437284300</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1586437284300</updated>
+    </task>
+    <task id="LOCAL-00081" summary=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
+      <created>1586438312046</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1586438312046</updated>
+    </task>
+    <task id="LOCAL-00082" summary=":bear: staging version 0.1.3">
+      <created>1586879251936</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1586879251938</updated>
+    </task>
+    <task id="LOCAL-00083" summary=":bear: staging version 0.1.3 :two:">
+      <created>1586879301794</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1586879301794</updated>
+    </task>
+    <task active="true" id="2137954-172315027" summary="As a User, I want to be able to store my personalized params so that I can use then later.">
+      <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
+      <branch name="feature/#172315027_store_personalized_params" repository="D:\workspace\pwdgenerate-reframe" />
+      <changelist id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction:&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I can use then later." />
+      <created>1586879614000</created>
+      <option name="issue" value="true" />
+      <url>https://www.pivotaltracker.com/story/show/172315027</url>
+      <option name="number" value="172315027" />
+      <option name="presentableId" value="#172315027" />
+      <option name="project" value="2137954" />
+      <updated>1586880304839</updated>
+      <workItem from="1586880305675" duration="12992000" />
+      <workItem from="1586976034363" duration="679000" />
+      <workItem from="1586976743827" duration="5261000" />
+      <workItem from="1587048702093" duration="7994000" />
+      <workItem from="1587579123416" duration="4975000" />
+      <workItem from="1587643745591" duration="11550000" />
+      <workItem from="1587752035756" duration="2007000" />
+      <workItem from="1587802493939" duration="217000" />
+      <workItem from="1588162223097" duration="7950000" />
+      <workItem from="1588244382106" duration="22423000" />
+      <workItem from="1588326169317" duration="3118000" />
+      <workItem from="1588406902153" duration="940000" />
+      <workItem from="1588425272724" duration="1997000" />
+      <workItem from="1589137384117" duration="221000" />
+      <workItem from="1589137768286" duration="750000" />
+      <workItem from="1589138551491" duration="57000" />
+      <workItem from="1589138664139" duration="1946000" />
+      <workItem from="1589287640423" duration="1683000" />
+    </task>
+    <task id="LOCAL-00084" summary=":bear: :construction: add the Firebase client to the project dependencies&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1586880626589</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1586880626589</updated>
+    </task>
+    <task id="LOCAL-00085" summary=":bear: :construction: add card and component for saving personalized params&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1586882286652</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1586882286652</updated>
+    </task>
+    <task id="LOCAL-00086" summary=":bear: :construction: add the login form to the &quot;personalized params&quot; card&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1586890268650</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1586890268651</updated>
+    </task>
+    <task id="LOCAL-00087" summary=":bear: :construction: failed :red_circle: attempt to use https://github.com/fbielejec/cljs-firebase-client&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1586959396205</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1586959396205</updated>
+    </task>
+    <task id="LOCAL-00088" summary=":bear: :construction: putting &quot;credentials&quot; into state&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1586981847129</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1586981847131</updated>
+    </task>
+    <task id="LOCAL-00089" summary=":bear: :construction: refactoring Firebase login&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587062237992</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1587062237993</updated>
+    </task>
+    <task id="LOCAL-00090" summary=":bear: :construction: try &quot;dispatch sync&quot; for login&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587063234452</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1587063234453</updated>
+    </task>
+    <task id="LOCAL-00091" summary=":bear: :construction: trying D. Goldfarb's &quot;reframe firebase&quot; wrappers&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587645323036</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1587645323037</updated>
+    </task>
+    <task id="LOCAL-00092" summary=":bear: :construction: use D. Goldbarb's &quot;firebase init&quot;&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587649053778</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1587649053778</updated>
+    </task>
+    <task id="LOCAL-00093" summary=":bear: :construction: Firebase &quot;login with email&quot; events working&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587651634361</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1587651634361</updated>
+    </task>
+    <task id="LOCAL-00094" summary=":bear: :construction: sorted out the UIkit icons and sprinkled them in&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587653659399</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1587653659400</updated>
+    </task>
+    <task id="LOCAL-00095" summary=":bear: :construction: refactor view components to their own namespace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587653993100</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1587653993100</updated>
+    </task>
+    <task id="LOCAL-00096" summary=":bear: :construction: make the Firebase login it's own component&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587654688596</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1587654688596</updated>
+    </task>
+    <task id="LOCAL-00097" summary=":bear: :construction: remove some console logging &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587752229092</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1587752229093</updated>
+    </task>
+    <task id="LOCAL-00098" summary=":bear: :construction: passing a parameter to the password generator component is unnecessary &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587752388669</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1587752388670</updated>
+    </task>
+    <task id="LOCAL-00099" summary=":bear: :construction: add the Firebase &quot;sign out&quot; action&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587753730242</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1587753730242</updated>
+    </task>
+    <task id="LOCAL-00100" summary=":bear: :construction: adjustment to the &quot;fieldset&quot; style&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1587754033496</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1587754033496</updated>
+    </task>
+    <task id="LOCAL-00101" summary=":bear: :construction: trying to subscribe to the &quot;params&quot; collection&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1588165089819</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1588165089820</updated>
+    </task>
+    <task id="LOCAL-00102" summary=":bear: :construction: events to handle getting and setting initialized &quot;personal parameters&quot; :one:&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1588249839003</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1588249839004</updated>
+    </task>
+    <task id="LOCAL-00103" summary=":bear: :construction: now a proper &quot;snapshot&quot; subscription to Firestore&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1588267029348</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1588267029348</updated>
+    </task>
+    <task id="LOCAL-00104" summary=":bear: :construction: use the shell environment to configure Firebase project initialization&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1588326526206</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1588326526207</updated>
+    </task>
+    <task id="LOCAL-00105" summary=":bear: :construction: remove the &quot;margin left&quot; styles from the form&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1589288721677</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1589288721678</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
+    <option name="branchNameFormat" value="feature/${id}_${summary}" />
+    <servers>
+      <JIRA shared="true" url="https://projectvigi.atlassian.net">
+        <option name="apiType" value="REST_2_0" />
+        <commitMessageFormat>:bear: :construction:
+
+{id} {summary}</commitMessageFormat>
+        <option name="inCloud" value="true" />
+        <option name="jiraVersion" value="1001.0.0-SNAPSHOT" />
+        <option name="searchQuery" value="project = VTI order by updated" />
+        <option name="shouldFormatCommitMessage" value="true" />
+        <username>matthew.eichler@aventinesolutions.nl</username>
+      </JIRA>
+      <PivotalTracker shared="true">
+        <commitMessageFormat>:bear: :construction:
+
+{id} {summary}</commitMessageFormat>
+        <option name="projectId" value="2137954" />
+        <option name="shouldFormatCommitMessage" value="true" />
+      </PivotalTracker>
+    </servers>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/#172315027_store_personalized_params" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/#172315027_store_personalized_params" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/170867407_fit_into_reframe_template" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/VTI-401_Windows_build_and_documentation" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="develop" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/167342318_message_to_Intermediary_for_invalid_doctype" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/167342104_too_many_login_attempts" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <confirmRemoveEmptyChangelist value="1" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.idea" />
+    </ignored-roots>
+    <MESSAGE value=":bear: staging version 0.1.3" />
+    <MESSAGE value=":bear: staging version 0.1.3 :two:" />
+    <MESSAGE value=":bear: :construction: add the Firebase client to the project dependencies&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: add card and component for saving personalized params&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: add the login form to the &quot;personalized params&quot; card&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: failed :red_circle: attempt to use https://github.com/fbielejec/cljs-firebase-client&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: putting &quot;credentials&quot; into state&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: refactoring Firebase login&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: try &quot;dispatch sync&quot; for login&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: trying D. Goldfarb's &quot;reframe firebase&quot; wrappers&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: use D. Goldbarb's &quot;firebase init&quot;&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: Firebase &quot;login with email&quot; events working&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: sorted out the UIkit icons and sprinkled them in&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: refactor view components to their own namespace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: make the Firebase login it's own component&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: remove some console logging &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: passing a parameter to the password generator component is unnecessary &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: add the Firebase &quot;sign out&quot; action&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: adjustment to the &quot;fieldset&quot; style&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: trying to subscribe to the &quot;params&quot; collection&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: fix the subscription to the &quot;params&quot; collection&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: events to handle getting and setting initialized &quot;personal parameters&quot; :one:&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: now a proper &quot;snapshot&quot; subscription to Firestore&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: use the shell environment to configure Firebase project initialization&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: remove the &quot;margin left&quot; styles from the form&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: remove the &quot;margin left&quot; styles from the form&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="547" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586093862476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="547" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1586093862476" />
+    <state x="576" y="295" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586878975745">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="576" y="295" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1586878975745" />
+    <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587752005543">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586344294981" />
+    <state x="2560" y="-550" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587643716870" />
+    <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1587752005543" />
+    <state x="0" y="0" width="1300" height="824" key="CommitChangelistDialog2" timestamp="1589288720430">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1818" y="-115" key="CommitChangelistDialog2/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430060580" />
+    <state x="-1818" y="-694" width="1511" height="1160" key="CommitChangelistDialog2/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580743168156" />
+    <state x="0" y="0" width="1536" height="824" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288720430" />
+    <state x="2022" y="-798" width="1548" height="1040" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326525424" />
+    <state x="82" y="0" width="1300" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587754032712" />
+    <state x="2012" y="-706" width="1736" height="856" key="DiffContextDialog" timestamp="1580902646879">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="-706" width="1736" height="856" key="DiffContextDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1580902646879" />
+    <state x="2610" y="-579" key="FileChooserDialogImpl" timestamp="1586532862408">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="129" key="FileChooserDialogImpl/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581433928873" />
+    <state x="2610" y="-455" key="FileChooserDialogImpl/0.0.1536.824/1920.-699.1920.1160@1920.-699.1920.1160" timestamp="1581413392802" />
+    <state x="2610" y="-579" key="FileChooserDialogImpl/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586532862408" />
+    <state x="552" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585844594027" />
+    <state x="2492" y="-676" key="RollbackChangesDialog" timestamp="1587652180112">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586343809077" />
+    <state x="2492" y="-676" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587652180112" />
+    <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587589389429" />
+    <state x="242" y="0" key="SettingsEditor" timestamp="1589287721326">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1459" y="-519" key="SettingsEditor/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580742202312" />
+    <state x="242" y="0" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287721326" />
+    <state x="2351" y="-682" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587644393193" />
+    <state x="242" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589138603488" />
+    <state x="410" y="280" key="SimpleOpenTaskDialog" timestamp="1586880304894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1408" y="279" key="SimpleOpenTaskDialog/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581429843788" />
+    <state x="410" y="280" key="SimpleOpenTaskDialog/0.0.1536.824@0.0.1536.824" timestamp="1586880304894" />
+    <state x="405" y="284" key="VCS.EditChangelistDialog" timestamp="1586880367442">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="405" y="284" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1586880367442" />
+    <state x="448" y="121" key="Vcs.Push.Dialog.v2" timestamp="1589288723780">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1360" y="190" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430064542" />
+    <state x="-1360" y="-389" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580743172182" />
+    <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288723780" />
+    <state x="2480" y="-525" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326527527" />
+    <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587754034840" />
+    <state x="2695" y="-500" key="chooseDestDirectoryDialog" timestamp="1587048794188">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="2695" y="-500" key="chooseDestDirectoryDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587048794188" />
+    <state x="2012" y="-706" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586432077630">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="-706" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586432077630" />
+    <state x="2530" y="-663" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588325370171">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="2530" y="-663" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588325370171" />
+    <state x="2112" y="-708" width="1558" height="827" key="find.popup" timestamp="1586952709689">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="-1728" y="-15" width="1558" height="1038" key="find.popup/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581429902668" />
+    <state x="2112" y="-708" width="1558" height="827" key="find.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586952709689" />
+    <state x="2452" y="-162" key="run.anything.popup" timestamp="1587648844466">
+      <screen x="1920" y="-798" width="1920" height="1040" />
+    </state>
+    <state x="426" y="504" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1585990053811" />
+    <state x="2452" y="-162" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587648844466" />
+    <state x="484" y="185" width="840" height="475" key="search.everywhere.popup" timestamp="1589287848551">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1315" y="146" width="840" height="669" key="search.everywhere.popup/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430289407" />
+    <state x="-1315" y="-433" width="840" height="669" key="search.everywhere.popup/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580732512346" />
+    <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287848551" />
+    <state x="2525" y="-564" width="840" height="599" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588433683723" />
+    <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589140045046" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
