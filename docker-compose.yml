@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./.dockerdev/Dockerfile
       args:
-        ADOPTOPEN_JDK_VERSION: '13-jdk-hotspot'
+        ADOPTOPEN_JDK_VERSION: '14-jdk-hotspot'
         NODE_MAJOR: '13'
         YARN_VERSION: '1.22.0'
     image: aventine-reframe-dev:0.1.1
