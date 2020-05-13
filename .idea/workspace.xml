@@ -922,7 +922,6 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="-1818" y="-115" key="CommitChangelistDialog2/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430060580" />
-    <state x="-1818" y="-694" width="1511" height="1160" key="CommitChangelistDialog2/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580743168156" />
     <state x="0" y="0" width="1536" height="824" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288720430" />
     <state x="2022" y="-798" width="1548" height="1040" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326525424" />
     <state x="82" y="0" width="1300" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587754032712" />
@@ -958,6 +957,14 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1063" height="881" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750174" />
+    <state x="1968" y="130" key="MergeDialog" timestamp="1589385322819">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1968" y="130" key="MergeDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589385322819" />
+    <state x="2350" y="265" key="MultipleFileMergeDialog" timestamp="1589385322865">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2350" y="265" key="MultipleFileMergeDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589385322865" />
     <state x="2492" y="-676" key="RollbackChangesDialog" timestamp="1587652180112">
       <screen x="1920" y="-798" width="1920" height="1040" />
     </state>
@@ -984,7 +991,6 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="-1360" y="190" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430064542" />
-    <state x="-1360" y="-389" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580743172182" />
     <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288723780" />
     <state x="2480" y="-525" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326527527" />
     <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587754034840" />
