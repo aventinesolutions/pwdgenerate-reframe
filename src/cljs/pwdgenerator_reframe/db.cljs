@@ -66,4 +66,5 @@
    :value      (generate-pw defaults)
    :show?      true
    :params     defaults
-   :field-defs form-field-defs})
+   :field-defs form-field-defs
+   :user       nil})

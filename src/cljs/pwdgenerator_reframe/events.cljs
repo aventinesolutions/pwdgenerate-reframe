@@ -1,7 +1,8 @@
 (ns pwdgenerator-reframe.events
   (:require
-    [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
+    [firebase.core :refer [init]]
+    [firebase.auth :as auth]
     [pwdgenerator-reframe.db :as db :refer [defaults]]
     [pwdgenerator-reframe.domain :refer [generate-pw]]))
 
@@ -39,3 +40,11 @@
   ::show?
   (fn [db [_ show?]]
     (assoc db :show? show?)))
+
+(re-frame/reg-event-db
+  ::firebase-login
+  (fn [db [_ [email password]]]
+    (do
+      (init {})
+      (auth/email-sign-in {:keys [email password]})
+      (assoc db :user (auth/current-user)))))
