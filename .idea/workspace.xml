@@ -1,7 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: remove the &quot;margin left&quot; styles from the form&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <list default="true" id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: remove the &quot;margin left&quot; styles from the form&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__args4j_2_0_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__binaryage_env_config_0_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cider_piggieback_0_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clj_stacktrace_0_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cljsjs_firebase_5_7_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cljsjs_react_16_9_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cljsjs_react_dom_16_9_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cljsjs_react_dom_server_16_9_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clout_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_andrewmcveigh_cljs_time_0_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_bhauman_cljs_test_display_0_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cemerick_clojurescript_test_0_2_3_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_transit_clj_0_8_309.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_transit_cljs_0_8_256.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_transit_java_0_8_332.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_transit_js_0_8_846.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_degel_iron_0_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_degel_re_frame_firebase_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_code_findbugs_jsr305_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_code_gson_gson_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_elemental2_elemental2_core_1_0_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_errorprone_error_prone_annotations_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_guava_guava_25_1_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_javascript_closure_compiler_externs_v20191027.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_javascript_closure_compiler_unshaded_v20191027.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_jsinterop_base_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_jsinterop_jsinterop_annotations_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_protobuf_protobuf_java_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_re2j_re2j_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_wsscode_pathom_2_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_wsscode_spec_inspec_1_0_0_alpha2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_fileupload_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_equality_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_random_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__edn_query_language_eql_0_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__expound_0_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__fipp_0_6_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__hawk_0_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__hiccup_1_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__instaparse_1_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_undertow_undertow_core_2_0_25_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__medley_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__net_cgrand_macrovich_0_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__net_incongru_watchservice_barbary_watchservice_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__net_java_dev_jna_jna_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ns_tracker_0_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_checkerframework_checker_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_async_0_6_532.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_cache_0_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_memoize_0_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_rrb_vector_0_0_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_data_json_0_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_data_priority_map_0_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_google_closure_library_0_0_20191016_6ae1f72f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_google_closure_library_third_party_0_0_20191016_6ae1f72f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_java_classpath_0_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_2_176.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_test_check_0_10_0_alpha3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_0_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_jvm_0_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_cli_0_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_logging_0_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_macro_0_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_namespace_0_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_reader_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_http_9_4_12_v20180830.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_io_9_4_12_v20180830.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_server_9_4_12_v20180830.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_util_9_4_12_v20180830.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_jboss_logging_jboss_logging_3_4_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_jboss_threads_jboss_threads_2_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_jboss_xnio_xnio_api_3_7_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_jboss_xnio_xnio_nio_3_7_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_mozilla_rhino_1_7R5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_msgpack_msgpack_0_6_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_ow2_asm_asm_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_wildfly_client_wildfly_client_config_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_wildfly_common_wildfly_common_1_3_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_com_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frisk_shell_0_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_codec_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_core_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_devel_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_jetty_adapter_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_servlet_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__spec_coerce_1_0_0_alpha6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__thheller_shadow_client_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__thheller_shadow_cljsjs_0_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__thheller_shadow_util_0_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
     <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
     <list id="4929e027-bbb7-489b-8fb1-ca813f03ff89" name="#167342318 As a Security Auditor, I would like to restrict the MIME types of files that are uploa..." comment=":bear: :construction: add some console logging :confused: &#10;&#10;#167342318 As a Security Auditor, I would like to restrict the MIME types &#10;of files that are uploaded to prevent viruses and other malware from &#10;getting to the backend." />
@@ -17,6 +119,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -134,7 +241,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv&#10;Clojure&#10;Markdown&#10;Bash" />
     <property name="editorconfig.notification" value="../.editorconfig&#10;" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/public/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -150,7 +257,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.417734" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="start.from.branch" value="develop" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -236,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="1" Folder0="C:\Users\matth\.IntelliJIdea2019.3\config\scratches" CustomDictionaries="1" CustomDictionary0="$APPLICATION_CONFIG_DIR$/scratches/dutch.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="1" Folder0="$APPLICATION_CONFIG_DIR$/scratches" CustomDictionaries="1" CustomDictionary0="$APPLICATION_CONFIG_DIR$/scratches/dutch.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
     <configuration />
@@ -576,6 +683,8 @@
       <workItem from="1589138551491" duration="57000" />
       <workItem from="1589138664139" duration="1946000" />
       <workItem from="1589287640423" duration="1683000" />
+      <workItem from="1589380706990" duration="1127000" />
+      <workItem from="1589381900468" duration="1106000" />
     </task>
     <task id="LOCAL-00084" summary=":bear: :construction: add the Firebase client to the project dependencies&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
       <created>1586880626589</created>
@@ -902,19 +1011,35 @@
     <state x="2610" y="-455" key="FileChooserDialogImpl/0.0.1536.824/1920.-699.1920.1160@1920.-699.1920.1160" timestamp="1581413392802" />
     <state x="2610" y="-579" key="FileChooserDialogImpl/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586532862408" />
     <state x="552" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585844594027" />
+    <state width="1063" height="881" key="GridCell.Tab.0.bottom" timestamp="1589382750175">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1063" height="881" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750175" />
+    <state width="1063" height="881" key="GridCell.Tab.0.center" timestamp="1589382750174">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1063" height="881" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750174" />
+    <state width="1063" height="881" key="GridCell.Tab.0.left" timestamp="1589382750173">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1063" height="881" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750173" />
+    <state width="1063" height="881" key="GridCell.Tab.0.right" timestamp="1589382750174">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1063" height="881" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750174" />
     <state x="2492" y="-676" key="RollbackChangesDialog" timestamp="1587652180112">
       <screen x="1920" y="-798" width="1920" height="1040" />
     </state>
     <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586343809077" />
     <state x="2492" y="-676" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587652180112" />
     <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587589389429" />
-    <state x="242" y="0" key="SettingsEditor" timestamp="1589287721326">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1983" y="23" key="SettingsEditor" timestamp="1589382486587">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1459" y="-519" key="SettingsEditor/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580742202312" />
     <state x="242" y="0" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287721326" />
     <state x="2351" y="-682" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587644393193" />
     <state x="242" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589138603488" />
+    <state x="1983" y="23" key="SettingsEditor/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382486587" />
     <state x="410" y="280" key="SimpleOpenTaskDialog" timestamp="1586880304894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -954,14 +1079,14 @@
     </state>
     <state x="426" y="504" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1585990053811" />
     <state x="2452" y="-162" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587648844466" />
-    <state x="484" y="185" width="840" height="475" key="search.everywhere.popup" timestamp="1589287848551">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2285" y="260" width="1050" height="610" key="search.everywhere.popup" timestamp="1589382323406">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="-1315" y="146" width="840" height="669" key="search.everywhere.popup/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430289407" />
-    <state x="-1315" y="-433" width="840" height="669" key="search.everywhere.popup/0.0.1536.824/-1920.-694.1920.1160@-1920.-694.1920.1160" timestamp="1580732512346" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287848551" />
     <state x="2525" y="-564" width="840" height="599" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588433683723" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589140045046" />
+    <state x="2285" y="260" width="1050" height="610" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382323406" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
