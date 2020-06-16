@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: upgrade Adopt Open JDK to 14&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__fbielejec_cljs_firebase_client_0_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/css/site.css" afterDir="false" />
     </list>
     <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
     <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
@@ -247,16 +250,6 @@
                 <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
                 <item name="pwdgenerate-reframe" type="9fbbdea:ServiceModel$ServiceNode" />
                 <item name="runner" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="Containers" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="Images" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -586,6 +579,9 @@
       <workItem from="1589287640423" duration="1683000" />
       <workItem from="1589380706990" duration="1127000" />
       <workItem from="1589381900468" duration="3053000" />
+      <workItem from="1589385212195" duration="2275000" />
+      <workItem from="1590588621993" duration="1385000" />
+      <workItem from="1590653180980" duration="431000" />
     </task>
     <task id="LOCAL-00084" summary=":bear: :construction: add the Firebase client to the project dependencies&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
       <created>1586880626589</created>
@@ -921,15 +917,10 @@
     <state x="1680" y="23" width="1654" height="1033" key="CommitChangelistDialog2" timestamp="1589384239083">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1818" y="-115" key="CommitChangelistDialog2/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430060580" />
     <state x="0" y="0" width="1536" height="824" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288720430" />
     <state x="2022" y="-798" width="1548" height="1040" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326525424" />
     <state x="82" y="0" width="1300" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587754032712" />
     <state x="1680" y="23" width="1654" height="1033" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589384239083" />
-    <state x="2012" y="-706" width="1736" height="856" key="DiffContextDialog" timestamp="1580902646879">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="2012" y="-706" width="1736" height="856" key="DiffContextDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1580902646879" />
     <state x="2498" y="434" key="DockerComposeFileDialog" timestamp="1589383995068">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
@@ -937,8 +928,6 @@
     <state x="2610" y="-579" key="FileChooserDialogImpl" timestamp="1586532862408">
       <screen x="1920" y="-798" width="1920" height="1040" />
     </state>
-    <state x="-1230" y="129" key="FileChooserDialogImpl/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581433928873" />
-    <state x="2610" y="-455" key="FileChooserDialogImpl/0.0.1536.824/1920.-699.1920.1160@1920.-699.1920.1160" timestamp="1581413392802" />
     <state x="2610" y="-579" key="FileChooserDialogImpl/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586532862408" />
     <state x="552" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585844594027" />
     <state width="1063" height="881" key="GridCell.Tab.0.bottom" timestamp="1589382750175">
@@ -971,17 +960,17 @@
     <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586343809077" />
     <state x="2492" y="-676" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587652180112" />
     <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587589389429" />
-    <state x="1983" y="23" key="SettingsEditor" timestamp="1589382486587">
-      <screen x="1680" y="23" width="1920" height="1057" />
+    <state x="1983" y="-237" key="SettingsEditor" timestamp="1590588856524">
+      <screen x="1680" y="-237" width="1920" height="1057" />
     </state>
     <state x="242" y="0" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287721326" />
     <state x="2351" y="-682" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587644393193" />
     <state x="242" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589138603488" />
+    <state x="1983" y="-237" key="SettingsEditor/1680.-237.1920.1057/-1920.-343.1920.1177/0.23.1680.1027@1680.-237.1920.1057" timestamp="1590588856524" />
     <state x="1983" y="23" key="SettingsEditor/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382486587" />
     <state x="410" y="280" key="SimpleOpenTaskDialog" timestamp="1586880304894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-1408" y="279" key="SimpleOpenTaskDialog/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581429843788" />
     <state x="410" y="280" key="SimpleOpenTaskDialog/0.0.1536.824@0.0.1536.824" timestamp="1586880304894" />
     <state x="405" y="284" key="VCS.EditChangelistDialog" timestamp="1586880367442">
       <screen x="0" y="0" width="1536" height="824" />
@@ -990,7 +979,6 @@
     <state x="2240" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589384242844">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1360" y="190" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430064542" />
     <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288723780" />
     <state x="2480" y="-525" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326527527" />
     <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587754034840" />
@@ -1010,20 +998,19 @@
     <state x="2112" y="-708" width="1558" height="827" key="find.popup" timestamp="1586952709689">
       <screen x="1920" y="-798" width="1920" height="1040" />
     </state>
-    <state x="-1728" y="-15" width="1558" height="1038" key="find.popup/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581429902668" />
     <state x="2112" y="-708" width="1558" height="827" key="find.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586952709689" />
     <state x="2452" y="-162" key="run.anything.popup" timestamp="1587648844466">
       <screen x="1920" y="-798" width="1920" height="1040" />
     </state>
     <state x="426" y="504" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1585990053811" />
     <state x="2452" y="-162" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587648844466" />
-    <state x="2285" y="260" width="1050" height="610" key="search.everywhere.popup" timestamp="1589383577627">
-      <screen x="1680" y="23" width="1920" height="1057" />
+    <state x="2285" y="0" width="1050" height="610" key="search.everywhere.popup" timestamp="1590588885337">
+      <screen x="1680" y="-237" width="1920" height="1057" />
     </state>
-    <state x="-1315" y="146" width="840" height="669" key="search.everywhere.popup/0.0.1536.824/-1920.-115.1920.1160@-1920.-115.1920.1160" timestamp="1581430289407" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287848551" />
     <state x="2525" y="-564" width="840" height="599" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588433683723" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589140045046" />
+    <state x="2285" y="0" width="1050" height="610" key="search.everywhere.popup/1680.-237.1920.1057/-1920.-343.1920.1177/0.23.1680.1027@1680.-237.1920.1057" timestamp="1590588885337" />
     <state x="2285" y="260" width="1050" height="610" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589383577627" />
   </component>
   <component name="XDebuggerManager">
