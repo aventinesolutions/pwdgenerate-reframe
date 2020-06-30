@@ -62,8 +62,10 @@
                         :numeric?  true}})
 
 (def default-db
-  {:name       "Password Generator in Re-frame"
-   :value      (generate-pw defaults)
-   :show?      true
-   :params     defaults
-   :field-defs form-field-defs})
+  {:name         "Password Generator in Re-frame"
+   :value        (generate-pw defaults)
+   :show?        true
+   :params       defaults
+   :field-defs   form-field-defs
+   :user         nil
+   :personalized []})

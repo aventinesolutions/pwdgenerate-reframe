@@ -4,13 +4,14 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "karma": "4.4.1",
+    "karma": "^5.0.5",
     "karma-chrome-launcher": "3.1.0",
     "karma-cljs-test": "0.1.0",
     "karma-junit-reporter": "^2.0.1",
     "shadow-cljs": "2.8.83"
   },
   "dependencies": {
+    "firebase": "^7.14.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "uikit": "^3.3.7"

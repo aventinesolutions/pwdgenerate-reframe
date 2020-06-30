@@ -1,5 +1,5 @@
 # Aventine Solutions Password Generator
-`pwdgenerator-reframe` Version 0.1.2
+`pwdgenerator-reframe` Version 0.1.4
 
 A [re-frame](https://github.com/day8/re-frame) application designed to generate passwords, Aventine style.
 
@@ -290,7 +290,7 @@ If `port` is not set, the server will run on port 3000 by default.
     ```sh
     git push heroku master
     ```
-   
+
 #### Using Docker for Development
 For Windows 10 or MacOS, Docker Desktop is required.  For Linux, use the package distribution to install `docker` and
 `docker-compose`.
@@ -316,4 +316,18 @@ Once the backend server is up, the REPL can be run like this:
 Tests can be run with Karma like this:
 ```shell
 % winpty docker-compose run runner lein karma
+```
+
+### Firebase Configuration
+
+The following environment variables must be set for Firebase to initialize correctly:
+```shell
+FIREBASE_API_KEY
+FIREBASE_AUTH_DOMAIN
+FIREBASE_DATABASE_URL
+FIREBASE_PROJECT_ID
+FIREBASE_STORAGE_BUCKET
+FIREBASE_MESSAGING_SENDER_ID
+FIREBASE_APP_ID
+FIREBASE_MEASUREMENT_ID
 ```

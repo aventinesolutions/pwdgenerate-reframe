@@ -1,27 +1,35 @@
 {:lein   true
 
- :nrepl {:port 8777}
+ :nrepl  {:port 8777}
 
  :builds {:app {:target          :browser
                 :output-dir      "resources/public/js/compiled"
                 :asset-path      "/js/compiled"
-                :modules         {:app {:init-fn pwdgenerator-reframe.core/init
+                :modules         {:app {:init-fn  pwdgenerator-reframe.core/init
                                         :preloads [devtools.preload
                                                    re-frisk.preload]}}
+                :closure-defines {pwdgenerator-reframe.firebase/API_KEY             #shadow/env "FIREBASE_API_KEY"
+                                  pwdgenerator-reframe.firebase/AUTH_DOMAIN         #shadow/env "FIREBASE_AUTH_DOMAIN"
+                                  pwdgenerator-reframe.firebase/DATABASE_URL        #shadow/env "FIREBASE_DATABASE_URL"
+                                  pwdgenerator-reframe.firebase/PROJECT_ID          #shadow/env "FIREBASE_PROJECT_ID"
+                                  pwdgenerator-reframe.firebase/STORAGE_BUCKET      #shadow/env "FIREBASE_STORAGE_BUCKET"
+                                  pwdgenerator-reframe.firebase/MESSAGING_SENDER_ID #shadow/env "FIREBASE_MESSAGING_SENDER_ID"
+                                  pwdgenerator-reframe.firebase/APP_ID              #shadow/env "FIREBASE_APP_ID"
+                                  pwdgenerator-reframe.firebase/MEASUREMENT_ID      #shadow/env "FIREBASE_MEASUREMENT_ID"}
                 :devtools        {:http-root    "resources/public"
                                   :http-port    8280
                                   :http-handler pwdgenerator-reframe.handler/dev-handler
                                   }}
 
           :browser-test
-          {:target :browser-test
-           :ns-regexp "-test$"
-           :runner-ns shadow.test.browser
-           :test-dir "target/browser-test"
-           :devtools {:http-root "target/browser-test"
-                      :http-port 8290}}
+               {:target    :browser-test
+                :ns-regexp "-test$"
+                :runner-ns shadow.test.browser
+                :test-dir  "target/browser-test"
+                :devtools  {:http-root "target/browser-test"
+                            :http-port 8290}}
 
           :karma-test
-          {:target :karma
-           :ns-regexp "-test$"
-           :output-to "target/karma-test.js"}}}
+               {:target    :karma
+                :ns-regexp "-test$"
+                :output-to "target/karma-test.js"}}}

@@ -3,7 +3,8 @@
     [cljs.pprint :refer [pprint]]
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.db :as db :refer [defaults]]
-    [pwdgenerator-reframe.domain :refer [generate-pw]]))
+    [pwdgenerator-reframe.domain :refer [generate-pw]]
+    [com.degel.re-frame-firebase :as firebase]))
 
 (re-frame/reg-event-db
   ::initialize-db
@@ -39,3 +40,18 @@
   ::show?
   (fn [db [_ show?]]
     (assoc db :show? show?)))
+
+(re-frame/reg-event-db
+  ::user
+  (fn [db [_ user]]
+    (assoc db :user user)))
+
+(re-frame/reg-event-fx
+  ::sign-in-by-email
+  (fn [_ [_ [email password]]]
+    {:firebase/email-sign-in {:email email :password password}}))
+
+(re-frame/reg-event-fx
+  ::sign-out
+  (fn [_ _]
+    {:firebase/sign-out nil}))
