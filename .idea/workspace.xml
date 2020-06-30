@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: upgrade Adopt Open JDK to 14&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
-      <change beforePath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="" />
     <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
     <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
     <list id="4929e027-bbb7-489b-8fb1-ca813f03ff89" name="#167342318 As a Security Auditor, I would like to restrict the MIME types of files that are uploa..." comment=":bear: :construction: add some console logging :confused: &#10;&#10;#167342318 As a Security Auditor, I would like to restrict the MIME types &#10;of files that are uploaded to prevent viruses and other malware from &#10;getting to the backend." />
     <list id="c246a231-e57a-4348-acf5-4573ece91070" name="#170867407 fit the existing code into the newer Reframe templatee" comment=":bear: :construction: add a &quot;reset&quot; action &#10;&#10;#170867407 As a Developer, I want to fit the existing code into the newer Reframe template &#10;to keep the application maintainable." />
     <list id="ca5136ef-1ad0-4e5f-83ad-19d0578c37c7" name="#172164715 As a Developer, I want to be able to develop on containers for maximum flexibility." comment=":bear: :construction: don't need this &quot;settings&quot; file&#10;&#10;#172164715 As a Developer, I want to be able to develop on containers for maximum flexibility." />
-    <list id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="" />
+    <list id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: upgrade &quot;HTTP proxy&quot; which had a security flaw&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="e77cb756-d6b5-4c69-bf44-30841a72849c" name="Revert &quot;:bear: :construction: some dependency updates&quot;" comment="Revert &quot;:bear: :construction: some dependency updates&quot;&#10;&#10;This reverts commit f85fb629" />
     <list id="01d4be0a-d07c-4447-bac0-667bc5fc2a97" name="VTI-369 Stekkie 2.0 Bug Intermediair portal " comment=":bear: :construction: add &quot;mortgage calculation&quot; to the document types&#10;&#10;VTI-369 Stekkie 2.0 Bug Intermediair portal" />
     <list id="2ffc0782-7ebf-479c-a858-8018df3014cd" name="VTI-394 Nieuwe versie (3.4) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediares" comment=":bear: :construction: new version of Excel calculator tool&#10;&#10;VTI-394 Nieuwe versie (3.4) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediares" />
@@ -36,6 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="develop" />
@@ -220,7 +219,7 @@
     </columns>
   </component>
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <branch name="develop" repository="D:\workspace\stekkie-frontend" />
       <branch name="feature/VTI-401_Windows_build_and_documentation" repository="D:\workspace\stekkie-frontend" original="true" />
       <branch name="feature/VTI-407_nieuwe_versie_3.5_rekentool" repository="D:\workspace\stekkie-frontend" original="true" />
@@ -229,7 +228,7 @@
       <created>1562767651662</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586880304839</updated>
+      <updated>1593522081524</updated>
       <workItem from="1562767652885" duration="4937000" />
       <workItem from="1562830648371" duration="1932000" />
       <workItem from="1562853644264" duration="2100000" />
@@ -316,6 +315,7 @@
       <workItem from="1586544124749" duration="5626000" />
       <workItem from="1586594972771" duration="21000" />
       <workItem from="1586878961075" duration="1341000" />
+      <workItem from="1593522082375" duration="3000" />
     </task>
     <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
@@ -330,13 +330,6 @@
       <updated>1586438455967</updated>
       <workItem from="1586120032216" duration="12959000" />
       <workItem from="1586344324727" duration="25567000" />
-    </task>
-    <task id="LOCAL-00062" summary=":bear: :construction: styling :two:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
-      <created>1586185836691</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1586185836691</updated>
     </task>
     <task id="LOCAL-00063" summary=":bear: :construction: styling :three:&#10;&#10;#153809837 As a User I want a beautful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable.">
       <created>1586186012955</created>
@@ -485,7 +478,7 @@
       <option name="project" value="LOCAL" />
       <updated>1586879301794</updated>
     </task>
-    <task active="true" id="2137954-172315027" summary="As a User, I want to be able to store my personalized params so that I can use then later.">
+    <task id="2137954-172315027" summary="As a User, I want to be able to store my personalized params so that I can use then later.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
       <branch name="feature/#172315027_store_personalized_params" repository="D:\workspace\pwdgenerate-reframe" />
       <changelist id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction:&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I can use then later." />
@@ -495,7 +488,7 @@
       <option name="number" value="172315027" />
       <option name="presentableId" value="#172315027" />
       <option name="project" value="2137954" />
-      <updated>1586880304839</updated>
+      <updated>1593522081524</updated>
       <workItem from="1586880305675" duration="12992000" />
       <workItem from="1586976034363" duration="679000" />
       <workItem from="1586976743827" duration="5261000" />
@@ -519,7 +512,7 @@
       <workItem from="1589385212195" duration="2275000" />
       <workItem from="1590588621993" duration="1385000" />
       <workItem from="1590653180980" duration="431000" />
-      <workItem from="1593512888795" duration="2624000" />
+      <workItem from="1593512888795" duration="4177000" />
     </task>
     <task id="LOCAL-00084" summary=":bear: :construction: add the Firebase client to the project dependencies&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
       <created>1586880626589</created>
@@ -696,7 +689,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589384239546</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary=":bear: :construction: upgrade &quot;HTTP proxy&quot; which had a security flaw&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
+      <created>1593516374181</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1593516374183</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <option name="branchNameFormat" value="feature/${id}_${summary}" />
     <servers>
       <JIRA shared="true" url="https://projectvigi.atlassian.net">
@@ -806,7 +806,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
-    <MESSAGE value=":bear: :construction: add card and component for saving personalized params&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: add the login form to the &quot;personalized params&quot; card&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: failed :red_circle: attempt to use https://github.com/fbielejec/cljs-firebase-client&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: putting &quot;credentials&quot; into state&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
@@ -831,7 +830,8 @@
     <MESSAGE value=":bear: :construction: more synchronization of the IntelliJ project&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: increase width of word separator input&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: upgrade Adopt Open JDK to 14&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
-    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: upgrade Adopt Open JDK to 14&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: upgrade &quot;HTTP proxy&quot; which had a security flaw&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: upgrade &quot;HTTP proxy&quot; which had a security flaw&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2104" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589384043620">
@@ -852,9 +852,10 @@
     <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586344294981" />
     <state x="2560" y="-550" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587643716870" />
     <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1587752005543" />
-    <state x="1680" y="23" width="1654" height="1033" key="CommitChangelistDialog2" timestamp="1589384239083">
-      <screen x="1680" y="23" width="1920" height="1057" />
+    <state x="0" y="0" width="1654" height="1033" key="CommitChangelistDialog2" timestamp="1593516370434">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1593516370434" />
     <state x="0" y="0" width="1536" height="824" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288720430" />
     <state x="2022" y="-798" width="1548" height="1040" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326525424" />
     <state x="82" y="0" width="1300" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587754032712" />
@@ -915,9 +916,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="405" y="284" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1586880367442" />
-    <state x="2240" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589384242844">
-      <screen x="1680" y="23" width="1920" height="1057" />
+    <state x="399" y="128" key="Vcs.Push.Dialog.v2" timestamp="1593516377731">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
+    <state x="399" y="128" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1593516377731" />
     <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288723780" />
     <state x="2480" y="-525" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326527527" />
     <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587754034840" />
