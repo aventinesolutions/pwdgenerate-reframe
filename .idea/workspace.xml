@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: upgrade Adopt Open JDK to 14&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__fbielejec_cljs_firebase_client_0_0_9.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
     <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
@@ -24,44 +23,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="stekkie-frontend" />
-    <favorites_list name="ApplicationDocuments">
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailBindingOfferDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/render-prop-components/Upload/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/render-prop-components/Upload/withUpload.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-    </favorites_list>
-    <favorites_list name="Upload Application Documents">
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailBindingOfferDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailNonBindingOfferDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenCommonDocument/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenDocumentsSectionBox/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/render-prop-components/Upload/withUpload.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/common/src/components/DocumentError/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenStatusSectionBox/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/ApplicationDetailScreen/components/ApplicationDetailScreenStatusSectionBox/index.scss" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-    </favorites_list>
-    <favorites_list name="Login">
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/screens/LoginScreen/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/common/lib/locale/nl/messages.json" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/common/locale/en/messages.json" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-    </favorites_list>
-    <favorites_list name="Docker Sync">
-      <favorite_root url="file://$PROJECT_DIR$/docker-compose-sync.yml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/docker-sync.yml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-    </favorites_list>
-    <favorites_list name="Owner Income">
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/components/OwnerDetailSectionBox/components/OwnerDetailSectionBoxIncome/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/packages/intermediary/src/components/OwnerDetailSectionBox/components/OwnerDetailSectionBoxIncome/OwnerDetailSectionBoxIncomeFragment.graphql" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-    </favorites_list>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -152,7 +117,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\matth\Desktop\workspace\pwdgenerate-reframe\node_modules\eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -230,35 +195,7 @@
       <item itemvalue="Node.js.Intermediary Lint with fixes" />
     </list>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="pwdgenerate-reframe" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="pwdgenerate-reframe" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="runner" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="1" Folder0="$APPLICATION_CONFIG_DIR$/scratches" CustomDictionaries="1" CustomDictionary0="$APPLICATION_CONFIG_DIR$/scratches/dutch.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="1" Folder0="C:\Users\matth\AppData\Roaming\JetBrains\IntelliJIdea2020.1\scratches" CustomDictionaries="1" CustomDictionary0="$APPLICATION_CONFIG_DIR$/scratches/dutch.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
     <configuration />
@@ -582,6 +519,7 @@
       <workItem from="1589385212195" duration="2275000" />
       <workItem from="1590588621993" duration="1385000" />
       <workItem from="1590653180980" duration="431000" />
+      <workItem from="1593512888795" duration="2624000" />
     </task>
     <task id="LOCAL-00084" summary=":bear: :construction: add the Firebase client to the project dependencies&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
       <created>1586880626589</created>
@@ -782,7 +720,7 @@
     </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -811,7 +749,6 @@
                   </entry>
                 </map>
               </option>
-              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -862,6 +799,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <confirmRemoveEmptyChangelist value="1" />
@@ -960,9 +898,10 @@
     <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586343809077" />
     <state x="2492" y="-676" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587652180112" />
     <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587589389429" />
-    <state x="1983" y="-237" key="SettingsEditor" timestamp="1590588856524">
-      <screen x="1680" y="-237" width="1920" height="1057" />
+    <state x="125" y="82" key="SettingsEditor" timestamp="1593513079664">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
+    <state x="125" y="82" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1593513079664" />
     <state x="242" y="0" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287721326" />
     <state x="2351" y="-682" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587644393193" />
     <state x="242" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589138603488" />
@@ -1004,9 +943,10 @@
     </state>
     <state x="426" y="504" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1585990053811" />
     <state x="2452" y="-162" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587648844466" />
-    <state x="2285" y="0" width="1050" height="610" key="search.everywhere.popup" timestamp="1590588885337">
-      <screen x="1680" y="-237" width="1920" height="1057" />
+    <state x="433" y="198" width="749" height="504" key="search.everywhere.popup" timestamp="1593513711765">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
+    <state x="433" y="198" width="749" height="504" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1593513711765" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287848551" />
     <state x="2525" y="-564" width="840" height="599" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588433683723" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589140045046" />
