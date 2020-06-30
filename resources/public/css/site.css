@@ -8,3 +8,6 @@ body {
 #word-separator-input input {
   min-width: 5em;
 }
+fieldset {
+  border-width: 1px;
+}

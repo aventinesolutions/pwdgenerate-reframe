@@ -1,19 +1,16 @@
 (ns pwdgenerator-reframe.views
   (:require
+    [reagent.core :refer [atom]]
     [re-frame.core :as re-frame]
     [pwdgenerator-reframe.domain :refer [password-stats]]
     [pwdgenerator-reframe.subs :as subs]
     [pwdgenerator-reframe.events :as events]
-    [uikit]))
+    [pwdgenerator-reframe.components.save-personalized-params :refer [save-personalized-params]]
+    [pwdgenerator-reframe.styles :refer [card-classes container-classes]]
+    [uikit]
+    ["uikit/dist/js/uikit-icons" :as Icons]))
 
 ;; home
-
-(def card-classes [:uk-padding-small :uk-margin-small
-                   :uk-card :uk-card-body :uk-card-default :uk-margin-left :uk-responsive-width
-                   :uk-box-shadow-medium :uk-box-shadow-hover-large])
-
-(def container-classes [:uk-margin-auto :uk-padding-small :uk-flex-center
-                        "uk-width-3-5@l" "uk-width-auto@s" :uk-background-default])
 
 (defn on-field-change [params field event]
   (re-frame/dispatch [::events/params (assoc params field (-> event .-target .-value))]))
@@ -43,7 +40,6 @@
         show? (re-frame/subscribe [::subs/show?])]
     (fn []
       (let [stats (for [f password-stats] (f @value))]
-
         [:form
          [:div {:id    :form-container "uk-grid" 1
                 :class container-classes}
@@ -69,7 +65,8 @@
                             (fn [event]
                               (do
                                 (.preventDefault event)
-                                (re-frame/dispatch [::events/generate])))} "Regenerate"]
+                                (re-frame/dispatch [::events/generate])))}
+            [:span.uk-icon {:data-uk-icon "icon: refresh"}] " Regenerate"]
            ^{:key "reset"}
            [:button {:id    :reset
                      :class [:uk-button "uk-width-1-5@m" :uk-button-small :uk-button-secondary
@@ -78,7 +75,8 @@
                             (fn [event]
                               (do
                                 (.preventDefault event)
-                                (re-frame/dispatch [::events/reset])))} "Reset"]
+                                (re-frame/dispatch [::events/reset])))}
+            [:span.uk-icon {:data-uk-icon "icon: history"}] " Reset"]
            ^{:key "copy"}
            [:button {:id    :copy
                      :class [:uk-button "uk-width-1-5@m" :uk-button-small :uk-button-danger
@@ -88,7 +86,8 @@
                               (do
                                 (.preventDefault event)
                                 (-> (.getElementById js/document "password-input") .select)
-                                (.execCommand js/document "copy")))} "Copy"]]
+                                (.execCommand js/document "copy")))}
+            [:span.uk-icon {:data-uk-icon "icon: copy"}] " Copy"]]
           ^{:key "show-password-input"}
           [:div {:id    "show-password-input"
                  :class card-classes}
@@ -109,7 +108,8 @@
                      :maxLength 3
                      :value     (:word_separator @params)
                      :on-change #(on-field-change @params :word_separator %)}]
-            " " (pr-str (:word_separator @params))]]]]))))
+            " " (pr-str (:word_separator @params))]]
+          [save-personalized-params]]]))))
 
 (defn home-panel []
   (let [name @(re-frame/subscribe [::subs/name])]
@@ -157,5 +157,6 @@
 
 (defn main-panel []
   (let [active-panel (re-frame/subscribe [::subs/active-panel])]
+    (.use uikit Icons)
     (.grid uikit (.getElementById js/document "form-container"))
     [show-panel @active-panel]))

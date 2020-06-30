@@ -10,7 +10,8 @@
                  [secretary "1.2.3"]
                  [compojure "1.6.1"]
                  [yogthos/config "1.1.7"]
-                 [ring "1.7.1"]]
+                 [ring "1.7.1"]
+                 [com.degel/re-frame-firebase "0.8.0"]]
 
   :plugins [
             [lein-less "1.7.5"]

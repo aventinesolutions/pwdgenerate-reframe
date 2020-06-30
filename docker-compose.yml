@@ -28,6 +28,14 @@ services:
       - HISTFILE=/shell_history/.zhistory
       - EDITOR=emacs
       - CHROME_BIN=chromium-browser
+      - FIREBASE_API_KEY
+      - FIREBASE_AUTH_DOMAIN
+      - FIREBASE_DATABASE_URL
+      - FIREBASE_PROJECT_ID
+      - FIREBASE_STORAGE_BUCKET
+      - FIREBASE_MESSAGING_SENDER_ID
+      - FIREBASE_APP_ID
+      - FIREBASE_MEASUREMENT_ID
 
   runner:
     <<: *backend
