@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:release" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: update workspace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/index.html" afterDir="false" />
+    </list>
     <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
     <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
     <list id="4929e027-bbb7-489b-8fb1-ca813f03ff89" name="#167342318 As a Security Auditor, I would like to restrict the MIME types of files that are uploa..." comment=":bear: :construction: add some console logging :confused: &#10;&#10;#167342318 As a Security Auditor, I would like to restrict the MIME types &#10;of files that are uploaded to prevent viruses and other malware from &#10;getting to the backend." />
     <list id="c246a231-e57a-4348-acf5-4573ece91070" name="#170867407 fit the existing code into the newer Reframe templatee" comment=":bear: :construction: add a &quot;reset&quot; action &#10;&#10;#170867407 As a Developer, I want to fit the existing code into the newer Reframe template &#10;to keep the application maintainable." />
     <list id="ca5136ef-1ad0-4e5f-83ad-19d0578c37c7" name="#172164715 As a Developer, I want to be able to develop on containers for maximum flexibility." comment=":bear: :construction: don't need this &quot;settings&quot; file&#10;&#10;#172164715 As a Developer, I want to be able to develop on containers for maximum flexibility." />
-    <list id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="" />
+    <list id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction: update workspace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <list id="e77cb756-d6b5-4c69-bf44-30841a72849c" name="Revert &quot;:bear: :construction: some dependency updates&quot;" comment="Revert &quot;:bear: :construction: some dependency updates&quot;&#10;&#10;This reverts commit f85fb629" />
     <list id="01d4be0a-d07c-4447-bac0-667bc5fc2a97" name="VTI-369 Stekkie 2.0 Bug Intermediair portal " comment=":bear: :construction: add &quot;mortgage calculation&quot; to the document types&#10;&#10;VTI-369 Stekkie 2.0 Bug Intermediair portal" />
     <list id="2ffc0782-7ebf-479c-a858-8018df3014cd" name="VTI-394 Nieuwe versie (3.4) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediares" comment=":bear: :construction: new version of Excel calculator tool&#10;&#10;VTI-394 Nieuwe versie (3.4) &quot;uitkerings en rentetabel&quot; Excel rekentool voor intermediares" />
@@ -217,7 +266,7 @@
     </columns>
   </component>
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <branch name="develop" repository="D:\workspace\stekkie-frontend" />
       <branch name="feature/VTI-401_Windows_build_and_documentation" repository="D:\workspace\stekkie-frontend" original="true" />
       <branch name="feature/VTI-407_nieuwe_versie_3.5_rekentool" repository="D:\workspace\stekkie-frontend" original="true" />
@@ -226,7 +275,7 @@
       <created>1562767651662</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593522109731</updated>
+      <updated>1593540146031</updated>
       <workItem from="1562767652885" duration="4937000" />
       <workItem from="1562830648371" duration="1932000" />
       <workItem from="1562853644264" duration="2100000" />
@@ -314,6 +363,7 @@
       <workItem from="1586594972771" duration="21000" />
       <workItem from="1586878961075" duration="1341000" />
       <workItem from="1593522082375" duration="28000" />
+      <workItem from="1593540146690" duration="108000" />
     </task>
     <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
@@ -469,7 +519,7 @@
       <option name="project" value="LOCAL" />
       <updated>1586879301794</updated>
     </task>
-    <task active="true" id="2137954-172315027" summary="As a User, I want to be able to store my personalized params so that I can use then later.">
+    <task id="2137954-172315027" summary="As a User, I want to be able to store my personalized params so that I can use then later.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
       <branch name="feature/#172315027_store_personalized_params" repository="D:\workspace\pwdgenerate-reframe" />
       <changelist id="0cbb3921-08ae-43ea-8cf9-d11448c05f85" name="#172315027 As a User, I want to be able to store my personalized params so that I can use then la..." comment=":bear: :construction:&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I can use then later." />
@@ -479,7 +529,7 @@
       <option name="number" value="172315027" />
       <option name="presentableId" value="#172315027" />
       <option name="project" value="2137954" />
-      <updated>1593522109731</updated>
+      <updated>1593540146031</updated>
       <workItem from="1586880305675" duration="12992000" />
       <workItem from="1586976034363" duration="679000" />
       <workItem from="1586976743827" duration="5261000" />
@@ -505,6 +555,7 @@
       <workItem from="1590653180980" duration="431000" />
       <workItem from="1593512888795" duration="4177000" />
       <workItem from="1593522110407" duration="29000" />
+      <workItem from="1593540143720" duration="3000" />
     </task>
     <task id="LOCAL-00084" summary=":bear: :construction: add the Firebase client to the project dependencies&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later.">
       <created>1586880626589</created>
@@ -742,7 +793,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/#172315027_store_personalized_params" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -758,6 +809,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="develop" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="feature/#172315027_store_personalized_params" />
@@ -776,11 +832,6 @@
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="feature/VTI-401_Windows_build_and_documentation" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="develop" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -944,10 +995,10 @@
     </state>
     <state x="426" y="504" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1585990053811" />
     <state x="2452" y="-162" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587648844466" />
-    <state x="433" y="198" width="749" height="504" key="search.everywhere.popup" timestamp="1593513711765">
+    <state x="436" y="201" width="749" height="504" key="search.everywhere.popup" timestamp="1593540250572">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="433" y="198" width="749" height="504" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1593513711765" />
+    <state x="436" y="201" width="749" height="504" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1593540250572" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287848551" />
     <state x="2525" y="-564" width="840" height="599" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588433683723" />
     <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589140045046" />
