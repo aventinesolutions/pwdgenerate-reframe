@@ -49,25 +49,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/azure-static-web-apps-zealous-river-0515b0d03.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__binaryage_devtools_0_9_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__binaryage_devtools_0_9_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clojure_complete_0_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__compojure_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__compojure_1_6_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__nrepl_0_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_10_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_10_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojurescript_1_10_597.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojurescript_1_10_597.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frame_0_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frame_0_11_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frisk_0_5_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frisk_0_5_4_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__reagent_0_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__reagent_0_9_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_1_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__secretary_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__secretary_1_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__thheller_shadow_cljs_2_8_83.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__thheller_shadow_cljs_2_8_83.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yogthos_config_1_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__yogthos_config_1_1_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" afterDir="false" />
+    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: reviving Re-Frame Application from 2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
     </list>
     <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
     <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
@@ -394,6 +377,7 @@
       <workItem from="1593540146690" duration="108000" />
       <workItem from="1740501687311" duration="394000" />
       <workItem from="1740502095366" duration="850000" />
+      <workItem from="1740503034250" duration="339000" />
     </task>
     <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
@@ -776,7 +760,7 @@
       <option name="project" value="LOCAL" />
       <updated>1593522128202</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <option name="localTasksCounter" value="112" />
     <option name="branchNameFormat" value="feature/${id}_${summary}" />
     <servers>
       <JIRA shared="true" url="https://projectvigi.atlassian.net">
@@ -885,7 +869,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
-    <MESSAGE value=":bear: :construction: failed :red_circle: attempt to use https://github.com/fbielejec/cljs-firebase-client&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: putting &quot;credentials&quot; into state&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: refactoring Firebase login&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: try &quot;dispatch sync&quot; for login&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
@@ -910,7 +893,8 @@
     <MESSAGE value=":bear: :construction: upgrade Adopt Open JDK to 14&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: upgrade &quot;HTTP proxy&quot; which had a security flaw&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: update workspace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
-    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: update workspace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
+    <MESSAGE value=":bear: :construction: reviving Re-Frame Application from 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: reviving Re-Frame Application from 2020" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
