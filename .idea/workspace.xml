@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -47,9 +50,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/azure-static-web-apps-zealous-river-0515b0d03.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__binaryage_devtools_0_9_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__binaryage_devtools_0_9_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clojure_complete_0_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__compojure_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__compojure_1_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__nrepl_0_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_10_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_10_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojurescript_1_10_597.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojurescript_1_10_597.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frame_0_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frame_0_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frisk_0_5_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__re_frisk_0_5_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__reagent_0_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__reagent_0_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_1_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__secretary_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__secretary_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__thheller_shadow_cljs_2_8_83.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__thheller_shadow_cljs_2_8_83.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yogthos_config_1_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__yogthos_config_1_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pwdgenerator-reframe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
     </list>
     <list id="02c626b3-6463-4432-a8ca-e4521ede47a1" name="#153809837 As a User I want a beautful colorful friendly interface to the generator so that using..." comment=":bear: :construction: finish about page&#10;&#10;#153809837 As a User I want a beautiful colorful friendly interface to the generator so that &#10;using it is simple and enjoyable." />
     <list id="2afeca95-f0d4-4ebe-ad1b-29b1aa875b5a" name="#167342104 As a Security Auditor, I would like the login attempts to be slowed down so that brute..." comment=":bear: :construction: capture the &quot;too many attempts&quot; error&#10;&#10;#167342104 As a Security Auditor, I would like the login attempts to &#10;be slowed down so that brute strength attack using password guessing is &#10;discouraged." />
@@ -138,6 +156,9 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="1Oiw3aN6LZ8MtAUhzeQftRnVLhO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -146,36 +167,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TF_FMT" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv&#10;Clojure&#10;Markdown&#10;Bash" />
-    <property name="editorconfig.notification" value="../.editorconfig&#10;" />
-    <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\matth\Desktop\workspace\pwdgenerate-reframe\node_modules\eslint" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.417734" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
-    <property name="start.from.branch" value="develop" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/matthew/Desktop/workspace/aventinesolutions/pwdgenerate-reframe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\matth\.IntelliJIdea2019.3\config\scratches" />
@@ -189,23 +196,36 @@
     </key>
   </component>
   <component name="RunManager" selected="Docker.Prettier Linter Intermediary">
-    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
-      <setting name="replType" value="NREPL" />
-      <setting name="execution" value="LEININGEN" />
-      <setting name="jvmArgs" value="" />
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
       <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
       <setting name="workingDir" value="" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <option name="configVersion" value="1" />
+      <option name="execution" value="LEININGEN" />
+      <option name="options" />
+      <option name="profiles" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
       <setting name="host" value="" />
       <setting name="port" value="0" />
       <setting name="replType" value="NREPL" />
       <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
       <setting name="fixLineNumbers" value="false" />
+      <setting name="useHeartbeat" value="true" />
+      <setting name="focusEditor" value="false" />
+      <setting name="urlFile" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Firefox Remote Debugger" type="FirefoxRemoteDebugType">
@@ -241,7 +261,15 @@
       <item itemvalue="Node.js.Intermediary Lint with fixes" />
     </list>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="1" Folder0="C:\Users\matth\AppData\Roaming\JetBrains\IntelliJIdea2020.1\scratches" CustomDictionaries="1" CustomDictionary0="$APPLICATION_CONFIG_DIR$/scratches/dutch.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="1" Folder0="$APPLICATION_CONFIG_DIR$/scratches" CustomDictionaries="1" CustomDictionary0="$APPLICATION_CONFIG_DIR$/scratches/dutch.dic" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
     <configuration />
@@ -364,6 +392,8 @@
       <workItem from="1586878961075" duration="1341000" />
       <workItem from="1593522082375" duration="28000" />
       <workItem from="1593540146690" duration="108000" />
+      <workItem from="1740501687311" duration="394000" />
+      <workItem from="1740502095366" duration="850000" />
     </task>
     <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
@@ -770,7 +800,7 @@
     </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -783,27 +813,6 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -849,7 +858,27 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <confirmRemoveEmptyChangelist value="1" />
@@ -882,128 +911,6 @@
     <MESSAGE value=":bear: :construction: upgrade &quot;HTTP proxy&quot; which had a security flaw&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: update workspace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: update workspace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2104" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589384043620">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state x="2104" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589384043620" />
-    <state x="547" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586093862476">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="547" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1586093862476" />
-    <state x="576" y="295" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586878975745">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="576" y="295" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1586878975745" />
-    <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587752005543">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586344294981" />
-    <state x="2560" y="-550" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587643716870" />
-    <state x="512" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1587752005543" />
-    <state x="0" y="0" width="1654" height="1033" key="CommitChangelistDialog2" timestamp="1593522126621">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1593522126621" />
-    <state x="0" y="0" width="1536" height="824" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288720430" />
-    <state x="2022" y="-798" width="1548" height="1040" key="CommitChangelistDialog2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326525424" />
-    <state x="82" y="0" width="1300" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587754032712" />
-    <state x="1680" y="23" width="1654" height="1033" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589384239083" />
-    <state x="2498" y="434" key="DockerComposeFileDialog" timestamp="1589383995068">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state x="2498" y="434" key="DockerComposeFileDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589383995068" />
-    <state x="2610" y="-579" key="FileChooserDialogImpl" timestamp="1586532862408">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="2610" y="-579" key="FileChooserDialogImpl/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586532862408" />
-    <state x="552" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585844594027" />
-    <state width="1063" height="881" key="GridCell.Tab.0.bottom" timestamp="1589382750175">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1063" height="881" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750175" />
-    <state width="1063" height="881" key="GridCell.Tab.0.center" timestamp="1589382750174">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1063" height="881" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750174" />
-    <state width="1063" height="881" key="GridCell.Tab.0.left" timestamp="1589382750173">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1063" height="881" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750173" />
-    <state width="1063" height="881" key="GridCell.Tab.0.right" timestamp="1589382750174">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1063" height="881" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382750174" />
-    <state x="1968" y="130" key="MergeDialog" timestamp="1589385322819">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state x="1968" y="130" key="MergeDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589385322819" />
-    <state x="2350" y="265" key="MultipleFileMergeDialog" timestamp="1589385322865">
-      <screen x="1680" y="23" width="1920" height="1057" />
-    </state>
-    <state x="2350" y="265" key="MultipleFileMergeDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589385322865" />
-    <state x="2492" y="-676" key="RollbackChangesDialog" timestamp="1587652180112">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1586343809077" />
-    <state x="2492" y="-676" key="RollbackChangesDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587652180112" />
-    <state x="458" y="0" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587589389429" />
-    <state x="125" y="82" key="SettingsEditor" timestamp="1593513079664">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="125" y="82" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1593513079664" />
-    <state x="242" y="0" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287721326" />
-    <state x="2351" y="-682" key="SettingsEditor/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587644393193" />
-    <state x="242" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589138603488" />
-    <state x="1983" y="-237" key="SettingsEditor/1680.-237.1920.1057/-1920.-343.1920.1177/0.23.1680.1027@1680.-237.1920.1057" timestamp="1590588856524" />
-    <state x="1983" y="23" key="SettingsEditor/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589382486587" />
-    <state x="410" y="280" key="SimpleOpenTaskDialog" timestamp="1586880304894">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="410" y="280" key="SimpleOpenTaskDialog/0.0.1536.824@0.0.1536.824" timestamp="1586880304894" />
-    <state x="405" y="284" key="VCS.EditChangelistDialog" timestamp="1586880367442">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="405" y="284" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1586880367442" />
-    <state x="399" y="128" key="Vcs.Push.Dialog.v2" timestamp="1593516377731">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="399" y="128" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1593516377731" />
-    <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589288723780" />
-    <state x="2480" y="-525" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588326527527" />
-    <state x="448" y="121" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587754034840" />
-    <state x="2240" y="178" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589384242844" />
-    <state x="2695" y="-500" key="chooseDestDirectoryDialog" timestamp="1587048794188">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="2695" y="-500" key="chooseDestDirectoryDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587048794188" />
-    <state x="2012" y="-706" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586432077630">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="2012" y="-706" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586432077630" />
-    <state x="2530" y="-663" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588325370171">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="2530" y="-663" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588325370171" />
-    <state x="2112" y="-708" width="1558" height="827" key="find.popup" timestamp="1586952709689">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="2112" y="-708" width="1558" height="827" key="find.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1586952709689" />
-    <state x="2452" y="-162" key="run.anything.popup" timestamp="1587648844466">
-      <screen x="1920" y="-798" width="1920" height="1040" />
-    </state>
-    <state x="426" y="504" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1585990053811" />
-    <state x="2452" y="-162" key="run.anything.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1587648844466" />
-    <state x="436" y="201" width="749" height="504" key="search.everywhere.popup" timestamp="1593540250572">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="436" y="201" width="749" height="504" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1593540250572" />
-    <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@0.0.1536.824" timestamp="1589287848551" />
-    <state x="2525" y="-564" width="840" height="599" key="search.everywhere.popup/0.0.1536.824/1920.-798.1920.1040@1920.-798.1920.1040" timestamp="1588433683723" />
-    <state x="484" y="185" width="840" height="475" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589140045046" />
-    <state x="2285" y="0" width="1050" height="610" key="search.everywhere.popup/1680.-237.1920.1057/-1920.-343.1920.1177/0.23.1680.1027@1680.-237.1920.1057" timestamp="1590588885337" />
-    <state x="2285" y="260" width="1050" height="610" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1589383577627" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

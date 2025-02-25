@@ -50,11 +50,11 @@
 
   :profiles
   {:dev
-            {:local-repo   "/m2_repository"
+            {:local-repo   "~/m2/repository"
              :dependencies [[binaryage/devtools "0.9.11"]
                             [re-frisk "0.5.4.1"]]}
 
-   :prod    {:local-repo "/m2_repository"}
+   :prod    {:local-repo "~/m2/repository"}
 
    :uberjar {:source-paths ["env/prod/clj"]
              :omit-source  true

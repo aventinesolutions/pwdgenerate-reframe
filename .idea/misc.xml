@@ -5,12 +5,12 @@
   </component>
   <component name="LeiningenProjectsManager">
     <option name="projectFiles">
-      <list>
+      <set>
         <option value="file://$PROJECT_DIR$/project.clj" />
-      </list>
+      </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="corretto-21" project-jdk-type="JavaSDK" />
   <component name="TaskProjectConfiguration">
     <server type="JIRA" url="https://projectvigi.atlassian.net" />
     <server type="PivotalTracker" url="https://www.pivotaltracker.com" />

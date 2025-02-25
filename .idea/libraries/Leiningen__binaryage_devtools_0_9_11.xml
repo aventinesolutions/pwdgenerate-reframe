@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Leiningen: binaryage/devtools:0.9.11">
     <CLASSES>
-      <root url="jar://C:/m2_repository/binaryage/devtools/0.9.11/devtools-0.9.11.jar!/" />
+      <root url="jar://$USER_HOME$/~/m2/repository/binaryage/devtools/0.9.11/devtools-0.9.11.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
