@@ -69,11 +69,27 @@ Use your preferred editor or IDE that supports Clojure/ClojureScript development
 [Clojure tools](https://clojure.org/community/resources#_clojure_tools) for some popular options.
 
 ### Environment Setup
-
-1. Install [JDK 8 or later](https://openjdk.java.net/install/) (Java Development Kit)
-2. Install [Leiningen](https://leiningen.org/#install) (Clojure/ClojureScript project task &
-dependency management)
+1. Install [JDK 8](https://github.com/adoptopenjdk) (Java Development Kit)
+    ```sh
+    asdf plugin add java https://github.com/halcyon/asdf-java.git
+    asdf list all java
+    asdf install java adoptopenjdk-8.0.442+6
+    java -version
+    ```
+2. Install [Leiningen](https://leiningen.org/#install) (Clojure/ClojureScript project task & dependency management)
+    ```sh
+    asdf plugin add lein https://github.com/miorimmax/asdf-lein.git
+    asdf list all lein
+    asdf install lein 2.11.2
+    lein --version
+    ```
 3. Install [Node.js](https://nodejs.org/) (JavaScript runtime environment)
+    ```sh
+    asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+    asdf list all nodejs
+    asdf install nodejs 23.8.0
+    node --version
+    ```
 4. Install [karma-cli](https://www.npmjs.com/package/karma-cli) (test runner):
     ```sh
     npm install -g karma-cli
