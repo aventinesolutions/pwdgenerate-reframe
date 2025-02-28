@@ -337,8 +337,9 @@ Tests can be run with Karma like this:
 ```
 
 ### Firebase Configuration
-
-The following environment variables must be set for Firebase to initialize correctly:
+* [Firebase Console](https://console.firebase.google.com/project/pwdgenerator-reframe/overview)
+* [deg/re-frame-firebase](https://github.com/deg/re-frame-firebase)
+* The following environment variables must be set for Firebase to initialize correctly:
 ```shell
 FIREBASE_API_KEY
 FIREBASE_AUTH_DOMAIN
