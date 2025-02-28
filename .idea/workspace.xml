@@ -49,9 +49,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: update IntelliJ Workspace">
+    <list default="true" id="92b35f26-3079-4183-9698-ba98ca259498" name="#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the applicatio..." comment=":bear: :construction: document using &quot;asdf&quot; for Rust Lang Support&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: update IntelliJ Workspace for new Rust Story&#10;&#10;188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the &#10;  application to the Google Cloud so the infrastruture is future proof." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +145,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/188938751__Rust__Deploy__Tasks",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/bijkler/Desktop/workspace/aventinesolutions/pwdgenerate-reframe",
     "node.js.detected.package.eslint": "true",
@@ -268,7 +269,7 @@
     </columns>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <branch name="develop" repository="D:\workspace\stekkie-frontend" />
       <branch name="feature/VTI-401_Windows_build_and_documentation" repository="D:\workspace\stekkie-frontend" original="true" />
       <branch name="feature/VTI-407_nieuwe_versie_3.5_rekentool" repository="D:\workspace\stekkie-frontend" original="true" />
@@ -277,7 +278,7 @@
       <created>1562767651662</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593540146031</updated>
+      <updated>1740748277636</updated>
       <workItem from="1562767652885" duration="4937000" />
       <workItem from="1562830648371" duration="1932000" />
       <workItem from="1562853644264" duration="2100000" />
@@ -371,7 +372,7 @@
       <workItem from="1740503034250" duration="1422000" />
       <workItem from="1740564762481" duration="1102000" />
       <workItem from="1740670428809" duration="229000" />
-      <workItem from="1740735414088" duration="5742000" />
+      <workItem from="1740735414088" duration="5800000" />
     </task>
     <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
@@ -752,7 +753,20 @@
       <option name="project" value="LOCAL" />
       <updated>1593522128202</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task active="true" id="2137954-188938751" summary="As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof.">
+      <branch name="develop" repository="$PROJECT_DIR$" original="true" />
+      <branch name="feature/188938751_Rust_Deploy_Tasks" repository="$PROJECT_DIR$" />
+      <changelist id="92b35f26-3079-4183-9698-ba98ca259498" name="#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the applicatio..." comment=":bear: :construction:&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
+      <created>1740736326000</created>
+      <option name="issue" value="true" />
+      <url>https://www.pivotaltracker.com/story/show/188938751</url>
+      <option name="number" value="188938751" />
+      <option name="presentableId" value="#188938751" />
+      <option name="project" value="2137954" />
+      <updated>1740748277636</updated>
+      <workItem from="1740748278631" duration="3344000" />
+    </task>
+    <option name="localTasksCounter" value="122" />
     <option name="branchNameFormat" value="feature/${id}_${summary}" />
     <servers>
       <PivotalTracker shared="true">
@@ -850,9 +864,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
-    <MESSAGE value=":bear: :construction: refactor view components to their own namespace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
-    <MESSAGE value=":bear: :construction: make the Firebase login it's own component&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
-    <MESSAGE value=":bear: :construction: remove some console logging &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: passing a parameter to the password generator component is unnecessary &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: add the Firebase &quot;sign out&quot; action&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: adjustment to the &quot;fieldset&quot; style&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
@@ -875,7 +886,10 @@
     <MESSAGE value=":bear: :construction: small fix to Java installation notes" />
     <MESSAGE value=":bear: :construction: better documentation for Firebase" />
     <MESSAGE value=":bear: :construction: update IntelliJ Workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: update IntelliJ Workspace" />
+    <MESSAGE value=":bear: :construction:&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
+    <MESSAGE value=":bear: :construction: update IntelliJ Workspace for new Rust Story&#10;&#10;188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the &#10;  application to the Google Cloud so the infrastruture is future proof." />
+    <MESSAGE value=":bear: :construction: document using &quot;asdf&quot; for Rust Lang Support&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
+    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: document using &quot;asdf&quot; for Rust Lang Support&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -885,6 +899,7 @@
             <option name="notifyOnTerminate" value="true" />
           </properties>
         </breakpoint>
+        <breakpoint type="dart-exception" />
       </default-breakpoints>
     </breakpoint-manager>
   </component>
