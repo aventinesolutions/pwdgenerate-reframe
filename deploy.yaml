@@ -1,0 +1,7 @@
+project_id: aventine-k8s
+bucket: aventine-responsive/pwdgenerate-reframe
+base_folder: resources/public
+home_page: index.html
+folders:
+  - css
+  - js.compiled
