@@ -49,9 +49,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: small fix to Java installation notes">
+    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: update IntelliJ Workspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,24 +139,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bijkler/Desktop/workspace/aventinesolutions/pwdgenerate-reframe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bijkler/Desktop/workspace/aventinesolutions/pwdgenerate-reframe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "tasks.servers",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\matth\.IntelliJIdea2019.3\config\scratches" />
@@ -372,7 +371,7 @@
       <workItem from="1740503034250" duration="1422000" />
       <workItem from="1740564762481" duration="1102000" />
       <workItem from="1740670428809" duration="229000" />
-      <workItem from="1740735414088" duration="4644000" />
+      <workItem from="1740735414088" duration="5742000" />
     </task>
     <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
@@ -753,20 +752,9 @@
       <option name="project" value="LOCAL" />
       <updated>1593522128202</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <option name="localTasksCounter" value="120" />
     <option name="branchNameFormat" value="feature/${id}_${summary}" />
     <servers>
-      <JIRA shared="true" url="https://projectvigi.atlassian.net">
-        <option name="apiType" value="REST_2_0" />
-        <commitMessageFormat>:bear: :construction:
-
-{id} {summary}</commitMessageFormat>
-        <option name="inCloud" value="true" />
-        <option name="jiraVersion" value="1001.0.0-SNAPSHOT" />
-        <option name="searchQuery" value="project = VTI order by updated" />
-        <option name="shouldFormatCommitMessage" value="true" />
-        <username>matthew.eichler@aventinesolutions.nl</username>
-      </JIRA>
       <PivotalTracker shared="true">
         <commitMessageFormat>:bear: :construction:
 
@@ -862,8 +850,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
-    <MESSAGE value=":bear: :construction: Firebase &quot;login with email&quot; events working&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
-    <MESSAGE value=":bear: :construction: sorted out the UIkit icons and sprinkled them in&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: refactor view components to their own namespace&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: make the Firebase login it's own component&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: remove some console logging &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
@@ -887,7 +873,9 @@
     <MESSAGE value=":bear: :construction: update IntelliJ Project Files from &quot;xuys&quot;" />
     <MESSAGE value=":bear: :construction: update IntelliJ Project Files from &quot;xuys&quot; :two:" />
     <MESSAGE value=":bear: :construction: small fix to Java installation notes" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: small fix to Java installation notes" />
+    <MESSAGE value=":bear: :construction: better documentation for Firebase" />
+    <MESSAGE value=":bear: :construction: update IntelliJ Workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: update IntelliJ Workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -899,5 +887,9 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
