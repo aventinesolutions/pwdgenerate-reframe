@@ -358,3 +358,6 @@ FIREBASE_MESSAGING_SENDER_ID
 FIREBASE_APP_ID
 FIREBASE_MEASUREMENT_ID
 ```
+
+### Deploying to Google Cloud
+* [Google Cloud Storage Crate](https://crates.io/crates/google-cloud-storage)
