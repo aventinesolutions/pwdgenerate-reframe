@@ -92,11 +92,19 @@ Use your preferred editor or IDE that supports Clojure/ClojureScript development
     asdf install nodejs 23.8.0
     node --version
     ```
-4. Install [karma-cli](https://www.npmjs.com/package/karma-cli) (test runner):
+4. Install [Rust Lang Support](https://www.rust-lang.org)
+    ```sh
+    asdf plugin add rust https://github.com/asdf-community/asdf-rust.git
+    asdf list all rust
+    asdf install rust 1.85.0
+    rustc --version
+    cargo --version
+    ```
+5. Install [karma-cli](https://www.npmjs.com/package/karma-cli) (test runner):
     ```sh
     npm install -g karma-cli
     ```
-5. Install [Chrome](https://www.google.com/chrome/) or
+6. Install [Chrome](https://www.google.com/chrome/) or
 [Chromium](https://www.chromium.org/getting-involved/download-chromium) version 59 or later
 (headless test environment)
     * For Chromium, set the `CHROME_BIN` environment variable in your shell to the command that
