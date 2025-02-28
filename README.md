@@ -74,6 +74,8 @@ Use your preferred editor or IDE that supports Clojure/ClojureScript development
     asdf plugin add java https://github.com/halcyon/asdf-java.git
     asdf list all java
     asdf install java adoptopenjdk-8.0.442+6
+    # ... or ...
+    #  asdf install java corretto-8.442.06.1
     java -version
     ```
 2. Install [Leiningen](https://leiningen.org/#install) (Clojure/ClojureScript project task & dependency management)
