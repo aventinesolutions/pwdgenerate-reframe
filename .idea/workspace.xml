@@ -49,8 +49,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: reviving Re-Frame Application from 2020 :two: switch to AdoptOpenJDK 8">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: update IntelliJ Project Files from &quot;xuys&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tool-versions" beforeDir="false" afterPath="$PROJECT_DIR$/.tool-versions" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,6 +372,7 @@
       <workItem from="1740503034250" duration="1422000" />
       <workItem from="1740564762481" duration="1102000" />
       <workItem from="1740670428809" duration="229000" />
+      <workItem from="1740735414088" duration="455000" />
     </task>
     <task id="2137954-153809837" summary="As a User I want a beautful colorful friendly interface to the generator so that using it is simple and enjoyable.">
       <branch name="develop" repository="D:\workspace\pwdgenerate-reframe" original="true" />
@@ -751,7 +753,7 @@
       <option name="project" value="LOCAL" />
       <updated>1593522128202</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <option name="localTasksCounter" value="115" />
     <option name="branchNameFormat" value="feature/${id}_${summary}" />
     <servers>
       <JIRA shared="true" url="https://projectvigi.atlassian.net">
@@ -860,7 +862,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
-    <MESSAGE value=":bear: :construction: try &quot;dispatch sync&quot; for login&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: trying D. Goldfarb's &quot;reframe firebase&quot; wrappers&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: use D. Goldbarb's &quot;firebase init&quot;&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: Firebase &quot;login with email&quot; events working&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
@@ -885,7 +886,8 @@
     <MESSAGE value=":bear: :construction: reviving Re-Frame Application from 2020" />
     <MESSAGE value=":bear: :construction: reviving Re-Frame Application from 2020 :two: add Tool Versions" />
     <MESSAGE value=":bear: :construction: reviving Re-Frame Application from 2020 :two: switch to AdoptOpenJDK 8" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: reviving Re-Frame Application from 2020 :two: switch to AdoptOpenJDK 8" />
+    <MESSAGE value=":bear: :construction: update IntelliJ Project Files from &quot;xuys&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: update IntelliJ Project Files from &quot;xuys&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
