@@ -361,3 +361,4 @@ FIREBASE_MEASUREMENT_ID
 
 ### Deploying to Google Cloud
 * [Google Cloud Storage Crate](https://crates.io/crates/google-cloud-storage)
+* [Serde YAML Serialization/Deserialization](https://crates.io/crates/serde)
