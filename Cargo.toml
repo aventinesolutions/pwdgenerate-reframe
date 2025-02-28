@@ -1,0 +1,15 @@
+[package]
+name = "gcloud-deploy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+google-cloud-storage = "0.24"
+tokio = { version = "1", features = ["full"] } # Most Google Cloud crates require tokio
+
+[[bin]]
+name = "gcloud-deploy"
+path = "rust-src/main.rs"
+test = false
+bench = false
+
