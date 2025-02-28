@@ -49,7 +49,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92b35f26-3079-4183-9698-ba98ca259498" name="#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the applicatio..." comment=":bear: :construction: document using &quot;asdf&quot; for Rust Lang Support&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof.">
+    <list default="true" id="92b35f26-3079-4183-9698-ba98ca259498" name="#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the applicatio..." comment=":bear: :construction: update the IntelliJ workspace&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5007993e-3a27-4f3b-8848-e431935b7c79" name="Default Changelist" comment=":bear: :construction: update IntelliJ Workspace for new Rust Story&#10;&#10;188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the &#10;  application to the Google Cloud so the infrastruture is future proof." />
@@ -140,24 +140,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feature/188938751__Rust__Deploy__Tasks",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/bijkler/Desktop/workspace/aventinesolutions/pwdgenerate-reframe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "tasks.servers",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/188938751__Rust__Deploy__Tasks&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bijkler/Desktop/workspace/aventinesolutions/pwdgenerate-reframe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;tasks.servers&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\matth\.IntelliJIdea2019.3\config\scratches" />
@@ -764,9 +764,9 @@
       <option name="presentableId" value="#188938751" />
       <option name="project" value="2137954" />
       <updated>1740748277636</updated>
-      <workItem from="1740748278631" duration="3344000" />
+      <workItem from="1740748278631" duration="5102000" />
     </task>
-    <option name="localTasksCounter" value="122" />
+    <option name="localTasksCounter" value="124" />
     <option name="branchNameFormat" value="feature/${id}_${summary}" />
     <servers>
       <PivotalTracker shared="true">
@@ -864,8 +864,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
-    <MESSAGE value=":bear: :construction: passing a parameter to the password generator component is unnecessary &#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
-    <MESSAGE value=":bear: :construction: add the Firebase &quot;sign out&quot; action&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: adjustment to the &quot;fieldset&quot; style&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: trying to subscribe to the &quot;params&quot; collection&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
     <MESSAGE value=":bear: :construction: fix the subscription to the &quot;params&quot; collection&#10;&#10;#172315027 As a User, I want to be able to store my personalized params so that I&#10; can use then later." />
@@ -889,7 +887,9 @@
     <MESSAGE value=":bear: :construction:&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
     <MESSAGE value=":bear: :construction: update IntelliJ Workspace for new Rust Story&#10;&#10;188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the &#10;  application to the Google Cloud so the infrastruture is future proof." />
     <MESSAGE value=":bear: :construction: document using &quot;asdf&quot; for Rust Lang Support&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
-    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: document using &quot;asdf&quot; for Rust Lang Support&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
+    <MESSAGE value=":bear: :construction: a basic Cargo set-up for &quot;GCloud Deploy&quot; binary&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
+    <MESSAGE value=":bear: :construction: update the IntelliJ workspace&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
+    <option name="LAST_COMMIT_MESSAGE" value=":bear: :construction: update the IntelliJ workspace&#10;&#10;#188938751 As a Clojure Developer, I would like to have tasks in Rust Lang to push the application to the Google Cloud so the infrastruture is future proof." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
